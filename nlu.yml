@@ -1,0 +1,1017 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: deny 
+  examples: | 
+    - no 
+    - n 
+    - never 
+    - I don't think so 
+    - don't like that 
+    - no way 
+    - not really 
+
+ 
+
+- intent: bot_challenge 
+  examples: | 
+    - are you a bot? 
+    - are you a human? 
+    - am I talking to a bot? 
+    - am I talking to a human? 
+
+#1
+
+- intent: apply_makeup  
+  examples: |
+    - How do I apply for Makeup? 
+    - I want to know how do I apply for Makeup
+    - How do I apply for makeup?
+    - Could you guide me on the process of applying for makeup? 
+    - What steps should I take to submit a makeup application? 
+    - Can you provide instructions on how to apply for makeup? 
+    - In what manner can I formally request makeup for a missed event? 
+    - Could you explain the proper protocol for applying for makeup?
+    - What actions do I need to take to request makeup for a missed opportunity? 
+    - How can I formally apply for makeup in the given situation? 
+    - What is the procedure for submitting a makeup application? 
+    - What are the necessary steps to put forth a makeup request? 
+    - how if i want to make a makeup request
+    - where is the makeup request
+    - if i want to make a makeup request how i can get it? - when can the doctor put me late
+    - can the doctor put me late if i leave the class
+
+#2
+
+- intent: computer_credits
+  examples: |
+    - How many credits I need to complete my computer engineering bachelor degree in AUM? 
+    - How can I graduate computer engineering in AUM 
+    - ce credits
+    - ce
+
+#3
+
+- intent: change_major
+  examples: |
+    - procedures for changing the major
+    - change my major
+    - can i change major if my credits is 76
+    - i want to know how can i change my major. 
+    - Can I change my major?
+    - What are the requirements for changing majors from business administration to engineering?
+    - What is the total credit limit for changing majors?
+    - What is the GPA required to change major?
+
+#4
+
+
+- intent: GPA_credit
+  examples: |
+    - I want to register more than 12 cards 
+    - I want to register more than 12 credit
+    - What is the maximum credit limit for register if students gpa is 3?
+    - What is the minimum GPA requirement for students to register for 18 credits at AUM?
+    - Are there any specific academic conditions for students to register for 18 credits at AUM?
+    - Is the 2.67 GPA threshold the same for all programs and departments at AUM?
+
+#5
+
+- intent: aum_club
+  examples: |
+    - What are the clubs in? 
+    - How can I register in the club? 
+    - What variety of clubs does AUM provide for its students, and how can students register for these clubs?
+    - What types of clubs are available for students at AUM?
+    - Can you list some of the specific clubs that AUM offers to its students?
+    - How does AUM facilitate club registration for its students?
+    - Are there any requirements or criteria for joining clubs at AUM?
+    - What role does the AUM portal play in the club registration process at AUM?
+    - Do students have the opportunity to start their own clubs at AUM?
+    - Are there any fees associated with joining clubs at AUM?
+    - How often do clubs at AUM typically meet and what activities do they engage in?
+    - Are there faculty advisors or mentors assigned to oversee the clubs at AUM?
+    - Can students participate in multiple clubs simultaneously at AUM?
+
+#6
+
+- intent: AUM_Tutoring_Center
+  examples: |
+    - AUM Tutoring Center 
+    - support center  
+    - can I have support in Tutoring 
+    - Tutoring 
+    - Where is Tutoring Center 
+    - how can i register in Tutoring Center 
+    - What services are offered by the Tutoring Center at AUM?
+    - What assistance does the Tutoring Center offer at AUM?
+    - What services does the Tutoring Center provide at AUM?
+    - How does the Tutoring Center support students at AUM?
+    - What resources are available at the Tutoring Center at AUM?
+    - What help can students receive from the Tutoring Center at AUM?
+
+
+#7
+
+- intent: check_schedule
+  examples: |
+    - How can i check my final exam schedule? 
+    - Where may I view a schedule for my final exam? 
+    - How can I access my final exam schedule, and when will it be made available to students? 
+    - How can I check my final exam schedule? 
+    - To verify my final exam schedule, what steps should I take? 
+    - How do I go about checking the details of my final exam schedule? 
+    - Can you guide me on the process for checking my final exam schedule? 
+    - What is the recommended method for confirming my final exam schedule? 
+    - How can I access and review my final exam schedule? 
+    - Could you provide instructions on how to check my final exam schedule? 
+    - What steps do I need to follow to ensure I have the accurate information about my final exam schedule? 
+    - Is there a specific platform or website where I can check my final exam schedule? 
+    - How do I find and confirm the details of my final exam schedule? 
+
+#8
+
+- intent: miss_final
+  examples: |
+    - I want to know what to do if I miss the final exam? 
+    - miss exam  
+    - what can i do when missed final exam 
+    - What steps should be taken if the final exam is missed? 
+    - In the event of missing the final exam, what actions should be considered? 
+    - Could you provide guidance on what to do if I miss the final exam? 
+    - What are the recommended procedures for addressing a missed final exam? 
+    - If the final exam is missed, what steps should I follow to rectify the situation? 
+    - What measures can be taken if I happen to miss the final exam? 
+    - Could you outline the appropriate course of action for a missed final exam? 
+    - In case of a missed final exam, what are the recommended next steps? 
+    - What should be done if I am unable to attend the final exam? 
+    - Can you provide advice on how to handle the situation if I miss the final exam? 
+#9
+- intent: paper_work_makeup 
+  examples: | 
+    - Where can I submit the paper work to apply for makeup?  
+    - To apply for makeup, where is the designated location for submitting the required paper work? 
+    - Where should I go to submit the necessary paper work for applying for makeup? 
+    - For makeup application, where is the designated place to submit the required paper work? 
+    - Where can I deliver the paper work needed to apply for makeup? 
+    - To initiate a makeup request, where is the appropriate location to submit the required paper work? 
+    - Where is the submission point for paper work related to applying for makeup? 
+    - What is the specific location for subm apply for makeup? 
+    - To apply for makeup, where do I need to submit the required paper work? 
+    - Where is the designated drop-off point for paper work when applying for makeup? 
+    - paper work
+
+
+ 
+
+#10 
+
+- intent: bring_final 
+  examples: |  
+    - What should I bring for the final exam? 
+    - Can you provide a list of items I need to bring for the final exam? 
+    - What items are essential to bring for the upcoming final exam? 
+    - Could you offer guidance on the necessary materials to bring for the final exam? 
+    - What should be included in the items I bring for the final exam? 
+    - Can you advise me on the essential things to bring for the final exam? 
+    - What items are recommended for me to bring when taking the final exam? 
+    - Could you outline the necessary supplies for the final exam that I should bring? 
+    - Is there a checklist of items I need to bring for the final exam? 
+    - Can you specify the required materials to bring with me for the final exam? 
+
+#11
+
+- intent: late_final  
+  examples: | 
+    - Can I enter the final exam if I am late?  
+    - Is it permissible to join the final exam after it has started if I am running late? 
+    - Will I be allowed to enter the final exam even if I arrive late? 
+    - Can I still participate in the final exam if I am tardy? 
+    - Is there a grace period for entering the final exam if I am running late? 
+    - Will I face any consequences for entering the final exam late? 
+    - Is there a policy on late entry for the final exam? 
+    - Can I join the final exam after the scheduled start time if I am late? 
+    - Are there any restrictions or guidelines regarding late entry to the final exam? 
+    - What is the procedure for entering the final exam if I arrive late? 
+    - late final
+
+#12
+
+- intent: satisfied_final 
+  examples: |  
+    - What do I do if I'm not satisfied with my final exam grade? 
+    - Is there a process for addressing dissatisfaction with my final exam grade? 
+    - What steps should I take if I'm unhappy with my final exam results? 
+    - Could you guide me on what to do if I find my final exam grade unsatisfactory? 
+    - If I'm not content with my final exam grade, what actions can I take? 
+    - Is there a protocol for expressing dissatisfaction with my final exam results? 
+    - How can I address concerns about my final exam grade if I'm not satisfied? 
+    - Are there procedures in place for handling dissatisfaction with final exam grades? 
+    - What recourse do I have if I'm dissatisfied with my final exam grade? 
+    - Could you provide advice on what steps to take if I'm not happy with my final exam result? 
+
+#13 
+
+- intent: submit_appeal 
+  examples: | 
+    - How can I submit an appeal?  
+    - What is the procedure for submitting an appeal? 
+    - Could you guide me through the process of appealing a decision? 
+    - How do I go about formally submitting an appeal? 
+    - Can you provide instructions on the appeal submission process? 
+    - What steps should I take to initiate the appeal process? 
+    - In what manner can I officially request an appeal? 
+    - Could you explain the proper protocol for submitting an appeal? 
+    - What actions do I need to take to appeal a decision? 
+    - How can I formally challenge a decision through the appeal process? 
+    - What are the necessary steps to put forth an official appeal? 
+
+#14
+
+- intent: FallSpring_attendance_policy 
+  examples: |
+    - what is the max number of absences for a class that has 1 session a week in Fall/Spring semester?
+    - what is the max number of absences for a class that has 2 sessions a week in Fall/Spring semester?
+    - what is the max number of absences for a class that has 3 sessions a week in Fall/Spring semester?
+    - what is the max number of absences for a class that has 4 sessions a week in Fall/Spring semester?
+    - What is the maximum number of absences allowed for a class that meets once a week during the Fall or Spring semester?
+    - How many absences are permitted for a course that holds two sessions weekly in the Fall or Spring semester?
+    - In the context of Fall or Spring semester classes, what is the maximum number of absences permitted for a course with three weekly sessions?
+    - For classes meeting four times per week in the Fall or Spring semester, what is the maximum allowable number of absences according to the policy?
+    - the maximum number of absences allowed for different session frequencies?
+    
+
+#15
+
+
+- intent: summer_attendance_policy 
+  examples: |
+    - what is the max number of absences for a class that has 2 sessions a week in Summer semester?
+    - what is the max number of absences for a class that has 3 sessions a week in Summer semester?
+    - what is the max number of absences for a class that has 5 sessions a week in Summer semester?
+    - the max number of absences for a class that has 7 sessions a week in Summer semester is 9
+    - the max number of absences for a class that has 10 sessions a week in Summer semester is 12
+    - the absent of the summer classes
+
+
+#16
+
+- intent: medical_excuses
+  examples: |
+    - When do I submit my medical excuses?
+    - How many days are allowed to submit my medical report?
+    - how many days until I submit my excuses?
+    - when the time if I want to submit my excuses? 
+    - when the last day for submit my medical excuses?
+    - How many days for submit the medical report? 
+    - What is the rationale behind the specific timeframe of 2 working days for submitting an appeal following a dismissal notification?
+ 
+#17
+
+- intent: aum_portal
+  examples: |
+    - How you can apply for the Attendance Dismissal ?
+    - how do I submit my medical excuses/report?
+    - If I get dismissed, how do I submit my medical report/excuses?
+    - Can I track the status of my appeal after submitting it through the AUM Portal's Student Requests section?
+    - Where specifically can I find the Student Requests section within the AUM Portal?
+
+#18
+
+- intent: dismisse_grade
+  examples: |
+    - if I get dismisse from a course, what will be my grade?
+    - I finished my all possible absents day, what will be my grade?
+    - What is the grade if I get the limit of absent in my course ?
+    - What is the grade if I reach 9 absents out of 9 of my course?
+    - What is the grade if I reach 6 absents out of 6 of my course?
+    - What is the grade if I reach 3 absents out of 3 of my course?
+    - What is the grade if I reach 12 absents out of 12 of my course?
+
+#19
+
+- intent: Absence_percentage
+  examples: |
+    - What is the percentage of absence in the average for each course?
+    - Absence percentage
+    - what the total grade for absent?
+    - the limit grade for absent?
+    - how many percentage for each course for the absent?
+
+#20
+
+- intent: before_dismissal
+  examples: |
+    - I want to know the allowed absence percentage to reach before dismissal?
+    - What is the defined threshold for allowable absences before an student faces dismissal in our univarsity?
+    - what is the percentage that I can take before I get dismissal?
+    - I get 20% of the absent parsentage I will get dissmil or not?
+    - I get 20% of the absence parsentage I will get dismissal or not?
+    - what is the parsentage that i can get before dismissal?
+
+# - intent: AUM_clinic
+#   examples: |
+#     - Is there a central clinic in AUM?
+#     - Where is the AUM Central Clinic located?
+#     - What services does the clinic provide? 
+#     - What types of medications are available at the clinic besides painkillers?
+#     - how I go to the clinic in AUM?
+#     - I want Panadol 
+
+#22
+
+- intent: AUM_email_for_the_university_student
+  examples: |
+    - Is there any way to communicate between the student and the university?
+    - How can I change the password for my email?
+    - Is the private email account used solely for attendance-related communications, or are other notifications also sent there?
+    - how I communicate with my doctors
+    - how I get the nofitication of attendance and absence information
+
+#23
+
+
+- intent: class_standing
+  examples: |
+    - If I'm a freshman,what is the total number of hours i have earned and the minimum GPA required?
+    - If I'm a sophomore,what is the total number of hours i have earned and the minimum GPA required?
+    - If I'm a junior,what is the total number of hours i have earned and the minimum GPA required?
+    - If I'm a senior,what is the total number of hours i have earned and the minimum GPA required?
+
+#24
+
+- intent: graduation_with_honors
+  examples: |
+    - How can I graduate with honors?
+    - Are there criteria for graduating with honors?
+    - Can I graduate with honors if I get a grade less than C?
+    - What is the cumulative GPA required to graduate with honors?
+    - If I committed conduct violation, can I graduate with honors?
+
+#25
+
+- intent: about_AUM
+  examples: |
+    - I want to know more about the AUM?
+    - How many colleges does the AUM include?
+    - What distinguishes the AUM?
+    - what can I study in AUM?
+    - since when the aum is bigining
+    - In what year was AUM open?
+
+#26
+
+- intent: writing_lab
+  examples: |
+    - What is the writing lab at AUM?
+    - Is the writing lab for all students?
+    - Does the writing lab help me if I have a presentation or other projects?
+    - How can I contact the writing lab?
+    
+#27
+
+
+- intent: AUM_library
+  examples: |
+    - Is there a library at the university?
+    - When does the library open?
+    - Will the library be open during Ramadan?
+    - How can we contact the library?
+    - How can I request a book that is not available in the library's catalog?
+    - Are there any upcoming events or workshops hosted by the library that can help me improve my research and study skills?
+    - What are the library's policies regarding borrowing materials, including loan periods, renewal options, and any associated fees or fines?
+
+#28
+
+- intent: AUM_restaurant
+  examples: |
+    - Are there restaurants on campus?
+    - What types of restaurants are available on campus?
+    - Are there healthy options available in restaurants?
+    - Are there designated places for students who want to eat in restaurants?
+
+#29
+
+
+- intent: AUM_registration
+  examples: |
+    - How can I register courses?
+    - Can I register less than 12 credits?
+    - What is the minimum credits that I must register for the course?
+    - When can I add or drop the course?
+    - Can I add a course after the end of the add and drop period?
+    - Can I change the section?
+    - If I have a subject on academic probation,how many credits can I register?
+
+#30
+
+   
+- intent: ATM_service
+  examples: |
+    - Is there an ATM service at the university?
+    - Can ATM cards from different banks be used?
+    - Are cash deposit services available at ATMs?
+
+#31
+
+- intent: tawteen_career_center
+  examples: |
+    - What services does the Tawteen Career Center offer to help students?
+    - What is the role of the Tawteen Career Center at the university?
+    - What services does the Tawteen Career Center provide to students and graduates?
+    - How can students access the Tawteen Career Center?
+    - Are job and internship opportunities provided through the Tawteen Career Center?
+    - Are recruitment events and events organized by the Tawteen Career Center?
+
+
+
+
+
+#32
+
+- intent: accident_campus
+  examples: |
+    - What should I do if I have an accident in a parking area?
+    - How can I access assistance in case of an accident within the campus?
+    - What steps should one take if an accident transpires within the campus premises?
+    - In case of an accident within the campus, what procedures should be followed to obtain assistance?
+    - What are the protocols for accessing aid in the event of an accident on campus?
+    - How does one access support if involved in an accident within campus boundaries?
+    - If there's an accident within the campus vicinity, how can one request assistance?
+    - What measures can individuals take to receive help promptly if a campus accidents haapen ?
+    - In what ways can individuals seek assistance if they encounter an accident  on campus grounds?
+    - How can one access emergency services in the event of an accident  situation on campus?
+    - if I get tired,I call who ?
+    - if I get tired where I go?
+
+
+ 
+
+#33
+- intent: AUM_study
+  examples: |
+    - What are the majors available at the university?
+    - What are the main majors offered by the university?
+    - What fields of study can students pursue at the university?
+    - What are the areas of specialization available for undergraduate studies at the university?
+    - In what subjects can students major at the university?
+    - What degree programs does the university provide in various fields?
+    - Which educational tracks are available for students to pursue at the university?
+    - What majors does the university offer for prospective students?
+    - Can you outline the diverse range of majors accessible for students at the university?
+
+
+#34
+- intent: emergency_cases
+  examples: |
+    - Are there alarm and evacuation systems in place within the campus?
+    - Are there designated assembly points for students and staff during emergencies?
+    - How is communication with students and staff handled during emergencies?
+    - What measures are taken to designate assembly points within the campus, and how are they communicated to students and staff?
+    - In what ways does the campus ensure accountability and safety at designated assembly points during emergencies?
+    - Which communication channels are utilized by the campus for disseminating information and guidance during critical situations?
+    - What steps are taken to train students and staff on emergency procedures and the use of evacuation systems?
+    - How often are emergency preparedness drills conducted on campus, and what is the process for evaluating their effectiveness?
+    - Are there specific procedures in place for coordinating with local emergency services during campus-wide crises?
+    - How does the campus utilize technology and data analytics to enhance the efficiency and effectiveness of its emergency response systems?
+
+
+#35
+- intent: program_degree
+  examples: |
+    - Are there programs for both bachelor's and master's degrees in specific fields?
+    - Can I do research or practical work in my chosen major?
+    - Do the academic offerings encompass both undergraduate and graduate programs tailored to specific disciplines?
+    - Are there educational pathways for both bachelor's and master's degrees in specialized subject areas?
+    - Are programs available for students pursuing both undergraduate and postgraduate degrees in certain fields?
+    - Do the academic programs cater to students seeking both bachelor's and master's degrees in specific disciplines?
+    - Are there options for pursuing undergraduate as well as graduate studies in particular fields of interest?
+    - Can students pursue both undergraduate and postgraduate degrees in select fields?
+    - Are there opportunities for students to enroll in bachelor's and master's programs focusing on specific subjects?
+    - Do the academic offerings accommodate students interested in both undergraduate and graduate studies within specific fields
+
+
+################################
+###################################
+#36
+- intent: arrive_within
+  examples: |
+    - if you arrive within the first 15 minutes of the start of the class you will be considered late 
+    - when can the doctor put me late
+    - if i come the first 2 minutes
+    - if i come the first 3 minutes
+    - if i come the first 4 minutes
+    - if i come the first 5 minutes
+    - if i come the first 6 minutes
+    - if i come the first 7 minutes
+    - if i come the first 8 minutes
+    - if i come the first 9 minutes
+    - if i come the first 10 minutes
+    - if i come the first 11 minutes
+    - if i come the first 12 minutes
+    - if i come the first 13 minutes
+    - if i come the first 14 minutes
+    - if i come the first 15 minutes 
+    - if i arrive to the class after 2 minutes
+    - if i arrive to the class after 3 minutes
+    - if i arrive to the class after 4 minutes
+    - if i arrive to the class after 5 minutes
+    - if i arrive to the class after 6 minutes
+    - if i arrive to the class after 7 minutes
+    - if i arrive to the class after 8 minutes
+    - if i arrive to the class after 9 minutes
+    - if i arrive to the class after 10 minutes
+    - if i arrive to the class after 11 minutes
+    - if i arrive to the class after 12 minutes
+    - if i arrive to the class after 13 minutes
+    - if i arrive to the class after 14 minutes
+    - if i arrive to the class before 15 minutes
+    
+
+#37
+- intent: after_start
+  examples: |
+    - if you arrive after 15 minutes of the start of the class you will be considered absent
+    - when can the doctor put me absent
+    - if i come to the class after 15 minutes
+    - if i come to the class after 16 minutes
+    - if i come to the class after 17 minutes
+    - if i come to the class after 20 minutes
+    - if i come to the class after 24 minutes
+    - if i come to the class after 16 minutes
+    - if i come to the class after 30 minutes
+
+#38
+
+- intent: leave_classroom
+  examples: |
+    - if you leave the classroom for less than 15 minutes you will be considered late.
+    - i leave the class for 10 minutes 
+    - i leave the class for 9 minutes 
+    - i leave the class for 5 minutes 
+    - when can the doctor put me late
+    - can the doctor put me late if i leave the class
+
+
+#39
+
+- intent: more_fifteen
+  examples: |
+    - if you leave the classroom for more than 15 minutes you will be considered absent.
+    - i leave the class for 15 minutes 
+    - i leave the class for 18 minutes
+    - i leave the class for 20 minutes
+    - when can the doctor put me absent
+    - can the doctor put me absent if i leave the class
+
+
+
+#40
+- intent: makeups_Saturday
+  examples: |
+    - can they put the makeups on Saturday?
+    - may they put my makeup on saturday? 
+    - they send to me that my makeup on saturday it is allowed?
+    - Is it acceptable to apply makeup on Saturdays?
+    - Can makeup be worn on Saturdays?
+    - Are Saturdays suitable for putting on makeup?
+    - Is Saturday an appropriate day for applying makeup?
+    - Do people typically wear makeup on Saturdays?
+    - Can individuals choose to put on makeup specifically on Saturdays?
+    - Is Saturday considered a suitable day for makeup application?
+    - Are there any restrictions on wearing makeup on Saturdays?
+    - Is it common for people to apply makeup on Saturdays?
+
+#41    
+
+- intent: privatepublic_institution
+  examples: | 
+    - what must the medical document containe if it take from a private institution
+    - what i should write in the medical doucment if it from private hospital ?
+    - what the important thinges in the medical position if it from private institution
+    - must have Doc Signature and Institution Stamp in the medical document from public hospital?
+    - what must be in the medical document that we take from public institution
+
+#42  
+
+- intent: three_late
+  examples: |
+    - if you are late to class three times it will be counted as 1 absence
+    - if i get 3 late 
+    - what happen if i get 3 late 
+    - when i get absent
+
+#44
+
+- intent: missed_midterm
+  examples: |
+    - what must be the grade for the assessment to apply for a makeup request?
+    - if the grade for assessment is 10% can I make a makeup request?
+    - i missed a quize with 2.5% , can I make a makeup request?
+    - i missed a quize with 5% , can I make a makeup request?
+    - if the grade for assessment is 15% can I make a makeup request?
+    - if the grade for assessment is 20% can I make a makeup request?
+    - if i missed the final can I make a makeup request?
+    - if i missed the midterm can I make a makeup request?
+
+#45
+
+- intent: within_five
+  examples: |
+    - how many days need to submit the Makeup Request of the missed assessment?
+    - when i must submit the makeup request?
+    - i have a missed assessment how many day i have to submit the makeup request?
+    - if the grade for assessment is 15% how many day i have to submit the makeup request?
+    - if the grade for assessment is 20% how many day i have to submit the makeup request?
+    - if i missed the final how many day i have to submit the makeup request?
+    - how many days must to submit makeup request
+    - if i missed the midterm how many day i have to submit the makeup request?
+#46
+
+- intent: allowed_number
+  examples: |
+    - how many allowed number of makeups for per student per semester?
+    - what the max allowed number of makeups for per student per semester? 
+    - i have a one makeup request in the semester can i get another one?
+    - i have a two makeup request in the semester can i get another one?
+    - how many makeup can I take in per semester
+    - max number for makeup for one student in one semester?
+
+#47   
+
+- intent: submit_petition
+  examples: |
+    - the last date to submit any makeup petition for any assessment missed during the semester  
+    - What is the deadline for submitting makeup petitions for missed assessments during the semester?
+    - When must students submit petitions to make up for any missed assessments throughout the semester?
+    - By what date should students request makeup opportunities for assessments missed during the semester?
+    - What is the cut-off time for submitting petitions to make up for missed assessments before the final exam?
+    - When does the opportunity to submit makeup petitions for missed assessments end each semester?
+    - What is the last day students can request to make up for any missed assessments before the final exam week?
+    - When does the window close for submitting makeup petitions for assessments not taken during the semester?
+    - What is the deadline for students to apply for makeup assessments for missed coursework?
+    - By when should students file petitions for making up any missed assessments before the final exam period?
+    - what the last date to submit any makeup petition for any assessment missed during the semester? 
+    - when the last day to submit my makeup petition?
+    - Can i submit the makeup petition in the final week?
+    - when the deadline to submit my makeup request?
+
+#48
+
+
+- intent: flexibility_request
+  examples: |
+    - Is it possible to request a makeup exam for an already approved and scheduled test, regardless of the circumstances?
+    - Can students reschedule an exam that has already been approved and scheduled, irrespective of the reason?
+    - Is there flexibility for students to change the date of an already approved and scheduled exam, regardless of the situation?
+    - Are students allowed to request a makeup exam for a pre-approved and scheduled test, regardless of the explanation?
+    - Is there an option for students to postpone an already approved and scheduled exam, irrespective of the cause?
+    - Does the policy allow for rescheduling exams that have already been approved and scheduled, regardless of the grounds?
+    - Can students seek alternative arrangements for pre-approved and scheduled exams, regardless of the rationale?
+    - Is rescheduling permitted for exams that have already been approved and scheduled, regardless of the reason provided?
+    - Are students permitted to request makeup exams for pre-approved and scheduled tests, irrespective of the situation?
+    - Is there a possibility to change the date of an already approved and scheduled exam, regardless of the circumstances?
+
+
+#49
+
+- intent: final_location
+  examples: |
+    - How do I find the final exam location?
+    - How can I determine the venue for the final examination?
+    - What is the method for locating the final exam's site?
+    - Where should I check to find the final exam's location?
+    - How do I discover the final exam venue?
+    - What steps should I take to find out where the final exam will be held?
+    - Where can I access information about the final exam's location?
+    - What's the process for identifying the final exam's venue?
+    - How can I find the place where the final exam will take place?
+    - Where can I obtain details about the final exam's venue?
+    - What are the ways to determine where the final exam will be conducted?
+
+ #50
+- intent: max_EPP
+  examples: |
+    - what is the max allowed number of absences for EPP?
+    - if i am an epp student how many days can i absent?
+    - What is the maximum permissible number of absences for the EPP?
+    - How many absences are students allowed to have for the EPP?
+    - What is the highest number of absences permitted for the EPP?
+    - How many absences are acceptable within the EPP guidelines?
+    - What is the cap on absences for students enrolled in the EPP?
+    - How many absences can students accrue while participating in the EPP?
+
+#51
+- intent: reach_excuses
+  examples: |
+    - what is the max dismissal percentage you can reach with excuses?    
+    - What is the maximum dismissal percentage allowed when providing excuses, capped at 30%?
+    - What is the highest dismissal rate permissible with excuses, limited to 30%?
+    - What is the maximum percentage of dismissal that can be reached using excuses, set at 30%?
+    - What is the threshold for dismissal percentage achievable with excuses, not exceeding 30%?
+    - What is the upper limit for dismissal percentage attainable with excuses, restricted to 30%?
+    - What is the highest percentage of dismissal permitted with excuses, capped at 30%?
+    - What is the maximum dismissal rate achievable with excuses, not surpassing 30%?
+    - What is the dismissal percentage limit when considering excuses, set at 30%?
+
+
+###############YAQEEN#################
+
+#18
+- intent: electrical_engineering
+  examples: |
+    - What kind of courses will I take in an electrical engineering program?
+    - How long does it typically take to complete a degree in electrical engineering?
+    - Are there any specific prerequisites or recommended background knowledge for entering an electrical engineering program?
+    - What career opportunities are available for graduates with a degree in electrical engineering?
+    - What kind of software or tools do electrical engineering students typically use in their coursework?
+    - How many credits are required to complete a degree in electrical engineering?
+#19
+- intent: clinic_services
+  examples: |
+    - which services are offered at the central clinic located on the AUM Campus?
+    - what types of services does the central clinic at AUM Campus deliver?
+    - what are the services available at the central clinic situated on the AUM Campus?
+    - could you outline the services provided by the central clinic on the AUM Campus?
+    - what kind of healthcare services does the central clinic offer at the AUM Campus?
+    - what services does the central clinic on AUM Campus provide?
+    - what are the clinic sevises that we have on AUM?
+    - clinic services
+
+
+#20
+- intent: clinic_location
+  examples: |
+    - Where exactly can the AUM Central Clinic be found?
+    - What is the precise address of the Central Clinic on the AUM campus?
+    - Where is the physical location of the Central Clinic within the AUM campus?
+    - Can you provide details about the whereabouts of the AUM Central Clinic?
+    - where can we find clinic?
+    - clinic location
+    - where is the clenic location?
+    
+
+#21
+- intent: sports_center
+  examples: |
+    - What services does the Sports Center at AUM provide?
+    - What amenities and services are available at the Sports Center on the AUM campus?
+    - Could you outline the offerings provided by the Sports Center at AUM?
+    - What types of services can one expect from the Sports Center located at AUM?
+    - What facilities and services are offered at the AUM Sports Center?
+    - What specific services are available for students at the AUM Sports Center?
+#22
+- intent: it_services
+  examples: |
+    - What IT services are provided to students at AUM?
+    - What technological services are extended to students enrolled at AUM?    
+    - Could you elaborate on the IT services accessible to students at AUM?    
+    - What specific IT provisions are offered to students attending AUM?
+    - What are the available IT support services catered to students of AUM?
+    - What IT resources and assistance are provided for students at AUM?
+#23  
+- intent: aum_website_info
+  examples: |
+    - What information does the AUM website provide to students?
+    - What kind of information does the AUM website offer to its students?
+    - Could you specify the information available to students on the AUM website?
+    - What types of student-oriented information can be found on the AUM website?
+    - What specific resources and details are provided for students on the AUM website?
+    - What kind of student support and resources does the AUM website offer?
+#24
+- intent: portal_purpose
+  examples: |
+    - What is the purpose of the MyAUM portal?
+    - What function does the MyAUM portal fulfill?
+    - What is the objective of implementing the MyAUM portal?
+    - What role does the MyAUM portal play?
+    - What is the intent behind the creation of the MyAUM portal?
+    - What does the MyAUM portal aim to achieve?
+#25
+- intent: aum_Moodle
+  examples: |
+    - What does Moodle entail?
+    - What is the function of Moodle?
+    - What is Moodle?
+    - How would you define Moodle?    
+    - What purpose does Moodle serve?
+    - What is the role of Moodle?
+#26
+- intent: aum_banner
+  examples: |
+    - How is Banner utilized at AUM?
+    - What functions does Banner serve at AUM?
+    - What is the purpose of Banner at AUM?
+    - What is Banner used for?
+#27   
+- intent: aum_communicate
+  examples: |
+    - How does AUM communicate important information to students?
+    - By what means does AUM relay crucial information to students?
+    - How does AUM disseminate important information to students?
+    - What methods does AUM utilize to communicate essential information to students?
+    - How does AUM ensure students receive important information?
+    - Through what channels does AUM convey significant information to students?
+#28   
+- intent: parking_services
+  examples: |
+    - What parking services are available to students at AUM?
+    - What parking facilities are provided to students at AUM?
+    - What parking options are available to students at AUM?
+    - How does AUM accommodate student parking?
+    - What parking services does AUM extend to students?
+    - What are the student parking arrangements at AUM?
+#29
+- intent: students_identified
+  examples: |
+    - How are students identified at AUM?
+    - How are students distinguished at AUM?
+    - What methods does AUM use to identify students?
+    - By what means are students recognized at AUM?
+    - What identification processes are in place for students at AUM?
+    - How does AUM differentiate its students?
+
+
+#30
+- intent: innovation_center
+  examples: |
+    - What are the Innovation Centers at AUM?
+    - What do the Innovation Centers at AUM entail?
+    - How are the Innovation Centers defined at AUM?
+    - What services are provided by the Innovation Centers at AUM?
+    - What is the function of the Innovation Centers at AUM?
+    - What purpose do the Innovation Centers serve at AUM?
+
+#31
+- intent: Ask_about_elearning
+  examples: |
+    - How many courses can I take at one time?
+    - Are reports available to show my progress or my completion of a course?
+    - What score is needed for me to complete a course?
+    - Can I retake the test to improve my score and if so, how many times can I retake it?
+
+#32
+- intent: AUM_calendar
+  examples: |
+    - What is the academic calendar for the university, including important dates such as the start and end of each semester, holidays?
+    - How do I access the university's online academic calendar and where can I find information about class schedules, registration dates, and deadlines?
+    - Are there any special events or activities planned throughout the academic year, such as orientation programs, career fairs, or cultural festivals?
+    - How can I stay updated on any changes or updates to the university calendar, such as weather-related closures or schedule adjustments?
+    - What are the deadlines for dropping or adding classes, withdrawing from courses, or applying for graduation?
+    - How does the university handle class scheduling conflicts or issues with course availability?
+    - Are there any academic policies or procedures related to the university calendar that I should be aware of, such as grading policies, academic probation, or academic honors?
+    - How can I request accommodations for religious observances or other personal obligations that may conflict with the university calendar?
+    - How does the university calendar align with other important dates or events in the local community, such as public holidays or local festivals?
+#33
+- intent: AUM_subject
+  examples: |
+    - What subjects are offered in the AUM program?
+    - Can you tell me about the courses available at AUM?
+    - I'm interested in learning more about the subjects taught at AUM.
+    - What are the major subjects available at AUM?
+    - Could you provide information about the academic disciplines at AUM?
+    - Tell me about the curriculum at AUM.
+    - What kind of subjects can I expect to study if I enroll at AUM?
+    - Can you list some of the subjects covered in the AUM curriculum?
+    - I'd like to know more about the subjects I can choose from at AUM.
+#34
+- intent: grading_system
+  examples: |
+    - How is GPA calculated at the university?
+    - How is GPA determined for students at the university?
+    - What method does the university use to compute GPA?
+#35
+- intent: campus_facilities
+  examples: |
+    - What dining options are available on campus?
+    - Where is the nearest gym or fitness center located?
+    - Can you tell me about the library facilities?
+    - How can I access computer labs or printing services?
+    - What medical services are provided on campus?
+    - Where can I find information about parking facilities?
+    - Are there study rooms or group collaboration spaces available?
+#36
+- intent: business_major
+  examples: |
+    - What are the core courses required for the business major?
+    - Can you provide information about the faculty members in the business department?
+    - What career opportunities are available for business majors?
+    - Are there any internships or experiential learning opportunities for business students?
+    - What specializations or concentrations are offered within the business major?
+    - Are there study abroad opportunities for business students?
+    - Can you provide information about the alumni network for business majors?
+    - How can I get involved in business-related research projects?  
+#37
+- intent: attendance_dismissal_request
+  examples: |
+    - How do I submit an attendance dismissal request to the university?
+    - What are the requirements for requesting attendance dismissal?
+    - Where can I find the form for requesting attendance dismissal?
+    - Is there a deadline to submit a request to withdraw from attendance?
+    - Can I submit medical documents as part of my absence request?
+    - How will I be notified of the status of my absence request?
+#38
+- intent: medical_examination_submission
+  examples: |
+    - How can I submit my medical examination results to the university?
+    - When should I submit the medical examination to the university?
+    - What are the procedures for submitting the medical examination to the university?
+    - Is there a deadline for submitting the medical examination?
+    - What documents are required to submit the medical examination?
+    - Do I need to bring the medical examination results in person or can they be sent electronically?
+    - How can I ensure that the university receives my medical examination results?
+    - Can I upload my medical examination results to the student portal?
+#39
+- intent: lost_item_on_campus
+  examples: |
+    - How do I report a lost item on campus?
+    - Where should I go if I've lost something on campus?
+    - What information should I provide when reporting a lost item?
+    - What should I do if I find a lost item on campus?
+
+
+ #40
+# - intent: inquire_advising_services
+#   examples: |
+#     - What services does the advising office offer?
+#     - Can you tell me about the advising services available?
+#     - What kind of assistance can I get from the advising office?
+# #42
+# - intent: schedule_advising_appointment
+#   examples: |
+#     - How can I schedule an appointment with my advisor?
+#     - What is the process to book an advising appointment?
+#     - Can you help me set up a meeting with an advisor?
+# #43
+# - intent: inquire_advising_hours
+#   examples: |
+#     - When is the advising office open?
+#     - What are the office hours for the advising department?
+#     - What time can I visit the advising office?
+# #44
+# - intent: reset_password
+#   examples: |
+#     - How do I reset my password if I've forgotten it?
+#     - What should I do if I don't receive the password reset email or SMS?
+# #45
+# - intent: library_code_of_conduct
+#   examples: |
+#     - What are the rules and guidelines for behavior in the library?
+#     - Are there any particular guidelines I need to follow when using the library?
+#     - What are the library's policies?
