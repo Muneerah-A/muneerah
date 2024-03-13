@@ -412,3 +412,227 @@ rules:
   steps:
   - intent: lost_item_on_campus
   - action: utter_lost_item_on_campus
+
+- rule: Respond to advising services inquiry
+  steps:
+  - intent: inquire_advising_services
+  - action: utter_inquire_advising_services
+
+- rule: Schedule advising appointment
+  steps:
+  - intent: schedule_advising_appointment
+  - action: utter_schedule_advising_appointment
+
+- rule: Provide advising office hours
+  steps:
+  - intent: inquire_advising_hours
+  - action: utter_inquire_advising_hours
+
+- rule: reset password
+  steps:
+  - intent: reset_password
+  - action: utter_reset_password
+
+- rule: library code of conduct
+  steps:
+  - intent: library_code_of_conduct
+  - action: utter_library_code_of_conduct
+
+############## Amina###########3
+
+# - rule: ask about medical emergency
+#   steps:
+#   - intent: medical_emergency
+#   - action: utter_medical_emergency
+
+  
+# - rule: ask about car accidents
+#   steps:
+#   - intent: car_accidents
+#   - action: utter_car_accidents
+
+  
+# - rule: ask about lost & found
+#   steps:
+#   - intent: lost_found
+#   - action: utter_lost_found
+
+  
+# - rule: ask about scientific laboratories
+#   steps:
+#   - intent: scientific_laboratories
+#   - action: utter_scientific_laboratories
+
+  
+# - rule: ask about tawteen center
+#   steps:
+#   - intent: tawteen_center
+#   - action: utter_tawteen_center
+
+  
+# - rule: ask about grading system
+#   steps:
+#   - intent: grading_system
+#   - action: utter_grading_system
+
+  
+# - rule: ask about grade points
+#   steps:
+#   - intent: grade_points
+#   - action: utter_grade_points
+
+
+  
+# - rule: ask about trasnscript grade
+#   steps:
+#   - intent: trasnscript_grade
+#   - action: utter_trasnscript_grade
+
+  
+# - rule: ask about minimum required grade
+#   steps:
+#   - intent: minimum_required_grade
+#   - action: utter_minimum_required_grade
+
+  
+# - rule: ask about minimum passing grade
+#   steps:
+#   - intent: minimum_passing_grade
+#   - action: utter_minimum_passing_grade
+
+  
+# - rule: ask about minimum grade exceptions
+#   steps:
+#   - intent: minimum_grade_exceptions
+#   - action: utter_minimum_grade_exceptions
+
+  
+# - rule: ask about grading affect CGPA
+#   steps:
+#   - intent: grading_affect_CGPA
+#   - action: utter_grading_affect_CGPA
+
+
+# - rule: ask about incomplete grade
+#   steps:
+#   - intent: incomplete_grade
+#   - action: utter_incomplete_grade
+
+# - rule: ask about withdrawal grade
+#   steps:
+#   - intent: withdrawal_grade
+#   - action: utter_withdrawal_grade
+
+# - rule: ask about EPP passing grade
+#   steps:
+#   - intent: EPP_passing_grade
+#   - action: utter_EPP_passing_grade
+
+# - rule: ask about Math prep passing grade
+#   steps:
+#   - intent: Math_prep_passing_grade
+#   - action: utter_Math_prep_passing_grade
+
+# - rule: ask about undergraduate class standings
+#   steps:
+#   - intent: undergraduate_class_standings
+#   - action: utter_undergraduate_class_standings
+
+# - rule: ask about academic class standing
+#   steps:
+#   - intent: academic_class_standing
+#   - action: utter_academic_class_standing
+
+# - rule: ask about total credits class standing
+#   steps:
+#   - intent: total_credits_class_standing
+#   - action: utter_total_credits_class_standing
+
+
+# - rule: ask about CGPA good standing
+#   steps:
+#   - intent: CGPA_good_standing
+#   - action: utter_CGPA_good_standing
+
+# - rule: ask about calculate CGPA and GPA
+#   steps:
+#   - intent: calculate_CGPA_GPA
+#   - action: utter_calculate_CGPA_GPA
+
+
+# - rule: ask about CGPA and GPA transcript
+#   steps:
+#   - intent: CGPA_GPA_transcript
+#   - action: utter_CGPA_GPA_transcript
+
+# - rule: ask about EPP purpose
+#   steps:
+#   - intent: EPP_purpose
+#   - action: utter_EPP_purpose
+
+# - rule: ask about 
+#   steps:
+#   - intent: 
+#   - action: utter_
+
+# - rule: ask about college of engineering and technolgy require math placement test
+#   steps:
+#   - intent: college_eng_tech_require_math_placement_test 
+#   - action: utter_college_eng_tech_require_math_placement_test
+
+
+# - rule: ask about academic max duration
+#   steps:
+#   - intent: academic_max_duration
+#   - action: utter_academic_max_duration
+
+
+# - rule: ask about academic probation dismissal
+#   steps:
+#   - intent: academic_probation_dismissal
+#   - action: utter_academic_probation_dismissal
+
+# - rule: ask about honors graduation criteria
+#   steps:
+#   - intent: honors_graduation_criteria
+#   - action: utter_honors_graduation_criteria
+
+# - rule: ask about expecting graduate steps
+#   steps:
+#   - intent: expecting_graduate_steps
+#   - action: utter_expecting_graduate_steps
+
+# - rule: ask about graduation clearance requirements
+#   steps:
+#   - intent: graduation_clearance_requirements
+#   - action: utter_graduation_clearance_requirements
+
+# - rule: ask about CGPA max credit fall spring
+#   steps:
+#   - intent: CGPA_max_credit_fall_spring
+#   - action: utter_CGPA_max_credit_fall_spring
+
+# - rule: ask about CGPA max credi summer
+#   steps:
+#   - intent: CGPA_max_credit_summer
+#   - action: utter_CGPA_max_credit_summer
+
+# - rule: ask about more max credit allowed
+#   steps:
+#   - intent: more_max_credit_allowed
+#   - action: utter_more_max_credit_allowed
+
+# - rule: ask about appeal grade change 
+#   steps:
+#   - intent: appeal_grade_change 
+#   - action: utter_appeal_grade_change 
+
+# - rule: ask about course repetition policy 
+#   steps:
+#   - intent: course_repetition_policy 
+#   - action: utter_course_repetition_policy 
+
+# - rule: ask about repeat course CGPA improve
+#   steps:
+#   - intent: repeat_course_CGPA_improve
+#   - action: utter_repeat_course_CGPA_improve
