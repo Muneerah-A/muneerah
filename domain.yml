@@ -233,16 +233,6 @@ responses:
             -the max number of absences for a class that has 4 sessions a week in Fall/Spring semester is 12"
             
  
-  # utter_AUM_clinic:
-  # - text: "There is a central clinic on campus.
-
-
-  #          AUM central is located in the middle of the campus near the colleges of Business administration and Engineering and Technology.
-
-
-  #          The clinic provides first aid services and medications when needed for example, painkillers.
-           
-  #          image: "https://ibb.co/M5bK0gd"
 
 
   utter_before_dismissal:
@@ -671,10 +661,10 @@ responses:
   # - text: "A student may repeat a course if they earned a C grade or below, or if they wish to improve their CGPA."
   
   # utter_repeat_course_CGPA_improve:
-  # - text: "-	Students repeating specific courses to improve their CGPA can repeat up to four courses, with each individual course only repeatable once."
+  # - text: "Students repeating specific courses to improve their CGPA can repeat up to four courses, with each individual course only repeatable once."
 
   # utter_CGPA_GPA_transcript:
-  # - text: "-	GPA and CGPA displayed on the AUM transcript include 3 decimal digits, truncated without any rounding."
+  # - text: "GPA and CGPA displayed on the AUM transcript include 3 decimal digits, truncated without any rounding."
 
 
 

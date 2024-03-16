@@ -365,14 +365,7 @@ nlu:
     - I get 20% of the absence parsentage I will get dismissal or not?
     - what is the parsentage that i can get before dismissal?
 
-# - intent: AUM_clinic
-#   examples: |
-#     - Is there a central clinic in AUM?
-#     - Where is the AUM Central Clinic located?
-#     - What services does the clinic provide? 
-#     - What types of medications are available at the clinic besides painkillers?
-#     - how I go to the clinic in AUM?
-#     - I want Panadol 
+
 
 #22
 
@@ -547,8 +540,7 @@ nlu:
     - Do the academic offerings accommodate students interested in both undergraduate and graduate studies within specific fields
 
 
-################################
-###################################
+
 #36
 - intent: arrive_within
   examples: |
@@ -1029,7 +1021,7 @@ nlu:
 
 # - intent: medical_emergency 
 #   examples: |
-#     -	What should students do in case of a medical emergency on campus?
+      # - What should students do in case of a medical emergency on campus?
 #     - What actions should students take if there's a medical emergency while on campus?
 #     - In the event of a medical emergency on campus, what steps should students follow?
 #     - What are the recommended procedures for students during a medical emergency situation at the campus?
@@ -1125,7 +1117,7 @@ nlu:
 # #25
 # - intent: minimum_passing_grade
 #   examples: |
-#    - 	What is the minimum passing grade for most courses at AUM?
+  # - What is the minimum passing grade for most courses at AUM?
 #    - What is the lowest acceptable passing grade for the majority of courses at AUM?
 #    - What is the standard minimum passing grade for most courses at AUM?
 #    - What grade do most courses at AUM require as the minimum for passing?

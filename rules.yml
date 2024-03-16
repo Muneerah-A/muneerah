@@ -438,7 +438,7 @@ rules:
   - intent: library_code_of_conduct
   - action: utter_library_code_of_conduct
 
-############## Amina###########3
+############## Amina###########
 
 # - rule: ask about medical emergency
 #   steps:
