@@ -56,68 +56,43 @@ intents:
   - final_location
   - max_EPP
   - reach_excuses
-  - electrical_engineering
-  - clinic_services
-  - clinic_location
-  - sports_center
-  - it_services
-  - aum_website_info
-  - portal_purpose
-  - aum_Moodle
-  - aum_banner
-  - aum_communicate
-  - parking_services
-  - students_identified
-  - innovation_center
-  - Ask_about_elearning
-  - AUM_calendar
-  - AUM_subject
+  - medical_emergency 
+  - car_accidents
+  - lost_found
+  - scientific_laboratories
+  - tawteen_center
   - grading_system
-  - campus_facilities
-  - business_major
-  - attendance_dismissal_request
-  - medical_examination_submission
-  - lost_item_on_campus
-  - inquire_advising_services
-  - schedule_advising_appointment
-  - inquire_advising_hours
-  - reset_password
-  - library_code_of_conduct
-  # - medical_emergency 
-  # - car_accidents
-  # - lost_found
-  # - scientific_laboratories
-  # - tawteen_center
-  # - grading_system
-  # - grade_points
-  # - trasnscript_grade
-  # - minimum_required_grade
-  # - minimum_passing_grade
-  # - minimum_grade_exceptions
-  # - grading_affect_CGPA
-  # - incomplete_grade
-  # - withdrawal_grade
-  # - EPP_passing_grade
-  # - Math_prep_passing_grade
-  # - undergraduate_class_standings
-  # - academic_class_standing
-  # - total_credits_class_standing
-  # - CGPA_good_standing
-  # - calculate_CGPA_GPA
-  # - CGPA_GPA_transcript
-  # - EPP_purpose
-  # - college_eng_tech_require_math_placement_test
-  # - academic_max_duration
-  # - academic_probation_dismissal
-  # - honors_graduation_criteria
-  # - expecting_graduate_steps
-  # - graduation_clearance_requirements
-  # - CGPA_max_credit_fall_spring
-  # - CGPA_max_credit_summer
-  # - more_max_credit_allowed
-  # - appeal_grade_change 
-  # - course_repetition_policy 
-  # - repeat_course_CGPA_improve
+  - grade_points
+  - trasnscript_grade
+  - minimum_required_grade
+  - minimum_passing_grade
+  - minimum_grade_exceptions
+  - grading_affect_CGPA
+  - incomplete_grade
+  - withdrawal_grade
+  - EPP_passing_grade
+  - Math_prep_passing_grade
+  - undergraduate_class_standings
+  - academic_class_standing
+  - total_credits_class_standing
+  - CGPA_good_standing
+  - calculate_CGPA_GPA
+  - CGPA_GPA_transcript
+  - EPP_purpose
+  - college_eng_tech_require_math_placement_test
+  - academic_max_duration
+  - academic_probation_dismissal
+  - honors_graduation_criteria
+  - expecting_graduate_steps
+  - graduation_clearance_requirements
+  - CGPA_max_credit_fall_spring
+  - CGPA_max_credit_summer
+  - more_max_credit_allowed
+  - appeal_grade_change 
+  - course_repetition_policy 
+  - repeat_course_CGPA_improve
+
+
 
 
 
@@ -406,265 +381,125 @@ responses:
 ######################################
 
 
-  utter_electrical_engineering:
-  - text: "Courses typically cover topics such as circuits, electronics, electromagnetics, signals and systems, control systems, and power systems"
-  - text: "It usually takes about four years to complete a Bachelor's degree in electrical engineering"
-  - text: "Prerequisites often include courses in calculus, physics, and introductory engineering topics"
-  - text: "Graduates can pursue careers in various industries such as telecommunications, power generation and distribution, electronics, computer hardware, and renewable energy"
-  - text: "Students often use software tools for circuit simulation, programming (such as MATLAB or Python), and design (such as CAD software)"
-  - text: "Total Minimum Credits Required for Graduation = 128 credits for the Bachelor's degree in electrical engineering."
-
-  utter_clinic_services: 
-  - text: "The Central Clinic on AUM Campus provides immediate first aid services, general check-ups for students, and hosts students prior to hospital transfer if necessary."
-
-  utter_clinic_location:
-  - text: "The AUM Central Clinic is located in the middle of the campus, near the colleges of Business Administration and Engineering and Technology."
-    image: "https://ibb.co/M5bK0gd"
-
-  utter_sports_center:
-  - text: "The Sports Center at AUM provides dedicated gyms for male and female students, fully equipped with workout and training equipment, as well as indoor and outdoor sports facilities designed to international specifications."
-
-  utter_it_services:
-  - text: "AUM provides students with easy access to computers and various online platforms such as the AUM website, MyAUM Portal, AUM email, Moodle system for Learning Management, Banner system for Student Information, AUM Soft Skills E-courses platform, AUM Mobile app, and E-portfolio."
-  
-
-  utter_aum_website_info:
-  - text: "The AUM website provides general information about the University, its programs, courses, activities, and events. It also allows students to access the MyAUM portal, which includes the Moodle Learning Management System. This is the AUM website if you need it https://www.aum.edu.kw/english/home "
-
-  utter_portal_purpose:
-  - text: "MyAUM is a web portal dedicated to AUM students on the AUM website, providing access to various useful links such as the Learning Management System (Moodle), Student Information System (Banner), academic calendar, events calendar, student handbook, advising sheets, and online forms for various student requests. This is the MyAUM portal webpage to download https://www.aum.edu.kw/english/aum-mobile-app "
-
-  utter_aum_Moodle:
-  - text: "Moodle is AUM's chosen Learning Management System (LMS), providing a platform for collaboration between faculty members and students through a virtual learning environment. It allows students to access course materials, share documents, review course material, and know their grades, marks, and attendance rates. This is the Moodle webpage https://myportal.aum.edu.kw "
-
-  utter_aum_banner:
-  - text: "AUM uses Banner, the leading information system in higher education institutions, to manage students' online registration process, access grades, and academic schedules. This is the Banner webpage https://www.aum.edu.kw/english/common/banner-links "
-   
-
-  utter_aum_communicate:
-  - text: "The main means of communication with students at AUM is via their AUM student email account, used to communicate information about attendance, academic performance, achievements, and AUM activities in general. This is the Email link to login https://login.microsoftonline.com "
-  
-  utter_parking_services:
-  - text: "AUM provides parking spaces for all its students and offers designated parking zones. Students with special needs can apply for Disability Parking space through the Student Affairs Department."
-
-  utter_students_identified:
-  - text: "AUM Student Identification (ID) cards are used to identify registered students and are required for various purposes such as campus access, library borrowing, document requests, course registration, assessments, and entry into facilities like the Sports Center"
-
-  
-  utter_innovation_center:
-  - text: "The Innovation Centers at AUM include the Robotics Research Center, nanotechnology center, business clubs, and Capstone Center, aimed at broadening students' knowledge and providing practical insight into various disciplines."
-
-  # utter_AUM_E-learning:
-  # - text: "Start by checking the Course Catalogue to get a better idea of the varied and rich contents of the platform. You can also browse the catalogue by category."
-
-  utter_AUM_calendar:
-  - text: "The academic calendar outlines key dates for each semester, including the start and end dates, holidays and exam periods"
-  - text: "The university's online academic calendar can usually be found on the official website or student portal, where you can also access information about class schedules, registration dates, and deadlines"
-  - text: "Yes, universities often host special events and activities throughout the academic year, such as orientation programs for new students, career fairs, cultural festivals, and academic conferences"
-  - text: "You can stay updated on changes to the university calendar through official communication channels, such as email alerts, the university website, social media, or mobile apps"
-  - text: " Deadlines for dropping or adding classes, withdrawing from courses, or applying for graduation are typically listed on the academic calendar and may vary by semester"
-  - text: "Universities usually have procedures in place for handling class scheduling conflicts or issues with course availability, such as waitlists, alternative class options, or advising support"
-  - text: "Yes, universities have academic policies and procedures outlined in the university catalog or student handbook that students should be familiar with, including grading policies, academic probation, and academic honors"
-  - text: "Students can typically request accommodations for religious observances or other personal obligations through the university's office of student affairs"
-  - text: "The university calendar may take into account important dates or events in the local community, such as public holidays or local festivals"
-
-  utter_AUM_subject:
-  - text: "At AUM, we offer a wide range of subjects across various academic disciplines. Some of the subjects you can study include Computer Science, Engineering, Business Administration, Architecture, and more"
-
-  utter_grading_system:
-  - text: "At our university, the grading system typically follows a scale of letter grades (e.g., A, B, C, D, F) with corresponding grade point values. The GPA (Grade Point Average) is calculated based on the grades earned in individual courses and the credit hours associated with each course. GPA requirements may vary depending on the program of study and academic policies"
-
-  utter_Ask_about_elearning:
-  - text: "Here are some answers to your questions:
-      1. To get started, you can enroll in a course by visiting our website and selecting the course you're interested in.
-      2. You can take multiple courses at one time, but we recommend focusing on one or two at a time to ensure you can manage your workload effectively.
-      3. Yes, reports are available to track your progress and completion of courses. You can access them through your student dashboard.
-      4. The score needed to complete a course varies depending on the course requirements. You'll typically need to achieve a passing score on assignments and exams.
-      5. You may have the option to retake tests to improve your score, but the number of times you can retake it may depend on the course. Please check the course details for specific information."
-
-  utter_campus_facilities:
-  - text: "Here are some details about campus facilities:
-      1. Dining options: We have multiple dining halls and food outlets offering a variety of cuisines.
-      2. Fitness center: Our gym is located in [sport center], and it offers various equipment and classes.
-      3. Library facilities: Our library provides access to a wide range of resources, study spaces, and research assistance.
-      4. Computer labs and printing services: Computer labs and printing services can be accessed [engineering building].
-      5. Medical services: The campus health center offers medical care, counseling, and wellness programs.
-      6. Parking facilities: Information about parking permits and locations can be found [gate E, F,C].
-      7. Study rooms and collaboration spaces: Study rooms and group spaces are available in the Librray building." 
-
-  utter_business_major:
-  - text: "Of course! Here's some information about the business major:
-      1. Core courses: The core courses for the business major typically include subjects such as accounting, finance, marketing, management, and business ethics.
-      2. Faculty: Our business department is staffed with experienced faculty members who specialize in various areas of business, including finance, marketing, management, and entrepreneurship.
-      3. Career opportunities: Business majors have a wide range of career opportunities, including roles in finance, consulting, marketing, human resources, and entrepreneurship.
-      4. Internships: We offer internships and experiential learning opportunities for business students to gain practical experience in their field.
-      5. Specializations: We offer specializations or concentrations within the business major, such as finance, marketing, management, and international business.
-      6. Study abroad: Business students have the opportunity to participate in study abroad programs to gain global perspective and experience.
-      7. Alumni network: Our business alumni network provides resources and networking opportunities for current students and graduates.
-      8. Research projects: Students can get involved in business-related research projects through opportunities offered by faculty members or research centers."
-
-  utter_attendance_dismissal_request:
-  - text: "Sure! Here's some information about attendance dismissal requests:
-      1. Submission process: Attendance dismissal requests can typically be submitted through the university's student portal or by contacting the student affairs
-      2. Requirements: generally, valid reasons for dismissal include medical emergencies, family emergencies, or other extenuating circumstances.
-      3. Request form: You can usually find the form for requesting attendance dismissal on the university's website or student portal.
-      4. Deadline: Only two days until the deadline for submitting the attendance request.
-      5. Supporting Documents: You may be asked to provide supporting documents, such as medical documents or a letter explaining the circumstances.
-      6. Notification: You will be notified of the status of your in-person class request through email or the student portal."
-
-  utter_medical_examination_submission:
-  - text: "Sure! Here's some information about submitting medical examination results to the university:
-      1. Submission process: You can usually submit your medical examination results to the university health center or the designated office responsible for student health services.
-      2. Submission deadline: It's important to submit your medical examination within the specified deadline, which may vary depending on the university's policies.
-      3. Procedures: The procedures for submitting the medical examination may include filling out a form, providing necessary documentation, and following any specific instructions provided by the university.
-      4. Required documents: You may need to submit a copy of your medical examination report or results along with any additional documentation required by the university.
-      5. Submission options: Depending on the university's policies, you may be able to submit your medical examination results in person, by mail, or electronically through the student portal or designated online platform.
-      6. Confirmation of receipt: To ensure that the university receives your medical examination results, you can follow up with the designated office or check the status of your submission through the student portal.
-      7. Uploading to student portal: Some universities allow students to upload their medical examination results directly to the student portal for easy access and record-keeping."
-  
-  utter_lost_item_on_campus:
-  - text: "Sure! Here's some information about lost items on campus:
-      1. Reporting a lost item: If you've lost something on campus, you can report it to student affairs or security department.
-      2. Lost and found office: The university typically has a designated lost and found office or department where lost items are collected and stored.
-      3. Reporting process: When reporting a lost item, provide as much detail as possible about the item, including its description, when and where it was lost, and any identifying features.
-      4. Finding a lost item: If you find a lost item on campus, you can turn it in to the lost and found office or security department."
-
-
-  utter_inquire_advising_services:
-  - text: "At AUM, our advising services include academic guidance, course selection assistance, and career counseling."
-
-  utter_schedule_advising_appointment:
-  - text: "To schedule an advising appointment, you can visit our online booking system or contact our advising office directly."
-
-  utter_inquire_advising_hours:
-  - text: "Our advising office is open from [8am to 5pm]. You can visit during these hours for assistance."
-
-  utter_reset_password:
-  - text: "To reset your forgotten password, navigate to the login page and look for the Forgot Password link. Click on it, and follow the prompts to reset your password.
-          
-           if you do not receive a password reset email or SMS, check your mail folder or contact support for assistance."
-
-  utter_library_code_of_conduct:
-  - text: "The library strives to provide an environment conducive to study and research, and therefore all visitors to the library are asked to adhere to several rules in order to maintain safety, including maintaining calm, setting phones on silent, not leaving personal items unattended, and not bringing food and drinks into the library."
 
  
 ########### Amina ##########
 ############################
 
 
-  # utter_medical_emergency:
-  # - text: "In case of a medical emergency, students should report the case immediately to the Clinic by calling the direct number 22255111."
+  utter_medical_emergency:
+  - text: "In case of a medical emergency, students should report the case immediately to the Clinic by calling the direct number 22255111."
   
 
-  # utter_car_accidents:
-  # - text: "Students should report any car accidents that happen in the AUM parking areas to AUM Campus Security or by calling the direct number 22255111. In case of injury sustained in the accident, students should inform the AUM Campus Security staff directly or call the Clinic on 22255111."
+  utter_car_accidents:
+  - text: "Students should report any car accidents that happen in the AUM parking areas to AUM Campus Security or by calling the direct number 22255111. In case of injury sustained in the accident, students should inform the AUM Campus Security staff directly or call the Clinic on 22255111."
 
-  # utter_lost_found:
-  # - text: "The Lost and Found items on campus should be inquired about at the Student Affairs department."
+  utter_lost_found:
+  - text: "The Lost and Found items on campus should be inquired about at the Student Affairs department."
 
-  # utter_scientific_laboratories:
-  # - text: "AUM Scientific Laboratories provide a supportive environment for executing projects, linking theoretical and applicable science. Equipped with up-to-date devices and equipment, these labs aim to sharpen students' skills and discover their abilities and creativity in various domains."
+  utter_scientific_laboratories:
+  - text: "AUM Scientific Laboratories provide a supportive environment for executing projects, linking theoretical and applicable science. Equipped with up-to-date devices and equipment, these labs aim to sharpen students' skills and discover their abilities and creativity in various domains."
   
 
-  # utter_tawteen_center:
-  # - text: "The Tawteen Career Center at AUM is responsible for preparing and guiding students in the career exploration process. It offers a wide range of career planning services such as workshops, seminars, career fairs, and other professional development activities to help students discover themselves, reach their goals, and lead their future."
+  utter_tawteen_center:
+  - text: "The Tawteen Career Center at AUM is responsible for preparing and guiding students in the career exploration process. It offers a wide range of career planning services such as workshops, seminars, career fairs, and other professional development activities to help students discover themselves, reach their goals, and lead their future."
   
 
-  # utter_grading_system:
-  # - text: " The grading system for undergraduate courses at AUM follows a scale where grades are given out of 100, with corresponding letter grades and grade points. The grading table includes ranges for each letter grade along with their respective grade points. Additionally, certain notations such as 'AF' , 'W' 'Incomplete (I)', 'Pass (P)' and 'No Pass (NP)' are included in the system, with the Grade/100 not reflected in the transcript."
-
-  # utter_grade_points:
-  # - text: "In the AUM grading system for undergraduate courses, the corresponding grade points for letter grades range from 4 for an 'A' to 0 for an 'F' The grading table provides specific grade point values for each letter grade within defined grade ranges."
+  utter_grade_points:
+  - text: "In the AUM grading system for undergraduate courses, the corresponding grade points for letter grades range from 4 for an 'A' to 0 for an 'F' The grading table provides specific grade point values for each letter grade within defined grade ranges."
   
 
-  # utter_trasnscript_grade:
-  # - text: "No, the Grade/100 is not reflected in the AUM transcript. Instead, the transcript reflects the letter grade and the corresponding grade points only."
+  utter_trasnscript_grade:
+  - text: "No, the Grade/100 is not reflected in the AUM transcript. Instead, the transcript reflects the letter grade and the corresponding grade points only."
   
 
-  # utter_minimum_required_grade:
-  # - text: "The minimum required passing grade varies depending on the course and program, but generally, a grade of 'D' is the minimum passing grade for most courses. However, some specialization, concentration, or other courses may require a higher passing grade of 'C-' or 'C' Students should refer to the degree requirements of each program/concentration for specific passing grade criteria."
+  utter_minimum_required_grade:
+  - text: "The minimum required passing grade varies depending on the course and program, but generally, a grade of 'D' is the minimum passing grade for most courses. However, some specialization, concentration, or other courses may require a higher passing grade of 'C-' or 'C' Students should refer to the degree requirements of each program/concentration for specific passing grade criteria."
   
 
-  # utter_minimum_passing_grade:
-  # - text: "The minimum passing grade for most courses is a D."
+  utter_minimum_passing_grade:
+  - text: "The minimum passing grade for most courses is a D."
   
 
-  # utter_minimum_grade_exceptions:
-  # - text: "Yes, some specialization, concentration, or other courses may require a higher grade of C- or C. Students should refer to the degree requirements of each program/concentration for clarification."
+  utter_minimum_grade_exceptions:
+  - text: "Yes, some specialization, concentration, or other courses may require a higher grade of C- or C. Students should refer to the degree requirements of each program/concentration for clarification."
   
 
-  # utter_grading_affect_CGPA:
-  # - text: "Certain courses are subject to Pass grade (P) or No Pass grade (NP), and neither P nor NP grades are counted in the calculation of CGPA."
+  utter_grading_system:
+  - text: " The grading system for undergraduate courses at AUM follows a scale where grades are given out of 100, with corresponding letter grades and grade points. The grading table includes ranges for each letter grade along with their respective grade points. Additionally, certain notations such as 'AF' ,'W',Incomplete (I), Pass (P), and 'No Pass (NP)' are included in the system, with the Grade/100 not reflected in the transcript."
 
-  # utter_incomplete_grade:
-  # - text: "An Incomplete grade indicates that the student has completed the majority of the course requirements but has failed to complete the final assessment due to serious and compelling reasons. In such cases, the Incomplete Policy is applied."
+  utter_grading_affect_CGPA:
+  - text: "Certain courses are subject to Pass grade (P) or No Pass grade (NP), and neither P nor NP grades are counted in the calculation of CGPA."
 
-  # utter_withdrawal_grade:
-  # - text: " A 'Withdrawal' grade indicates that the student has withdrawn from a course after the Add/Drop period until the specified week of the semester. The 'W' grade is recorded on the student's record but is not included in the calculation of GPA."
+  utter_incomplete_grade:
+  - text: "An Incomplete grade indicates that the student has completed the majority of the course requirements but has failed to complete the final assessment due to serious and compelling reasons. In such cases, the Incomplete Policy is applied."
 
-  # utter_EPP_passing_grade:
-  # - text: "The passing grade for each level of the EPP is 70%, and students will be granted a Pass grade (P) or No Pass grade (NP)."
+  utter_withdrawal_grade:
+  - text: " A 'Withdrawal' grade indicates that the student has withdrawn from a course after the Add/Drop period until the specified week of the semester. The 'W' grade is recorded on the student's record but is not included in the calculation of GPA."
+
+  utter_EPP_passing_grade:
+  - text: "The passing grade for each level of the EPP is 70%, and students will be granted a Pass grade (P) or No Pass grade (NP)."
   
-  # utter_Math_prep_passing_grade:
-  # - text: "The passing grade for each level of the Mathematics Preparatory Program is a (C)."
+  utter_Math_prep_passing_grade:
+  - text: "The passing grade for each level of the Mathematics Preparatory Program is a (C)."
 
-  # utter_undergraduate_class_standings:
-  # - text: "The class standings are Freshman, Sophomore, Junior, and Senior."
+  utter_undergraduate_class_standings:
+  - text: "The class standings are Freshman, Sophomore, Junior, and Senior."
 
-  # utter_academic_class_standing:
-  # - text: "Freshman corresponds to Year 1, Sophomore corresponds to Year 2, Junior corresponds to Year 3, and Senior corresponds to Year 4."
+  utter_academic_class_standing:
+  - text: "Freshman corresponds to Year 1, Sophomore corresponds to Year 2, Junior corresponds to Year 3, and Senior corresponds to Year 4."
 
-  # utter_total_credits_class_standing:
-  # - text: "Total credits earned determine a student's class standing. For example, Freshmen have earned 0-30 credits, Sophomores have earned 31-60 credits, Juniors have earned 61-90 credits, and Seniors have earned 91 or above credits."
+  utter_total_credits_class_standing:
+  - text: "Total credits earned determine a student's class standing. For example, Freshmen have earned 0-30 credits, Sophomores have earned 31-60 credits, Juniors have earned 61-90 credits, and Seniors have earned 91 or above credits."
   
-  # utter_CGPA_good_standing:
-  # - text: "The minimum required CGPA for Freshman is 1.6, for Sophomore is 1.8, for Junior is 2, and for Senior is also 2."
+  utter_CGPA_good_standing:
+  - text: "The minimum required CGPA for Freshman is 1.6, for Sophomore is 1.8, for Junior is 2, and for Senior is also 2."
 
-  # utter_calculate_CGPA_GPA:
-  # - text: "GPA (Grade Point Average) is the average of a student's grades achieved in one single semester, while CGPA (Cumulative Grade Point Average) is the average of all final grades achieved by a student during all completed semesters at AUM. GPA and CGPA include all final grades obtained by a student, and in the case of repeating a course, the higher result is considered. Courses that were not transferred to a new major are not included in GPA and CGPA calculations."
+  utter_calculate_CGPA_GPA:
+  - text: "GPA (Grade Point Average) is the average of a student's grades achieved in one single semester, while CGPA (Cumulative Grade Point Average) is the average of all final grades achieved by a student during all completed semesters at AUM. GPA and CGPA include all final grades obtained by a student, and in the case of repeating a course, the higher result is considered. Courses that were not transferred to a new major are not included in GPA and CGPA calculations."
 
 
-  # utter_EPP_purpose:
-  # - text: "The AUM English Preparatory Program is designed for students who do not meet the English language requirements for admission at AUM, providing intensive academic English instruction to improve overall proficiency in English."
+  utter_EPP_purpose:
+  - text: "The AUM English Preparatory Program is designed for students who do not meet the English language requirements for admission at AUM, providing intensive academic English instruction to improve overall proficiency in English."
 
-  # utter_college_eng_tech_require_math_placement_test:
-  # - text: "If a student does not satisfy the threshold needed for the Math Placement Test, they need to register for one or more remedial math courses."
+  utter_college_eng_tech_require_math_placement_test:
+  - text: "If a student does not satisfy the threshold needed for the Math Placement Test, they need to register for one or more remedial math courses."
   
-  # utter_academic_max_duration:
-  # - text: "Students must meet all academic program requirements within a maximum of eight academic years from the date of enrollment as a registered AUM student."
+  utter_academic_max_duration:
+  - text: "Students must meet all academic program requirements within a maximum of eight academic years from the date of enrollment as a registered AUM student."
 
-  # utter_academic_probation_dismissal:
-  # - text: "Academic probation is determined in the Fall and Spring semesters of each academic year and does not apply to the Summer semester. A student must maintain a good academic standing and minimum required CGPA as per the Class Standing table. If a student fails to achieve the minimum cumulative GPA required, they are placed under Academic Probation for the next semester. A student cannot continue under Academic Probation for more than two consecutive semesters. Exceeding this results in permanent dismissal from AUM. Summer semester is not included in the academic probation semesters. Dismissed students have the right to appeal for another chance before the beginning of the next semester. Dismissed students may or may not be granted a chance to improve their CGPA in the next semester. Students granted a chance to raise their CGPA must sign an acknowledgement and are not permitted to freeze the semester. AUM reserves the right to grant or not grant a chance for dismissed students. Permanently dismissed students are not allowed to reapply to the university."
+  utter_academic_probation_dismissal:
+  - text: "Academic probation is determined in the Fall and Spring semesters of each academic year and does not apply to the Summer semester. A student must maintain a good academic standing and minimum required CGPA as per the Class Standing table. If a student fails to achieve the minimum cumulative GPA required, they are placed under Academic Probation for the next semester. A student cannot continue under Academic Probation for more than two consecutive semesters. Exceeding this results in permanent dismissal from AUM. Summer semester is not included in the academic probation semesters. Dismissed students have the right to appeal for another chance before the beginning of the next semester. Dismissed students may or may not be granted a chance to improve their CGPA in the next semester. Students granted a chance to raise their CGPA must sign an acknowledgement and are not permitted to freeze the semester. AUM reserves the right to grant or not grant a chance for dismissed students. Permanently dismissed students are not allowed to reapply to the university."
 
-  # utter_honors_graduation_criteria:
-  # - text: "All graduation requirements must be completed. A CGPA of 3.5 or more must be achieved upon graduation. The student must not have any grades less than 'C' during their entire studies at AUM. The student must not have committed any significant academic or non-academic conduct violations during their time at AUM."
+  utter_honors_graduation_criteria:
+  - text: "All graduation requirements must be completed. A CGPA of 3.5 or more must be achieved upon graduation. The student must not have any grades less than 'C' during their entire studies at AUM. The student must not have committed any significant academic or non-academic conduct violations during their time at AUM."
 
-  # utter_expecting_graduate_steps:
-  # - text: "Students expecting to graduate must fill out a Graduation request form during their last semester."
+  utter_expecting_graduate_steps:
+  - text: "Students expecting to graduate must fill out a Graduation request form during their last semester."
   
-  # utter_graduation_clearance_requirements:
-  # - text: "Students must provide official identification documents as requested by the General Secretariat of Private Universities Council and the Ministry of Higher Education. Students must complete any outstanding payments to the university. Students must return all books borrowed from the Library. Students must return the AUM Student ID Card and car sticker upon receiving graduation documents."
+  utter_graduation_clearance_requirements:
+  - text: "Students must provide official identification documents as requested by the General Secretariat of Private Universities Council and the Ministry of Higher Education. Students must complete any outstanding payments to the university. Students must return all books borrowed from the Library. Students must return the AUM Student ID Card and car sticker upon receiving graduation documents."
 
-  # utter_CGPA_max_credit_fall_spring:
-  # - text: "Below 2.0 Cumulative GPA: Maximum allowed credit load is 12. With Dean's approval, students repeating courses can register up to 15 credits. 2.0 – 2.669 Cumulative GPA: Maximum allowed credit load is 16. For students expected to graduate in the current semester, a maximum of 21 credits can be registered with Dean's approval. 2.670 or above Cumulative GPA: Maximum allowed credit load is 18. For students expected to graduate in the current semester, a maximum of 21 credits can be registered with Dean's approval."
+  utter_CGPA_max_credit_fall_spring:
+  - text: "Below 2.0 Cumulative GPA: Maximum allowed credit load is 12. With Dean's approval, students repeating courses can register up to 15 credits. 2.0 – 2.669 Cumulative GPA: Maximum allowed credit load is 16. For students expected to graduate in the current semester, a maximum of 21 credits can be registered with Dean's approval. 2.670 or above Cumulative GPA: Maximum allowed credit load is 18. For students expected to graduate in the current semester, a maximum of 21 credits can be registered with Dean's approval."
 
-  # utter_CGPA_max_credit_summer:
-  # - text: "Below 2.0 Cumulative GPA: Maximum allowed credit load is 6. 2.0 or above Cumulative GPA: Maximum allowed credit load is 7. For students expected to graduate in the Summer semester or Fall semester, a maximum of 10 credits can be registered with Dean's approval."
+  utter_CGPA_max_credit_summer:
+  - text: "Below 2.0 Cumulative GPA: Maximum allowed credit load is 6. 2.0 or above Cumulative GPA: Maximum allowed credit load is 7. For students expected to graduate in the Summer semester or Fall semester, a maximum of 10 credits can be registered with Dean's approval."
   
-  # utter_more_max_credit_allowed:
-  # - text: "Students must fill in a request, and their requests are handled on a case-by-case basis."
+  utter_more_max_credit_allowed:
+  - text: "Students must fill in a request, and their requests are handled on a case-by-case basis."
 
-  # utter_appeal_grade_change:
-  # - text: "Students can submit their appeal for grade change within three working days from the date the grade was issued. They should fill in the relevant form and submit it to the Student Affairs Department. A meeting with the faculty member will be scheduled for the student. If the university finds a difference or mistakes between the actual grade and the published grade, the university has the right to amend the grade to the actual one, and the student cannot reject or claim it."
+  utter_appeal_grade_change:
+  - text: "Students can submit their appeal for grade change within three working days from the date the grade was issued. They should fill in the relevant form and submit it to the Student Affairs Department. A meeting with the faculty member will be scheduled for the student. If the university finds a difference or mistakes between the actual grade and the published grade, the university has the right to amend the grade to the actual one, and the student cannot reject or claim it."
 
-  # utter_course_repetition_policy:
-  # - text: "A student may repeat a course if they earned a C grade or below, or if they wish to improve their CGPA."
+  utter_course_repetition_policy:
+  - text: "A student may repeat a course if they earned a C grade or below, or if they wish to improve their CGPA."
   
-  # utter_repeat_course_CGPA_improve:
-  # - text: "Students repeating specific courses to improve their CGPA can repeat up to four courses, with each individual course only repeatable once."
+  utter_repeat_course_CGPA_improve:
+  - text: "Students repeating specific courses to improve their CGPA can repeat up to four courses, with each individual course only repeatable once."
 
-  # utter_CGPA_GPA_transcript:
-  # - text: "GPA and CGPA displayed on the AUM transcript include 3 decimal digits, truncated without any rounding."
+  utter_CGPA_GPA_transcript:
+  - text: "GPA and CGPA displayed on the AUM transcript include 3 decimal digits, truncated without any rounding."
 
 
 

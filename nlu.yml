@@ -763,638 +763,392 @@ nlu:
     - What is the dismissal percentage limit when considering excuses, set at 30%?
 
 
-###############YAQEEN#################
-
-#18
-- intent: electrical_engineering
-  examples: |
-    - What kind of courses will I take in an electrical engineering program?
-    - How long does it typically take to complete a degree in electrical engineering?
-    - Are there any specific prerequisites or recommended background knowledge for entering an electrical engineering program?
-    - What career opportunities are available for graduates with a degree in electrical engineering?
-    - What kind of software or tools do electrical engineering students typically use in their coursework?
-    - How many credits are required to complete a degree in electrical engineering?
-#19
-- intent: clinic_services
-  examples: |
-    - which services are offered at the central clinic located on the AUM Campus?
-    - what types of services does the central clinic at AUM Campus deliver?
-    - what are the services available at the central clinic situated on the AUM Campus?
-    - could you outline the services provided by the central clinic on the AUM Campus?
-    - what kind of healthcare services does the central clinic offer at the AUM Campus?
-    - what services does the central clinic on AUM Campus provide?
-    - what are the clinic sevises that we have on AUM?
-    - clinic services
-
-
-#20
-- intent: clinic_location
-  examples: |
-    - Where exactly can the AUM Central Clinic be found?
-    - What is the precise address of the Central Clinic on the AUM campus?
-    - Where is the physical location of the Central Clinic within the AUM campus?
-    - Can you provide details about the whereabouts of the AUM Central Clinic?
-    - where can we find clinic?
-    - clinic location
-    - where is the clenic location?
-    
-
-#21
-- intent: sports_center
-  examples: |
-    - What services does the Sports Center at AUM provide?
-    - What amenities and services are available at the Sports Center on the AUM campus?
-    - Could you outline the offerings provided by the Sports Center at AUM?
-    - What types of services can one expect from the Sports Center located at AUM?
-    - What facilities and services are offered at the AUM Sports Center?
-    - What specific services are available for students at the AUM Sports Center?
-#22
-- intent: it_services
-  examples: |
-    - What IT services are provided to students at AUM?
-    - What technological services are extended to students enrolled at AUM?    
-    - Could you elaborate on the IT services accessible to students at AUM?    
-    - What specific IT provisions are offered to students attending AUM?
-    - What are the available IT support services catered to students of AUM?
-    - What IT resources and assistance are provided for students at AUM?
-#23  
-- intent: aum_website_info
-  examples: |
-    - What information does the AUM website provide to students?
-    - What kind of information does the AUM website offer to its students?
-    - Could you specify the information available to students on the AUM website?
-    - What types of student-oriented information can be found on the AUM website?
-    - What specific resources and details are provided for students on the AUM website?
-    - What kind of student support and resources does the AUM website offer?
-#24
-- intent: portal_purpose
-  examples: |
-    - What is the purpose of the MyAUM portal?
-    - What function does the MyAUM portal fulfill?
-    - What is the objective of implementing the MyAUM portal?
-    - What role does the MyAUM portal play?
-    - What is the intent behind the creation of the MyAUM portal?
-    - What does the MyAUM portal aim to achieve?
-#25
-- intent: aum_Moodle
-  examples: |
-    - What does Moodle entail?
-    - What is the function of Moodle?
-    - What is Moodle?
-    - How would you define Moodle?    
-    - What purpose does Moodle serve?
-    - What is the role of Moodle?
-#26
-- intent: aum_banner
-  examples: |
-    - How is Banner utilized at AUM?
-    - What functions does Banner serve at AUM?
-    - What is the purpose of Banner at AUM?
-    - What is Banner used for?
-#27   
-- intent: aum_communicate
-  examples: |
-    - How does AUM communicate important information to students?
-    - By what means does AUM relay crucial information to students?
-    - How does AUM disseminate important information to students?
-    - What methods does AUM utilize to communicate essential information to students?
-    - How does AUM ensure students receive important information?
-    - Through what channels does AUM convey significant information to students?
-#28   
-- intent: parking_services
-  examples: |
-    - What parking services are available to students at AUM?
-    - What parking facilities are provided to students at AUM?
-    - What parking options are available to students at AUM?
-    - How does AUM accommodate student parking?
-    - What parking services does AUM extend to students?
-    - What are the student parking arrangements at AUM?
-#29
-- intent: students_identified
-  examples: |
-    - How are students identified at AUM?
-    - How are students distinguished at AUM?
-    - What methods does AUM use to identify students?
-    - By what means are students recognized at AUM?
-    - What identification processes are in place for students at AUM?
-    - How does AUM differentiate its students?
-
-
-#30
-- intent: innovation_center
-  examples: |
-    - What are the Innovation Centers at AUM?
-    - What do the Innovation Centers at AUM entail?
-    - How are the Innovation Centers defined at AUM?
-    - What services are provided by the Innovation Centers at AUM?
-    - What is the function of the Innovation Centers at AUM?
-    - What purpose do the Innovation Centers serve at AUM?
-
-#31
-- intent: Ask_about_elearning
-  examples: |
-    - How many courses can I take at one time?
-    - Are reports available to show my progress or my completion of a course?
-    - What score is needed for me to complete a course?
-    - Can I retake the test to improve my score and if so, how many times can I retake it?
-
-#32
-- intent: AUM_calendar
-  examples: |
-    - What is the academic calendar for the university, including important dates such as the start and end of each semester, holidays?
-    - How do I access the university's online academic calendar and where can I find information about class schedules, registration dates, and deadlines?
-    - Are there any special events or activities planned throughout the academic year, such as orientation programs, career fairs, or cultural festivals?
-    - How can I stay updated on any changes or updates to the university calendar, such as weather-related closures or schedule adjustments?
-    - What are the deadlines for dropping or adding classes, withdrawing from courses, or applying for graduation?
-    - How does the university handle class scheduling conflicts or issues with course availability?
-    - Are there any academic policies or procedures related to the university calendar that I should be aware of, such as grading policies, academic probation, or academic honors?
-    - How can I request accommodations for religious observances or other personal obligations that may conflict with the university calendar?
-    - How does the university calendar align with other important dates or events in the local community, such as public holidays or local festivals?
-#33
-- intent: AUM_subject
-  examples: |
-    - What subjects are offered in the AUM program?
-    - Can you tell me about the courses available at AUM?
-    - I'm interested in learning more about the subjects taught at AUM.
-    - What are the major subjects available at AUM?
-    - Could you provide information about the academic disciplines at AUM?
-    - Tell me about the curriculum at AUM.
-    - What kind of subjects can I expect to study if I enroll at AUM?
-    - Can you list some of the subjects covered in the AUM curriculum?
-    - I'd like to know more about the subjects I can choose from at AUM.
-#34
-- intent: grading_system
-  examples: |
-    - How is GPA calculated at the university?
-    - How is GPA determined for students at the university?
-    - What method does the university use to compute GPA?
-#35
-- intent: campus_facilities
-  examples: |
-    - What dining options are available on campus?
-    - Where is the nearest gym or fitness center located?
-    - Can you tell me about the library facilities?
-    - How can I access computer labs or printing services?
-    - What medical services are provided on campus?
-    - Where can I find information about parking facilities?
-    - Are there study rooms or group collaboration spaces available?
-#36
-- intent: business_major
-  examples: |
-    - What are the core courses required for the business major?
-    - Can you provide information about the faculty members in the business department?
-    - What career opportunities are available for business majors?
-    - Are there any internships or experiential learning opportunities for business students?
-    - What specializations or concentrations are offered within the business major?
-    - Are there study abroad opportunities for business students?
-    - Can you provide information about the alumni network for business majors?
-    - How can I get involved in business-related research projects?  
-#37
-- intent: attendance_dismissal_request
-  examples: |
-    - How do I submit an attendance dismissal request to the university?
-    - What are the requirements for requesting attendance dismissal?
-    - Where can I find the form for requesting attendance dismissal?
-    - Is there a deadline to submit a request to withdraw from attendance?
-    - Can I submit medical documents as part of my absence request?
-    - How will I be notified of the status of my absence request?
-#38
-- intent: medical_examination_submission
-  examples: |
-    - How can I submit my medical examination results to the university?
-    - When should I submit the medical examination to the university?
-    - What are the procedures for submitting the medical examination to the university?
-    - Is there a deadline for submitting the medical examination?
-    - What documents are required to submit the medical examination?
-    - Do I need to bring the medical examination results in person or can they be sent electronically?
-    - How can I ensure that the university receives my medical examination results?
-    - Can I upload my medical examination results to the student portal?
-#39
-- intent: lost_item_on_campus
-  examples: |
-    - How do I report a lost item on campus?
-    - Where should I go if I've lost something on campus?
-    - What information should I provide when reporting a lost item?
-    - What should I do if I find a lost item on campus?
-
-
-#  40
-- intent: inquire_advising_services
-  examples: |
-    - What services does the advising office offer?
-    - Can you tell me about the advising services available?
-    - What kind of assistance can I get from the advising office?
-
-# #41
-- intent: schedule_advising_appointment
-  examples: |
-    - How can I schedule an appointment with my advisor?
-    - What is the process to book an advising appointment?
-    - Can you help me set up a meeting with an advisor?
-
- #42
-- intent: inquire_advising_hours
-  examples: |
-    - When is the advising office open?
-    - What are the office hours for the advising department?
-    - What time can I visit the advising office?
-
-# #43
-- intent: reset_password
-  examples: |
-    - How do I reset my password if I've forgotten it?
-    - What should I do if I don't receive the password reset email or SMS?
-
-# #44
-- intent: library_code_of_conduct
-  examples: |
-    - What are the rules and guidelines for behavior in the library?
-    - Are there any particular guidelines I need to follow when using the library?
-    - What are the library's policies?
-
 
 ################ Amina ############
 ###################################
 
 
-# #45
+#45
 
-# - intent: medical_emergency 
-#   examples: |
-      # - What should students do in case of a medical emergency on campus?
-#     - What actions should students take if there's a medical emergency while on campus?
-#     - In the event of a medical emergency on campus, what steps should students follow?
-#     - What are the recommended procedures for students during a medical emergency situation at the campus?
-#     - If there's a medical emergency at the campus, what course of action is advised for students?
-#     - In case of a medical crisis on campus, what actions are suggested for students to take?
+- intent: medical_emergency 
+  examples: |
+    - What should students do in case of a medical emergency on campus?
+    - What actions should students take if there's a medical emergency while on campus?
+    - In the event of a medical emergency on campus, what steps should students follow?
+    - What are the recommended procedures for students during a medical emergency situation at the campus?
+    - If there's a medical emergency at the campus, what course of action is advised for students?
+    - In case of a medical crisis on campus, what actions are suggested for students to take?
 
-# #17
-# - intent: car_accidents
-#   examples: |
-#     - How should students handle car accidents on campus?
-#     - What is the proper protocol for students to follow in the event of a car accident on campus?
-#     - How should students manage car accidents that occur on the campus premises?
-#     - What steps should students take if they are involved in a car accident while on campus?
-#     - In the event of a car collision on campus, what guidance is recommended for students?
-#     - What procedures should students adhere to if they encounter a car accident situation on campus?
+#17
+- intent: car_accidents
+  examples: |
+    - How should students handle car accidents on campus?
+    - What is the proper protocol for students to follow in the event of a car accident on campus?
+    - How should students manage car accidents that occur on the campus premises?
+    - What steps should students take if they are involved in a car accident while on campus?
+    - In the event of a car collision on campus, what guidance is recommended for students?
+    - What procedures should students adhere to if they encounter a car accident situation on campus?
 
 
-# #18
-# - intent: lost_found
-#   examples: |
-#     - Where should students inquire about lost and found items on campus?
-#     - To whom should students direct their inquiries regarding lost and found items on campus?
-#     - Where can students seek assistance regarding lost and found items within the campus grounds?
-#     - What is the designated location for students to inquire about lost and found items on campus?
-#     - Where should students go to report or inquire about lost belongings found on campus?
-#     - Whom should students contact to inquire about misplaced items found within the campus premises?
+#18
+- intent: lost_found
+  examples: |
+    - Where should students inquire about lost and found items on campus?
+    - To whom should students direct their inquiries regarding lost and found items on campus?
+    - Where can students seek assistance regarding lost and found items within the campus grounds?
+    - What is the designated location for students to inquire about lost and found items on campus?
+    - Where should students go to report or inquire about lost belongings found on campus?
+    - Whom should students contact to inquire about misplaced items found within the campus premises?
 
    
-# #19
-# - intent: scientific_laboratories
-#   examples: |
-#     - What role do the Scientific Laboratories play at AUM?
-#     - How does AUM utilize its Scientific Laboratories?
-#     - What functions are fulfilled by the Scientific Laboratories at AUM?
-#     - What is the significance of Scientific Laboratories in the operations of AUM?
-#     - How do the Scientific Laboratories contribute to AUM's activities?
-#     - What purposes do the Scientific Laboratories serve within the framework of AUM?
+#19
+- intent: scientific_laboratories
+  examples: |
+    - What role do the Scientific Laboratories play at AUM?
+    - How does AUM utilize its Scientific Laboratories?
+    - What functions are fulfilled by the Scientific Laboratories at AUM?
+    - What is the significance of Scientific Laboratories in the operations of AUM?
+    - How do the Scientific Laboratories contribute to AUM's activities?
+    - What purposes do the Scientific Laboratories serve within the framework of AUM?
 
-# #20
-# - intent: tawteen_center
-#   examples: |
-#     - What services does the Tawteen Career Center offer?
-#     - What are the services provided by the Tawteen Career Center?
-#     - What assistance does the Tawteen Career Center offer?
-#     - What types of services are available at the Tawteen Career Center?
-#     - What support can students expect from the Tawteen Career Center?
-#     - What resources does the Tawteen Career Center provide to students?
-
-
-# #21
-# - intent: grading_system
-#   examples: |
-#     - What is the grading system for undergraduate courses at AUM?
-#     - How are undergraduate courses graded at AUM?
-#     - What grading criteria are employed for undergraduate courses at AUM?
-#     - What grading system is utilized for undergraduates at AUM?
-#     - How does the grading system work for undergraduate courses at AUM?
-#     - What is the method for grading undergraduate courses at AUM?
+#20
+- intent: tawteen_center
+  examples: |
+    - What services does the Tawteen Career Center offer?
+    - What are the services provided by the Tawteen Career Center?
+    - What assistance does the Tawteen Career Center offer?
+    - What types of services are available at the Tawteen Career Center?
+    - What support can students expect from the Tawteen Career Center?
+    - What resources does the Tawteen Career Center provide to students?
 
 
-# #22
-# - intent: grade_points
-#   examples: |
-#     - What are the corresponding grade points for letter grades in the AUM grading system?
-#     - What grade point equivalents correspond to letter grades in the AUM grading system?
-#     - How do letter grades translate into grade points in the AUM grading system?
-#     - What is the conversion scale for letter grades to grade points in the AUM grading system?
-#     - What are the grade point values associated with letter grades within the AUM grading framework?
-#     - How are letter grades converted into grade points within the AUM grading system?
+#21
+- intent: grading_system
+  examples: |
+    - What is the grading system for undergraduate courses at AUM?
+    - How are undergraduate courses graded at AUM?
+    - What grading criteria are employed for undergraduate courses at AUM?
+    - What grading system is utilized for undergraduates at AUM?
+    - How does the grading system work for undergraduate courses at AUM?
+    - What is the method for grading undergraduate courses at AUM?
+    - How is GPA calculated at the university?
+    - How is GPA determined for students at the university?
+    - What method does the university use to compute GPA?
+
+#22
+- intent: grade_points
+  examples: |
+    - What are the corresponding grade points for letter grades in the AUM grading system?
+    - What grade point equivalents correspond to letter grades in the AUM grading system?
+    - How do letter grades translate into grade points in the AUM grading system?
+    - What is the conversion scale for letter grades to grade points in the AUM grading system?
+    - What are the grade point values associated with letter grades within the AUM grading framework?
+    - How are letter grades converted into grade points within the AUM grading system?
 
 
-# #23
-# - intent: trasnscript_grade
-#   examples: |
-#     - Does the AUM transcript reflect the Grade/100?
-#     - Is the Grade/100 reflected on the AUM transcript?
-#     - Does the AUM transcript display the Grade/100?
-#     - Is the Grade/100 score shown on the AUM transcript?
-#     - Does the AUM transcript include the Grade/100 calculation?
-#     - Is the Grade/100 information documented on the AUM transcript?
+#23
+- intent: trasnscript_grade
+  examples: |
+    - Does the AUM transcript reflect the Grade/100?
+    - Is the Grade/100 reflected on the AUM transcript?
+    - Does the AUM transcript display the Grade/100?
+    - Is the Grade/100 score shown on the AUM transcript?
+    - Does the AUM transcript include the Grade/100 calculation?
+    - Is the Grade/100 information documented on the AUM transcript?
 
 
-# #24
-# - intent: minimum_required_grade
-#   examples: |
-#     - What is the minimum required passing grade in the AUM grading system?
-#     - What is the lowest passing grade permitted in the AUM grading system?
-#     - What is the minimum passing grade threshold within the AUM grading system?
-#     - What is the minimum acceptable passing grade under the AUM grading guidelines?
-#     - What is the lowest acceptable passing grade according to the AUM grading system?
-#     - What is the minimum passing grade requirement in the AUM grading structure?
+#24
+- intent: minimum_required_grade
+  examples: |
+    - What is the minimum required passing grade in the AUM grading system?
+    - What is the lowest passing grade permitted in the AUM grading system?
+    - What is the minimum passing grade threshold within the AUM grading system?
+    - What is the minimum acceptable passing grade under the AUM grading guidelines?
+    - What is the lowest acceptable passing grade according to the AUM grading system?
+    - What is the minimum passing grade requirement in the AUM grading structure?
 
-# #25
-# - intent: minimum_passing_grade
-#   examples: |
-  # - What is the minimum passing grade for most courses at AUM?
-#    - What is the lowest acceptable passing grade for the majority of courses at AUM?
-#    - What is the standard minimum passing grade for most courses at AUM?
-#    - What grade do most courses at AUM require as the minimum for passing?
-#    - What is the minimum passing grade expected in the majority of courses at AUM?
-#    - What grade is typically considered the minimum pass mark for courses at AUM?
-
-
-# #26
-# - intent: minimum_grade_exceptions
-#   examples: |
-#     - Are there exceptions to the minimum passing grade requirement?
-#     - Are there any instances where the minimum passing grade requirement is waived?
-#     - Do exceptions exist for the minimum passing grade requirement?
-#     - Are there any circumstances where the minimum passing grade requirement is not applicable?
-#     - Is there flexibility in the minimum passing grade requirement under certain circumstances?
-#     - Are there any situations where the minimum passing grade requirement may be different?
+#25
+- intent: minimum_passing_grade
+  examples: |
+   - What is the minimum passing grade for most courses at AUM?
+   - What is the lowest acceptable passing grade for the majority of courses at AUM?
+   - What is the standard minimum passing grade for most courses at AUM?
+   - What grade do most courses at AUM require as the minimum for passing?
+   - What is the minimum passing grade expected in the majority of courses at AUM?
+   - What grade is typically considered the minimum pass mark for courses at AUM?
 
 
-# #27
-# - intent: grading_affect_CGPA
-#   examples: |
-#     - How are certain courses graded, and how does it affect CGPA?
-#     - What is the grading process for specific courses, and how does it impact CGPA?
-#     - How do certain course grading methods influence CGPA calculation?
-#     - What is the correlation between grading methodologies for particular courses and their impact on CGPA?
-#     - How do grading practices for specific courses factor into CGPA determination?
-#     - What is the relationship between the grading criteria for certain courses and their effect on CGPA?
+#26
+- intent: minimum_grade_exceptions
+  examples: |
+    - Are there exceptions to the minimum passing grade requirement?
+    - Are there any instances where the minimum passing grade requirement is waived?
+    - Do exceptions exist for the minimum passing grade requirement?
+    - Are there any circumstances where the minimum passing grade requirement is not applicable?
+    - Is there flexibility in the minimum passing grade requirement under certain circumstances?
+    - Are there any situations where the minimum passing grade requirement may be different?
 
 
-# #28
-# - intent: incomplete_grade
-#   examples: |
-#     - What does an "Incomplete" grade signify, and how is it handled?
-#     - What is the significance of an Incomplete grade, and what procedures are in place for managing it?
-#     - What does an Incomplete grade indicate, and what are the protocols for its resolution?
-#     - What is the meaning behind an Incomplete grade, and what are the steps taken to address it?
-#     - How is an Incomplete grade defined, and what measures are taken to resolve it?
-#     - What does receiving an Incomplete grade imply, and how is it managed administratively?
+#27
+- intent: grading_affect_CGPA
+  examples: |
+    - How are certain courses graded, and how does it affect CGPA?
+    - What is the grading process for specific courses, and how does it impact CGPA?
+    - How do certain course grading methods influence CGPA calculation?
+    - What is the correlation between grading methodologies for particular courses and their impact on CGPA?
+    - How do grading practices for specific courses factor into CGPA determination?
+    - What is the relationship between the grading criteria for certain courses and their effect on CGPA?
+
+
+#28
+- intent: incomplete_grade
+  examples: |
+    - What does an "Incomplete" grade signify, and how is it handled?
+    - What is the significance of an Incomplete grade, and what procedures are in place for managing it?
+    - What does an Incomplete grade indicate, and what are the protocols for its resolution?
+    - What is the meaning behind an Incomplete grade, and what are the steps taken to address it?
+    - How is an Incomplete grade defined, and what measures are taken to resolve it?
+    - What does receiving an Incomplete grade imply, and how is it managed administratively?
 
  
-# #29
-# - intent: withdrawal_grade
-#   examples: |
-#     - What does a "Withdrawal" grade indicate, and how does it impact GPA?
-#     - What does a "Withdrawal" grade signify, and what effect does it have on GPA calculation?
-#     - What is the meaning of a "Withdrawal" grade, and how does it influence GPA?
-#     - What does receiving a "Withdrawal" grade signify, and how does it affect GPA?
-#     - What is the implication of a "Withdrawal" grade, and how does it impact GPA calculation?
-#     - What does a "Withdrawal" grade indicate, and how does it factor into GPA determination?
+#29
+- intent: withdrawal_grade
+  examples: |
+    - What does a "Withdrawal" grade indicate, and how does it impact GPA?
+    - What does a "Withdrawal" grade signify, and what effect does it have on GPA calculation?
+    - What is the meaning of a "Withdrawal" grade, and how does it influence GPA?
+    - What does receiving a "Withdrawal" grade signify, and how does it affect GPA?
+    - What is the implication of a "Withdrawal" grade, and how does it impact GPA calculation?
+    - What does a "Withdrawal" grade indicate, and how does it factor into GPA determination?
 
-# #30
-# - intent: EPP_passing_grade
-#   examples: |
-#     - What is the passing grade requirement for each level of the English Foundation Program (EPP)?
-#     - What is the minimum passing grade prerequisite for every tier of the English Foundation Program (EPP)?
-#     - What is the passing grade threshold for each stage within the English Foundation Program (EPP)?
-#     - What grade is required to pass each level of the English Foundation Program (EPP)?
-#     - What is the minimum grade required to pass every tier of the English Foundation Program (EPP)?
-#     - What is the requisite passing grade for each level in the English Foundation Program (EPP)?
-
-
-# #31
-# - intent: Math_prep_passing_grade
-#   examples: |
-#     - What is the passing grade requirement for each level of the Mathematics Preparatory Program?
-#     - What is the minimum passing grade requirement for each tier of the Mathematics Preparatory Program?
-#     - What grade is necessary to pass each level of the Mathematics Preparatory Program?
-#     - What is the passing grade prerequisite for every stage within the Mathematics Preparatory Program?
-#     - What grade is required to successfully complete each tier of the Mathematics Preparatory Program?
-#     - What is the requisite passing grade for each level in the Mathematics Preparatory Program?
-
-# #32
-# - intent: undergraduate_class_standings
-#   examples: |
-#     - What are the different class standings for undergraduate students at AUM?
-#     - What are the various class standings available for undergraduate students enrolled at AUM?
-#     - What are the distinct classifications of class standings for undergraduate students at AUM?
-#     - What are the different levels of class standings that undergraduate students can achieve at AUM?
-#     - What are the diverse categories of class standings that undergraduate students may hold at AUM?
-#     - What are the separate designations for class standings applicable to undergraduate students attending AUM?
+#30
+- intent: EPP_passing_grade
+  examples: |
+    - What is the passing grade requirement for each level of the English Foundation Program (EPP)?
+    - What is the minimum passing grade prerequisite for every tier of the English Foundation Program (EPP)?
+    - What is the passing grade threshold for each stage within the English Foundation Program (EPP)?
+    - What grade is required to pass each level of the English Foundation Program (EPP)?
+    - What is the minimum grade required to pass every tier of the English Foundation Program (EPP)?
+    - What is the requisite passing grade for each level in the English Foundation Program (EPP)?
 
 
-# #33
-# - intent: academic_class_standing
-#   examples: |
-#     - What is the corresponding academic year for each class standing?
-#     - What academic year aligns with each class standing?
-#     - Which academic year corresponds to each class standing?
-#     - What academic period is associated with each class standing?
-#     - For each class standing, what is the corresponding academic year?
-#     - What academic level correlates with each class standing?
+#31
+- intent: Math_prep_passing_grade
+  examples: |
+    - What is the passing grade requirement for each level of the Mathematics Preparatory Program?
+    - What is the minimum passing grade requirement for each tier of the Mathematics Preparatory Program?
+    - What grade is necessary to pass each level of the Mathematics Preparatory Program?
+    - What is the passing grade prerequisite for every stage within the Mathematics Preparatory Program?
+    - What grade is required to successfully complete each tier of the Mathematics Preparatory Program?
+    - What is the requisite passing grade for each level in the Mathematics Preparatory Program?
+
+#32
+- intent: undergraduate_class_standings
+  examples: |
+    - What are the different class standings for undergraduate students at AUM?
+    - What are the various class standings available for undergraduate students enrolled at AUM?
+    - What are the distinct classifications of class standings for undergraduate students at AUM?
+    - What are the different levels of class standings that undergraduate students can achieve at AUM?
+    - What are the diverse categories of class standings that undergraduate students may hold at AUM?
+    - What are the separate designations for class standings applicable to undergraduate students attending AUM?
 
 
-# #34
-# - intent: total_credits_class_standing
-#   examples: |
-#     - How are total credits earned related to class standing?
-#     - What is the relationship between total earned credits and class standing?
-#     - How do total earned credits impact class standing?
-#     - In what way are total credits earned connected to class standing?
-#     - What is the correlation between total earned credits and class standing?
-#     - How does the accumulation of total credits earned influence class standing?
+#33
+- intent: academic_class_standing
+  examples: |
+    - What is the corresponding academic year for each class standing?
+    - What academic year aligns with each class standing?
+    - Which academic year corresponds to each class standing?
+    - What academic period is associated with each class standing?
+    - For each class standing, what is the corresponding academic year?
+    - What academic level correlates with each class standing?
 
 
-
-# #35
-# - intent: CGPA_good_standing
-#   examples: |
-#     - What is the minimum required CGPA to maintain a good standing for each class?
-#     - What is the minimum CGPA required to maintain good standing for each class level?
-#     - What is the CGPA threshold necessary to sustain good standing for each class designation?
-#     - What is the minimum CGPA requirement to uphold good standing status for each class level?
-#     - What CGPA must be maintained to retain good standing for each class category?
-#     - What is the minimum CGPA needed to ensure good standing for students at each class level?
+#34
+- intent: total_credits_class_standing
+  examples: |
+    - How are total credits earned related to class standing?
+    - What is the relationship between total earned credits and class standing?
+    - How do total earned credits impact class standing?
+    - In what way are total credits earned connected to class standing?
+    - What is the correlation between total earned credits and class standing?
+    - How does the accumulation of total credits earned influence class standing?
 
 
 
-# #36
-# - intent: calculate_CGPA_GPA
-#   examples: |
-#     - What is GPA and CGPA, and how are they calculated?
-#     - What is the definition of GPA and CGPA, and what methodologies are used to calculate them?
-#     - What are GPA and CGPA, and what formulas are employed to compute them?
-#     - How are GPA and CGPA defined, and what procedures are used to determine their values?
-#     - What do GPA and CGPA signify, and what calculations are involved in deriving them?
-#     - What are GPA and CGPA, and how are their numerical values determined through calculation processes?
-
-
-# #37
-# - intent: CGPA_GPA_transcript
-#   examples: |
-#     - How are GPA and CGPA displayed on the AUM transcript?
-#     - How are GPA and CGPA showcased on the AUM transcript?
-#     - In what format are GPA and CGPA presented on the AUM transcript?
-#     - How are GPA and CGPA represented on the AUM transcript?
-#     - What is the layout for displaying GPA and CGPA on the AUM transcript?
-#     - On the AUM transcript, how are GPA and CGPA visually represented?
-
-
-# #38
-# - intent: EPP_purpose
-#   examples: |
-#     - What is the purpose of the AUM English Preparatory Program (EPP)?
-#     - What is the objective of implementing the AUM English Preparatory Program (EPP)?
-#     - What is the aim of establishing the AUM English Preparatory Program (EPP)?
-#     - What purpose does the AUM English Preparatory Program (EPP) serve?
-#     - What are the goals of the AUM English Preparatory Program (EPP)?
-#     - What is the intended outcome of the AUM English Preparatory Program (EPP)?
-
-
-# #39
-# - intent: college_eng_tech_require_math_placement_test
-#   examples: |
-#     - What happens if a student of the College of Engineering and Technology does not satisfy the threshold needed for the Math Placement Test?
-#     - What occurs if a student from the College of Engineering and Technology fails to meet the required threshold for the Math Placement Test?
-#     - What are the consequences if a student in the College of Engineering and Technology does not meet the Math Placement Test requirement?
-#     - What happens if a College of Engineering and Technology student does not achieve the necessary score on the Math Placement Test?
-#     - If a student in the College of Engineering and Technology does not meet the Math Placement Test criteria, what are the implications?
-#     - What are the repercussions for a student in the College of Engineering and Technology who does not meet the Math Placement Test standard?
-
-
-# #40
-# - intent: academic_max_duration
-#   examples: |
-#     - What is the maximum duration for students to meet all academic program requirements at AUM?
-#     - What is the deadline for students to fulfill all academic program requirements at AUM?
-#     - What is the maximum timeframe given to students to complete all academic program requirements at AUM?
-#     - What is the longest duration allowed for students to satisfy all academic program requirements at AUM?
-#     - What is the time limit for students to meet all academic program requirements at AUM?
-#     - What is the maximum period allocated for students to fulfill all academic program requirements at AUM?
+#35
+- intent: CGPA_good_standing
+  examples: |
+    - What is the minimum required CGPA to maintain a good standing for each class?
+    - What is the minimum CGPA required to maintain good standing for each class level?
+    - What is the CGPA threshold necessary to sustain good standing for each class designation?
+    - What is the minimum CGPA requirement to uphold good standing status for each class level?
+    - What CGPA must be maintained to retain good standing for each class category?
+    - What is the minimum CGPA needed to ensure good standing for students at each class level?
 
 
 
-# #41
-# - intent: academic_probation_dismissal
-#   examples: |
-#     - What are the conditions for academic probation and dismissal?
-#     - What criteria lead to academic probation and dismissal?
-#     - What circumstances result in academic probation and dismissal?
-#     - What are the requirements for academic probation and dismissal?
-#     - Under what conditions do students face academic probation and dismissal?
-#     - What factors contribute to academic probation and dismissal?
+#36
+- intent: calculate_CGPA_GPA
+  examples: |
+    - What is GPA and CGPA, and how are they calculated?
+    - What is the definition of GPA and CGPA, and what methodologies are used to calculate them?
+    - What are GPA and CGPA, and what formulas are employed to compute them?
+    - How are GPA and CGPA defined, and what procedures are used to determine their values?
+    - What do GPA and CGPA signify, and what calculations are involved in deriving them?
+    - What are GPA and CGPA, and how are their numerical values determined through calculation processes?
 
 
-# #42
-# - intent: honors_graduation_criteria
-#   examples: |
-#     - What are the criteria for graduation with honors?
-#     - What standards must be met for graduating with honors?
-#     - What are the requirements for achieving honors at graduation?
-#     - What criteria determine eligibility for graduating with honors?
-#     - What benchmarks need to be achieved to graduate with honors?
-#     - What are the qualifications for earning honors upon graduation?
+#37
+- intent: CGPA_GPA_transcript
+  examples: |
+    - How are GPA and CGPA displayed on the AUM transcript?
+    - How are GPA and CGPA showcased on the AUM transcript?
+    - In what format are GPA and CGPA presented on the AUM transcript?
+    - How are GPA and CGPA represented on the AUM transcript?
+    - What is the layout for displaying GPA and CGPA on the AUM transcript?
+    - On the AUM transcript, how are GPA and CGPA visually represented?
+
+
+#38
+- intent: EPP_purpose
+  examples: |
+    - What is the purpose of the AUM English Preparatory Program (EPP)?
+    - What is the objective of implementing the AUM English Preparatory Program (EPP)?
+    - What is the aim of establishing the AUM English Preparatory Program (EPP)?
+    - What purpose does the AUM English Preparatory Program (EPP) serve?
+    - What are the goals of the AUM English Preparatory Program (EPP)?
+    - What is the intended outcome of the AUM English Preparatory Program (EPP)?
+
+
+#39
+- intent: college_eng_tech_require_math_placement_test
+  examples: |
+    - What happens if a student of the College of Engineering and Technology does not satisfy the threshold needed for the Math Placement Test?
+    - What occurs if a student from the College of Engineering and Technology fails to meet the required threshold for the Math Placement Test?
+    - What are the consequences if a student in the College of Engineering and Technology does not meet the Math Placement Test requirement?
+    - What happens if a College of Engineering and Technology student does not achieve the necessary score on the Math Placement Test?
+    - If a student in the College of Engineering and Technology does not meet the Math Placement Test criteria, what are the implications?
+    - What are the repercussions for a student in the College of Engineering and Technology who does not meet the Math Placement Test standard?
+
+
+#40
+- intent: academic_max_duration
+  examples: |
+    - What is the maximum duration for students to meet all academic program requirements at AUM?
+    - What is the deadline for students to fulfill all academic program requirements at AUM?
+    - What is the maximum timeframe given to students to complete all academic program requirements at AUM?
+    - What is the longest duration allowed for students to satisfy all academic program requirements at AUM?
+    - What is the time limit for students to meet all academic program requirements at AUM?
+    - What is the maximum period allocated for students to fulfill all academic program requirements at AUM?
+
+
+
+#41
+- intent: academic_probation_dismissal
+  examples: |
+    - What are the conditions for academic probation and dismissal?
+    - What criteria lead to academic probation and dismissal?
+    - What circumstances result in academic probation and dismissal?
+    - What are the requirements for academic probation and dismissal?
+    - Under what conditions do students face academic probation and dismissal?
+    - What factors contribute to academic probation and dismissal?
+
+
+#42
+- intent: honors_graduation_criteria
+  examples: |
+    - What are the criteria for graduation with honors?
+    - What standards must be met for graduating with honors?
+    - What are the requirements for achieving honors at graduation?
+    - What criteria determine eligibility for graduating with honors?
+    - What benchmarks need to be achieved to graduate with honors?
+    - What are the qualifications for earning honors upon graduation?
     
 
-# #43
-# - intent: expecting_graduate_steps
-#   examples: |
-#     - What are the steps for students expecting to graduate?
-#     - What are the procedures for students anticipating graduation?
-#     - What steps must students take if they are planning to graduate?
-#     - What are the sequential actions for students preparing for graduation?
-#     - What is the process that students who are about to graduate need to follow?
-#     - What are the necessary steps for students who are expecting to graduate?
+#43
+- intent: expecting_graduate_steps
+  examples: |
+    - What are the steps for students expecting to graduate?
+    - What are the procedures for students anticipating graduation?
+    - What steps must students take if they are planning to graduate?
+    - What are the sequential actions for students preparing for graduation?
+    - What is the process that students who are about to graduate need to follow?
+    - What are the necessary steps for students who are expecting to graduate?
 
-# #44
-# - intent: graduation_clearance_requirements
-#   examples: |
-#     - What are the clearance requirements for graduation?
-#     - What are the criteria that students must fulfill for graduation clearance?
-#     - What are the requirements that students need to meet to obtain clearance for graduation?
-#     - What conditions or obligations must students satisfy in order to achieve graduation clearance?
-#     - What are the clearance prerequisites that students must fulfill in order to graduate?
-#     - What are the necessary steps or obligations that students need to complete for graduation clearance?
-
-
-# #45
-# - intent: CGPA_max_credit_fall_spring
-#   examples: |
-#     - What is the maximum credit load allowed for students during Fall and Spring semesters based on their Cumulative GPA?
-#     - What is the maximum credit load permitted for students during Fall and Spring semesters based on their Cumulative GPA?
-#     - What is the highest number of credits students can take during Fall and Spring semesters depending on their Cumulative GPA?
-#     - What is the upper limit for credit hours that students can enroll in during Fall and Spring semesters, determined by their Cumulative GPA?
-#     - What is the maximum number of credits students can register for during Fall and Spring semesters, taking into account their Cumulative GPA?
-#     - What is the maximum credit load that students can carry during Fall and Spring semesters, contingent upon their Cumulative GPA?
+#44
+- intent: graduation_clearance_requirements
+  examples: |
+    - What are the clearance requirements for graduation?
+    - What are the criteria that students must fulfill for graduation clearance?
+    - What are the requirements that students need to meet to obtain clearance for graduation?
+    - What conditions or obligations must students satisfy in order to achieve graduation clearance?
+    - What are the clearance prerequisites that students must fulfill in order to graduate?
+    - What are the necessary steps or obligations that students need to complete for graduation clearance?
 
 
-# #46
-# - intent: CGPA_max_credit_summer
-#   examples: |
-#     - What is the maximum credit load allowed for students during the Summer semester based on their Cumulative GPA?
-#     - What is the highest credit load permitted for students during the Summer semester depending on their Cumulative GPA?
-#     - What is the maximum number of credits students can take during the Summer semester, determined by their Cumulative GPA?
-#     - What is the upper limit for credit hours that students can enroll in during the Summer semester, based on their Cumulative GPA?
-#     - What is the maximum credit load that students can carry during the Summer semester, contingent upon their Cumulative GPA?
-#     - What is the maximum credit load allowed for students during the Summer semester, considering their Cumulative GPA?
+#45
+- intent: CGPA_max_credit_fall_spring
+  examples: |
+    - What is the maximum credit load allowed for students during Fall and Spring semesters based on their Cumulative GPA?
+    - What is the maximum credit load permitted for students during Fall and Spring semesters based on their Cumulative GPA?
+    - What is the highest number of credits students can take during Fall and Spring semesters depending on their Cumulative GPA?
+    - What is the upper limit for credit hours that students can enroll in during Fall and Spring semesters, determined by their Cumulative GPA?
+    - What is the maximum number of credits students can register for during Fall and Spring semesters, taking into account their Cumulative GPA?
+    - What is the maximum credit load that students can carry during Fall and Spring semesters, contingent upon their Cumulative GPA?
 
 
-# #47
-# - intent: more_max_credit_allowed
-#   examples: |
-#     - What is the procedure for students who wish to register for more than the maximum allowed credit load?
-#     - What steps should students follow if they want to register for more credits than the maximum allowed load?
-#     - What is the process for students who wish to exceed the maximum credit load during registration?
-#     - How should students proceed if they desire to enroll in additional credits beyond the maximum allowed limit?
-#     - What are the steps students need to take if they intend to register for more credits than the maximum permitted load?
-#     - What procedure do students need to follow if they want to exceed the maximum allowed credit load during registration?
+#46
+- intent: CGPA_max_credit_summer
+  examples: |
+    - What is the maximum credit load allowed for students during the Summer semester based on their Cumulative GPA?
+    - What is the highest credit load permitted for students during the Summer semester depending on their Cumulative GPA?
+    - What is the maximum number of credits students can take during the Summer semester, determined by their Cumulative GPA?
+    - What is the upper limit for credit hours that students can enroll in during the Summer semester, based on their Cumulative GPA?
+    - What is the maximum credit load that students can carry during the Summer semester, contingent upon their Cumulative GPA?
+    - What is the maximum credit load allowed for students during the Summer semester, considering their Cumulative GPA?
 
 
-# #48
-# - intent: appeal_grade_change 
-#   examples: |
-#     - What is the procedure for students who want to appeal for a grade change?
-#     - What steps should students follow if they seek to appeal a change in their grade?
-#     - How can students proceed if they wish to challenge a grade alteration?
-#     - What are the steps students need to take if they desire to contest a modification in their grade?
-#     - How should students proceed if they aim to request a review of their grade?
-#     - What is the process for students who wish to appeal for a modification in their grade?
+#47
+- intent: more_max_credit_allowed
+  examples: |
+    - What is the procedure for students who wish to register for more than the maximum allowed credit load?
+    - What steps should students follow if they want to register for more credits than the maximum allowed load?
+    - What is the process for students who wish to exceed the maximum credit load during registration?
+    - How should students proceed if they desire to enroll in additional credits beyond the maximum allowed limit?
+    - What are the steps students need to take if they intend to register for more credits than the maximum permitted load?
+    - What procedure do students need to follow if they want to exceed the maximum allowed credit load during registration?
 
 
-# #49
-# - intent: course_repetition_policy 
-#   examples: |
-#     - Under what circumstances can a student repeat a course according to the Course Repetition Policy?
-#     - What are the conditions under which a student can retake a course in accordance with the Course Repetition Policy?
-#     - Under what circumstances is a student permitted to repeat a course as outlined in the Course Repetition Policy?
-#     - What situations allow a student to retake a course based on the Course Repetition Policy?
-#     - According to the Course Repetition Policy, in what instances can a student repeat a course?
-#     - What are the criteria specified by the Course Repetition Policy for a student to repeat a course?
+#48
+- intent: appeal_grade_change 
+  examples: |
+    - What is the procedure for students who want to appeal for a grade change?
+    - What steps should students follow if they seek to appeal a change in their grade?
+    - How can students proceed if they wish to challenge a grade alteration?
+    - What are the steps students need to take if they desire to contest a modification in their grade?
+    - How should students proceed if they aim to request a review of their grade?
+    - What is the process for students who wish to appeal for a modification in their grade?
 
 
-# #50
-# - intent: repeat_course_CGPA_improve
-#   examples: |
-#     - How many courses can a student repeat to improve their CGPA, and how many times can they repeat each course?
-#     - How many courses can a student retake to enhance their CGPA, and what is the limit on the number of times they can repeat each course?
-#     - What is the maximum number of courses a student can repeat to raise their CGPA, and how many times can they retake each course?
-#     - How many courses can a student repeat in order to boost their CGPA, and what is the maximum number of repetitions allowed for each course?
-#     - According to the policy, what is the total number of courses a student can retake to improve their CGPA, and what is the maximum number of repetitions permitted for each course?
-#     - What is the limit on the number of courses a student can retake to improve their CGPA, and what is the maximum number of times they can retake each course?
+#49
+- intent: course_repetition_policy 
+  examples: |
+    - Under what circumstances can a student repeat a course according to the Course Repetition Policy?
+    - What are the conditions under which a student can retake a course in accordance with the Course Repetition Policy?
+    - Under what circumstances is a student permitted to repeat a course as outlined in the Course Repetition Policy?
+    - What situations allow a student to retake a course based on the Course Repetition Policy?
+    - According to the Course Repetition Policy, in what instances can a student repeat a course?
+    - What are the criteria specified by the Course Repetition Policy for a student to repeat a course?
+
+
+#50
+- intent: repeat_course_CGPA_improve
+  examples: |
+    - How many courses can a student repeat to improve their CGPA, and how many times can they repeat each course?
+    - How many courses can a student retake to enhance their CGPA, and what is the limit on the number of times they can repeat each course?
+    - What is the maximum number of courses a student can repeat to raise their CGPA, and how many times can they retake each course?
+    - How many courses can a student repeat in order to boost their CGPA, and what is the maximum number of repetitions allowed for each course?
+    - According to the policy, what is the total number of courses a student can retake to improve their CGPA, and what is the maximum number of repetitions permitted for each course?
+    - What is the limit on the number of courses a student can retake to improve their CGPA, and what is the maximum number of times they can retake each course?
+
