@@ -56,6 +56,8 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+    - fine
+    - good
 
 - intent: deny 
   examples: | 
@@ -104,7 +106,8 @@ nlu:
     - How many credits I need to complete my computer engineering bachelor degree in AUM? 
     - How can I graduate computer engineering in AUM 
     - ce credits
-    - ce
+    - how many credit i need to graduate from ce?
+    - how many credit i need to graduate from computer engineering ?
 
 #3
 
@@ -1151,4 +1154,131 @@ nlu:
     - How many courses can a student repeat in order to boost their CGPA, and what is the maximum number of repetitions allowed for each course?
     - According to the policy, what is the total number of courses a student can retake to improve their CGPA, and what is the maximum number of repetitions permitted for each course?
     - What is the limit on the number of courses a student can retake to improve their CGPA, and what is the maximum number of times they can retake each course?
+
+
+########## story #########
+
+- intent: what_is_your
+  examples: |
+    - i need help?
+    - i have a question?
+    - How many credit do I need to transfer to the chemical engineering major?
+    - how many credit I shouid take to graduate?
+    - How many credit do I need to transfer to the civil engineering major?
+    - How many credit do I need to transfer to the computer engineering major?
+    - How many credit do I need to transfer to the electrical engineering major?
+    - How many credit do I need to transfer to the Industrial engineering major?
+    - How many credit do I need to transfer to the Architectural engineering major?
+    - if i want to change my major to Architectural engineering , how many credit i need?
+    - if i want to change my major to chemical engineering , how many credit i need?
+    - if i want to change my major to civil engineering , how many credit i need?
+    - if i want to change my major to computer engineering , how many credit i need?
+    - if i want to change my major to electrical engineering , how many credit i need?
+    - if i want to change my major to Industrial engineering , how many credit i need?
+
+
+- intent: from_eng_to_eng
+  examples: |
+    - CE
+    - EE
+    - IE
+    - AE
+    - ChE
+    - CvlE
+
+####################### YAQEEN ##############
+
+
+
+  
+#57
+- intent: AUM_soft_skills
+  examples: |
+    - what is soft skills e-courses platform at aum?
+    - Are there any workshops or programs available at AUM to help improve my soft skills?
+    - How can I access the soft skills platform?
+
+#58
+- intent: AUM_book_store
+  examples: |
+    - Where is the bookstore located on campus?
+    - What are the bookstore hours?
+    - Does the bookstore sell supplies like notebooks, pens, and folders?
+
+#59
+- intent: robotics_research_center
+  examples: |
+    - What are the goals of the robotics research center?
+    - How does the center aim to support student and research in robotics?
+    - Does therobotics research center offer interdisciplinary research programs?
+
+#60
+- intent: nanotechnology_center
+  examples: |
+    - What is the aims of the nanotechnology center?
+    - How does the center contribute to nanotechnology research?
+    - Why was the nanotechnology center established?
+    
+#61
+- intent: toefl_and_ielts
+  examples: |
+    - What is the difference between TOEFL and IELTS?
+    - What is the format of the TOEFL/IELTS exam?
+    - What score do I need to pass the TOEFL/IELTS exam?
+    - Can the EPP student register for the TOEFL/IELTS test?
+
+#62
+# - intent: freezing_semester
+#   examples: |
+#     - What does it mean to freeze a semester?
+#     - Can I freeze my semester multiple times?
+#     - How does the semester freeze affect the graduation timeline?
+
+#63
+- intent: official_withdrawal_from_AUM
+  examples: |
+    - How do I officially withdraw from AUM?
+    - Is there a formal withdrawal form?
+    - Where can I submit the official withdrawal form?
+    - What grade will I get if I withdraw from the university?
+    - If I officially withdraw from the university, can I apply again?
+
+#64
+- intent: cancelling_the_withdrawal_request_during_the_semester 
+  examples: |
+    - Is there a deadline for canceling my withdrawal request?
+    - Can I cancel my withdrawal request multiple times in the same semester?
+    - What is the overall cumulative GPA required to withdraw from withdrawal?
+
+#65
+- intent: cheating
+  examples: |
+    - What is cheating?
+    - What are the consequences of being caught cheating?
+    - What exactly is considered cheating?
+#66
+- intent: plagiarism 
+  examples: |
+    - What is plagiarism?
+    - What steps can i take to avoid plagiarism?
+
+#67
+- intent: violation_of_dress_code
+  examples: |
+    - What is considered a violation of the dress code?
+    - How can I know if my outfit follows the dress code guidelines?
+
+#68
+- intent: no_smoking_policy
+  examples: |
+    - Where are the designated smoking areas on campus?
+    - Where can students smoke according to the policy?
+
+#69
+- intent: instructor_Hassan_Kanj
+  examples: |
+    - Where is the instructor Hassan Kanj office located?
+    - Is there a specific email address I should use to contact the instructor Hassan Kanj?
+    - What department does the instructor Hassan Kanj belong to?
+
 

@@ -1,0 +1,35 @@
+version: "3.1" 
+
+stories: 
+
+- story: happy path 
+  steps:
+  - intent: greet 
+  - action: utter_greet 
+  - intent: mood_great 
+  - action: utter_happy 
+
+
+- story: major
+  steps:
+  - intent: greet 
+  - action: utter_greet 
+  - intent: mood_great 
+  - action: utter_happy 
+  - intent: what_is_your
+  - action: utter_what_is_your
+  - intent: from_eng_to_eng
+  - action: utter_from_eng_to_eng
+
+
+
+#############   SLOT ###################
+
+# - story: interactive_story_2
+#   steps:
+#   - intent: get_course_code
+#     entities:
+#     - course_code: course_code
+#   - slot_was_set:
+#     - course_code: course_code
+#   - action: action_Course_code

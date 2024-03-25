@@ -477,9 +477,100 @@ rules:
   - intent: course_repetition_policy 
   - action: utter_course_repetition_policy 
 
+
 - rule: ask about repeat course CGPA improve
   steps:
   - intent: repeat_course_CGPA_improve
   - action: utter_repeat_course_CGPA_improve
+
+
+########## Story ##############
+
+
+- rule: ask about your
+  steps:
+  - intent: what_is_your
+  - action: utter_what_is_your
+
+- rule: from eng to eng
+  steps:
+  - intent: from_eng_to_eng
+  - action: utter_from_eng_to_eng
+
+
+
+
+
+
+
+
+
+
+############## YAQEEN ##############
+
+- rule: ask about AUM soft skills
+  steps:
+  - intent: AUM_soft_skills
+  - action: utter_AUM_soft_skills
+
+- rule: ask about AUM book store
+  steps:
+  - intent: AUM_book_store
+  - action: utter_AUM_book_store
+
+- rule: ask about robotics research center
+  steps:
+  - intent: robotics_research_center
+  - action: utter_robotics_research_center
+
+- rule: ask about nanotechnology center
+  steps:
+  - intent: nanotechnology_center
+  - action: utter_nanotechnology_center
+
+- rule: ask about toefl and ielts
+  steps:
+  - intent: toefl_and_ielts
+  - action: utter_toefl_and_ielts
+
+# - rule: ask about freezing semester
+#   steps:
+#   - intent: freezing_semester
+#   - action: utter_freezing_semester
+
+- rule: ask about official withdrawal from AUM
+  steps: 
+  - intent: official_withdrawal_from_AUM
+  - action: utter_official_withdrawal_from_AUM
+
+- rule: ask about cancelling the withdrawal request during the semester 
+  steps:
+  - intent: cancelling_the_withdrawal_request_during_the_semester 
+  - action: utter_cancelling_the_withdrawal_request_during_the_semester 
+
+- rule: ask about cheating
+  steps:
+  - intent: cheating
+  - action: utter_cheating
+
+- rule: ask about plagiarism
+  steps:
+  - intent: plagiarism
+  - action: utter_plagiarism
+
+- rule: ask about violation of dress code
+  steps:
+  - intent: violation_of_dress_code
+  - action: utter_violation_of_dress_code
+
+- rule: ask about no smoking policy
+  steps:
+  - intent: no_smoking_policy
+  - action: utter_no_smoking_policy
+
+- rule: ask about Hassan Kanj
+  steps:
+  - intent: instructor_Hassan_Kanj
+  - action: utter_instructor_Hassan_Kanj
 
 
