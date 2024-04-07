@@ -1,0 +1,289 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+
+
+
+- rule: ask about makeup 
+  steps:
+  - intent: apply_makeup 
+  - action: utter_apply_makeup 
+
+
+- rule: GPA credit
+  steps:
+  - intent: GPA_credit
+  - action: utter_GPA_credit
+
+
+
+
+
+- rule: AUM Tutoring Center 
+  steps:
+  - intent: AUM_Tutoring_Center
+  - action: utter_AUM_Tutoring_Center
+
+
+
+- rule: ask about final 1 
+  steps:
+  - intent: check_schedule 
+  - action: utter_check_schedule
+
+
+
+- rule: ask about final 2
+  steps:
+  - intent: miss_final
+  - action: utter_miss_final
+
+
+- rule: ask about final 3
+  steps:
+  - intent: paper_work_makeup
+  - action: utter_paper_work_makeup
+
+- rule: ask about final 4
+  steps:
+  - intent: bring_final
+  - action: utter_bring_final
+
+
+
+- rule: ask about final 5
+  steps:
+  - intent: late_final 
+  - action: utter_late_final 
+
+- rule: ask about final 7
+  steps:
+  - intent: satisfied_final
+  - action: utter_satisfied_final 
+
+- rule: ask about final 6
+  steps:
+  - intent: submit_appeal
+  - action: utter_submit_appeal
+
+- rule: computer eng 
+  steps:
+  - intent: computer_engineering_credits 
+  - action: utter_computer_engineering_credits 
+
+
+
+- rule: medical excuses 
+  steps:
+  - intent: medical_excuses
+  - action: utter_medical_excuses
+
+- rule: aum portal
+  steps:
+  - intent: aum_portal
+  - action: utter_aum_portal
+
+
+
+- rule: dismisse grade
+  steps:
+  - intent: dismisse_grade
+  - action: utter_dismisse_grade
+
+- rule: Absence percentage
+  steps:
+  - intent: Absence_percentage
+  - action: utter_Absence_percentage
+
+- rule: summer attendance policy
+  steps:
+  - intent: summer_attendance_policy
+  - action: utter_summer_attendance_policy
+
+- rule: FallSpring attendance policy 
+  steps:
+  - intent: FallSpring_attendance_policy 
+  - action: utter_FallSpring_attendance_policy 
+
+
+- rule: before_dismissal
+  steps:
+  - intent: before_dismissal
+  - action: utter_before_dismissal
+
+
+
+- rule: AUM restaurant
+  steps:
+  - intent: AUM_restaurant 
+  - action: utter_AUM_restaurant
+
+- rule: ATM service
+  steps:
+  - intent: ATM_service
+  - action: utter_ATM_service
+
+- rule: tawteen career center
+  steps:
+  - intent: tawteen_career_center
+  - action: utter_tawteen_career_center
+
+- rule: emergency_cases
+  steps:
+  - intent: emergency_cases
+  - action: utter_emergency_cases
+
+- rule: AUM major
+  steps:
+  - intent: AUM_major
+  - action: utter_AUM_major
+
+- rule: accident campus
+  steps:
+  - intent: accident_campus
+  - action: utter_accident_campus
+
+- rule: program degree
+  steps:
+  - intent: program_degree
+  - action: utter_program_degree
+
+- rule: arrive within
+  steps:
+  - intent: arrive_within
+  - action: utter_arrive_within
+
+
+- rule: after start
+  steps:
+  - intent: after_start
+  - action: utter_after_start
+
+- rule: leave classroom
+  steps:
+  - intent: leave_classroom
+  - action: utter_leave_classroom
+
+- rule: makeups Saturday
+  steps:
+  - intent: makeups_Saturday
+  - action: utter_makeups_Saturday
+
+- rule: more fifteen
+  steps:
+  - intent: more_fifteen
+  - action: utter_more_fifteen
+
+- rule: privatepublic_institution
+  steps:
+  - intent: privatepublic_institution
+  - action: utter_privatepublic_institution
+
+- rule: three late
+  steps:
+  - intent: three_late
+  - action: utter_three_late
+
+- rule: missed midterm
+  steps:
+  - intent: missed_midterm
+  - action: utter_missed_midterm
+
+
+- rule: within five
+  steps:
+  - intent: within_five
+  - action: utter_within_five
+
+- rule: allowed number
+  steps:
+  - intent: allowed_number
+  - action: utter_allowed_number
+
+- rule: submit petition
+  steps:
+  - intent: submit_petition
+  - action: utter_submit_petition
+
+- rule: flexibility request
+  steps:
+  - intent: flexibility_request
+  - action: utter_flexibility_request
+
+- rule: final location
+  steps:
+  - intent: final_location
+  - action: utter_final_location
+
+- rule: max EPP
+  steps:
+  - intent: max_EPP
+  - action: utter_max_EPP
+
+- rule: reach excuses
+  steps:
+  - intent: reach_excuses
+  - action: utter_reach_excuses  
+
+
+
+
+########## Story ##############
+
+
+- rule: ask about your
+  steps:
+  - intent: what_is_your
+  - action: utter_what_is_your
+
+- rule: from eng to eng
+  steps:
+  - intent: from_eng_to_eng
+  - action: utter_from_eng_to_eng
+
+- rule: from bus to bus
+  steps:
+  - intent: from_bus_to_bus
+  - action: utter_from_bus_to_bus
+
+
+- rule: from eng to teq
+  steps:
+  - intent: from_eng_to_teq
+  - action: utter_from_eng_to_teq
+
+- rule: about convert
+  steps:
+  - intent: convert
+  - action: utter_convert
+
+
+- rule: about transfer teq
+  steps:
+  - intent: transfer_teq
+  - action: utter_transfer_teq
+ 
+
+- rule: from teq to eng
+  steps:
+  - intent: from_teq_to_eng
+  - action: utter_from_teq_to_eng
+   
+
+
+
+
+############## YAQEEN ##############
+
