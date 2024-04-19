@@ -22,8 +22,86 @@ stories:
   - action: utter_from_eng_to_eng
 
 
+- story: major1
+  steps:
+  - intent: greet 
+  - action: utter_greet 
+  - intent: mood_great 
+  - action: utter_happy 
+  - intent: what_is_your
+  - action: utter_what_is_your
+  - intent: from_bus_to_bus
+  - action: utter_from_bus_to_bus
+
+- story: major2
+  steps:
+  - intent: greet 
+  - action: utter_greet 
+  - intent: mood_great 
+  - action: utter_happy 
+  - intent: convert
+  - action: utter_convert
+  - intent: from_bus_to_bus
+  - action: utter_from_bus_to_bus
+
+- story: major3
+  steps:
+  - intent: greet 
+  - action: utter_greet 
+  - intent: mood_great 
+  - action: utter_happy 
+  - intent: transfer_teq
+  - action: utter_transfer_teq
+  - intent: from_eng_to_teq
+  - action: utter_from_eng_to_teq
+
+- story: Internal transfer
+  steps:
+  - intent: greet 
+  - action: utter_greet 
+  - intent: mood_great 
+  - action: utter_happy 
+  - intent: transfer_teq
+  - action: utter_transfer_teq
+  - intent: from_teq_to_eng
+  - action: utter_from_teq_to_eng
+
+
+# - story: Internal transfer1
+#   steps:
+#   - intent: greet 
+#   - action: utter_greet 
+#   - intent: mood_great 
+#   - action: utter_happy 
+#   - intent: transfer_teq
+#   - action: utter_transfer_teq
+#   - intent: from_teq_to_eng
+#   - action: utter_from_teq_to_eng
 
 #############   SLOT ###################
+
+ 
+
+# - story: Check student ID
+#   steps:
+#   - intent: lost_id
+#   - action: utter_ask_lost_id
+#   - intent: check_student_id
+#   - action: action_check_student_id
+#   - action: utter_thank_you
+
+
+
+ 
+# - story: interactive_story_1
+#   steps:
+#   - intent: get_course_info
+#     entities:
+#     - course_name: course_name
+#   - slot_was_set:
+#     - course_name: course_name
+#   - action: action_Course
+#   # - action: utter_course_name
 
 # - story: interactive_story_2
 #   steps:
@@ -33,3 +111,26 @@ stories:
 #   - slot_was_set:
 #     - course_code: course_code
 #   - action: action_Course_code
+
+
+
+# - story: User provides GPA, grades, then credits
+#   steps:
+#   - intent: calculate_gpa
+#   - action: action_ask_gpa
+#   - intent: provide_gpa
+#     entities:
+#     - gpa: "3.5"
+#   - action: action_ask_grades
+#   - intent: provide_grades
+#     entities:
+#     - grade: "A"
+#     - grade: "B"
+#     - grade: "A-"
+#   - action: action_ask_credits
+#   - intent: provide_credits
+#     entities:
+#     - credit: "4"
+#     - credit: "3"
+#     - credit: "2"
+#   - action: action_calculate_gpa

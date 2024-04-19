@@ -13,10 +13,7 @@ rules:
   - action: utter_iamabot
 
 
-- rule: change major 
-  steps:
-  - intent: change_major
-  - action: utter_change_major
+
 
 
 - rule: ask about makeup 
@@ -31,16 +28,13 @@ rules:
   - action: utter_GPA_credit
 
 
-- rule: about aum club
-  steps:
-  - intent: aum_club
-  - action: utter_aum_club
 
 
-- rule: AUM Tutoring Center 
-  steps:
-  - intent: AUM_Tutoring_Center
-  - action: utter_AUM_Tutoring_Center
+
+# - rule: AUM Tutoring Center 
+#   steps:
+#   - intent: AUM_Tutoring_Center
+#   - action: utter_AUM_Tutoring_Center
 
 
 
@@ -84,17 +78,17 @@ rules:
   - intent: submit_appeal
   - action: utter_submit_appeal
 
-- rule: computer eng 
-  steps:
-  - intent: computer_engineering_credits 
-  - action: utter_computer_engineering_credits 
+# # - rule: computer eng 
+#   steps:
+#   - intent: computer_engineering_credits 
+#   - action: utter_computer_engineering_credits 
 
 
 
-- rule: medical excuses 
-  steps:
-  - intent: medical_excuses
-  - action: utter_medical_excuses
+# - rule: medical excuses 
+#   steps:
+#   - intent: medical_excuses
+#   - action: utter_medical_excuses
 
 - rule: aum portal
   steps:
@@ -113,15 +107,6 @@ rules:
   - intent: Absence_percentage
   - action: utter_Absence_percentage
 
-- rule: summer attendance policy
-  steps:
-  - intent: summer_attendance_policy
-  - action: utter_summer_attendance_policy
-
-- rule: FallSpring attendance policy 
-  steps:
-  - intent: FallSpring_attendance_policy 
-  - action: utter_FallSpring_attendance_policy 
 
 
 - rule: before_dismissal
@@ -131,77 +116,35 @@ rules:
 
 
 
-# - rule: ask about clinic
-#   steps:
-#   - intent: AUM_clinic
-#   - action: utter_AUM_clinic
-
-- rule: ask about AUM email for the university student
-  steps:
-  - intent: AUM_email_for_the_university_student
-  - action: utter_AUM_email_for_the_university_student
-
-- rule: ask about class standing
-  steps:
-  - intent: class_standing
-  - action: utter_class_standing
-
-- rule: ask about graduation with honors
-  steps:
-  - intent: graduation_with_honors
-  - action: utter_graduation_with_honors
-
-- rule: ask about AUM 
-  steps:
-  - intent: about_AUM
-  - action: utter_about_AUM
-
-
-- rule: ask about writing lab
-  steps:
-  - intent: writing_lab
-  - action: utter_writing_lab
-
-
-- rule: AUM library
-  steps:
-  - intent: AUM_library
-  - action: utter_AUM_library
-
 - rule: AUM restaurant
   steps:
   - intent: AUM_restaurant 
   - action: utter_AUM_restaurant
-
-- rule: ask about registration
-  steps:
-  - intent: AUM_registration
-  - action: utter_AUM_registration
 
 - rule: ATM service
   steps:
   - intent: ATM_service
   - action: utter_ATM_service
 
-- rule: tawteen career center
-  steps:
-  - intent: tawteen_career_center
-  - action: utter_tawteen_career_center
+# - rule: tawteen career center
+#   steps:
+#   - intent: tawteen_career_center
+#   - action: utter_tawteen_career_center
 
-- rule: emergency_cases
-  steps:
-  - intent: emergency_cases
-  - action: utter_emergency_cases
+# - rule: emergency_cases
+#   steps:
+#   - intent: emergency_cases
+#   - action: utter_emergency_cases
 
-- rule: AUM study
+- rule: AUM major
   steps:
-  - intent: AUM_study
-  - action: utter_AUM_study
+  - intent: AUM_major
+  - action: utter_AUM_major
 
-- rule: accident campus
-  steps:
-  - intent: accident_campus
-  - action: utter_accident_campus
+# - rule: accident campus
+#   steps:
+#   - intent: accident_campus
+#   - action: utter_accident_campus
 
 - rule: program degree
   steps:
@@ -234,10 +177,10 @@ rules:
   - intent: more_fifteen
   - action: utter_more_fifteen
 
-- rule: privatepublic_institution
-  steps:
-  - intent: privatepublic_institution
-  - action: utter_privatepublic_institution
+# - rule: privatepublic_institution
+#   steps:
+#   - intent: privatepublic_institution
+#   - action: utter_privatepublic_institution
 
 - rule: three late
   steps:
@@ -285,203 +228,107 @@ rules:
   - intent: reach_excuses
   - action: utter_reach_excuses  
 
-
-
-############## Amina###########
-
-- rule: ask about medical emergency
+- rule: prayer room
   steps:
-  - intent: medical_emergency
-  - action: utter_medical_emergency
+  - intent: prayer_room
+  - action: utter_prayer_room  
 
+- rule: about prayer Engineering female
+  steps:
+  - intent: about_prayer_Engineeringfemale
+  - action: utter_about_prayer_Engineeringfemale
+
+
+- rule: about prayer Engineering male
+  steps:
+  - intent: about_prayer_Engineeringmale
+  - action: utter_about_prayer_Engineeringmale
+
+- rule: about prayer businessmale
+  steps:
+  - intent: about_about_prayer_businessmale
+  - action: utter_about_prayer_businessmale
+
+- rule: about prayer businessfemale
+  steps:
+  - intent: about_about_prayer_businessfemale
+  - action: utter_about_prayer_businessfemale
+
+
+- rule: about prayer Librarymale
+  steps:
+  - intent: about_prayer_Librarymale
+  - action: utter_about_prayer_Librarymale
+
+
+- rule: about prayer Researchmale
+  steps:
+  - intent: about_prayer_Researchmale
+  - action: utter_about_prayer_Researchmale
+
+- rule: about prayer Researchfemale
+  steps:
+  - intent: about_prayer_Researchfemale
+  - action: utter_about_prayer_Researchfemale
+
+
+- rule: about prayer Culturalmale
+  steps:
+  - intent: about_prayer_Culturalmale
+  - action: utter_about_prayer_Culturalmale
+
+
+- rule: about prayer Culturalfemale
+  steps:
+  - intent: about_prayer_Culturalfemale
+  - action: utter_about_prayer_Culturalfemale
+
+
+- rule: Respond to fall spring attendance policy1
+  steps:
+  - intent: clarify_one_session
+  - action: utter_clarify_one_session
+
+- rule: Respond to fall spring attendance policy2
+  steps:
+  - intent: clarify_two_sessions
+  - action: utter_clarify_two_sessions
+
+- rule: Respond to fall spring attendance policy3
+  steps:
+  - intent: clarify_three_sessions
+  - action: utter_clarify_three_sessions
+
+- rule: Respond to fall spring attendance policy4
+  steps:
+  - intent: clarify_four_sessions
+  - action: utter_clarify_four_sessions
+
+- rule: clarify summer two sessions
+  steps:
+  - intent: clarify_summer_two_sessions
+  - action: utter_clarify_summer_two_sessions
+
+- rule: clarify summer three sessions
+  steps:
+  - intent: clarify_summer_three_sessions
+  - action: utter_clarify_summer_three_sessions
+
+- rule: clarify summer five sessions
+  steps:
+  - intent: clarify_summer_five_sessions
+  - action: utter_clarify_summer_five_sessions
   
-- rule: ask about car accidents
+- rule: clarify summer seven sessions
   steps:
-  - intent: car_accidents
-  - action: utter_car_accidents
+  - intent: clarify_summer_seven_sessions
+  - action: utter_clarify_summer_seven_sessions
 
-  
-- rule: ask about lost & found
+- rule: clarify summer ten sessions
   steps:
-  - intent: lost_found
-  - action: utter_lost_found
+  - intent: clarify_summer_ten_sessions
+  - action: utter_clarify_summer_ten_sessions  
 
-  
-- rule: ask about scientific laboratories
-  steps:
-  - intent: scientific_laboratories
-  - action: utter_scientific_laboratories
-
-  
-- rule: ask about tawteen center
-  steps:
-  - intent: tawteen_center
-  - action: utter_tawteen_center
-
-  
-- rule: ask about grading system
-  steps:
-  - intent: grading_system
-  - action: utter_grading_system
-
-  
-- rule: ask about grade points
-  steps:
-  - intent: grade_points
-  - action: utter_grade_points
-
-
-  
-- rule: ask about trasnscript grade
-  steps:
-  - intent: trasnscript_grade
-  - action: utter_trasnscript_grade
-
-  
-- rule: ask about minimum required grade
-  steps:
-  - intent: minimum_required_grade
-  - action: utter_minimum_required_grade
-
-  
-- rule: ask about minimum passing grade
-  steps:
-  - intent: minimum_passing_grade
-  - action: utter_minimum_passing_grade
-
-  
-- rule: ask about minimum grade exceptions
-  steps:
-  - intent: minimum_grade_exceptions
-  - action: utter_minimum_grade_exceptions
-
-  
-- rule: ask about grading affect CGPA
-  steps:
-  - intent: grading_affect_CGPA
-  - action: utter_grading_affect_CGPA
-
-
-- rule: ask about incomplete grade
-  steps:
-  - intent: incomplete_grade
-  - action: utter_incomplete_grade
-
-- rule: ask about withdrawal grade
-  steps:
-  - intent: withdrawal_grade
-  - action: utter_withdrawal_grade
-
-- rule: ask about EPP passing grade
-  steps:
-  - intent: EPP_passing_grade
-  - action: utter_EPP_passing_grade
-
-- rule: ask about Math prep passing grade
-  steps:
-  - intent: Math_prep_passing_grade
-  - action: utter_Math_prep_passing_grade
-
-- rule: ask about undergraduate class standings
-  steps:
-  - intent: undergraduate_class_standings
-  - action: utter_undergraduate_class_standings
-
-- rule: ask about academic class standing
-  steps:
-  - intent: academic_class_standing
-  - action: utter_academic_class_standing
-
-- rule: ask about total credits class standing
-  steps:
-  - intent: total_credits_class_standing
-  - action: utter_total_credits_class_standing
-
-
-- rule: ask about CGPA good standing
-  steps:
-  - intent: CGPA_good_standing
-  - action: utter_CGPA_good_standing
-
-- rule: ask about calculate CGPA and GPA
-  steps:
-  - intent: calculate_CGPA_GPA
-  - action: utter_calculate_CGPA_GPA
-
-
-- rule: ask about CGPA and GPA transcript
-  steps:
-  - intent: CGPA_GPA_transcript
-  - action: utter_CGPA_GPA_transcript
-
-- rule: ask about EPP purpose
-  steps:
-  - intent: EPP_purpose
-  - action: utter_EPP_purpose
-
-
-- rule: ask about college of engineering and technolgy require math placement test
-  steps:
-  - intent: college_eng_tech_require_math_placement_test 
-  - action: utter_college_eng_tech_require_math_placement_test
-
-
-- rule: ask about academic max duration
-  steps:
-  - intent: academic_max_duration
-  - action: utter_academic_max_duration
-
-
-- rule: ask about academic probation dismissal
-  steps:
-  - intent: academic_probation_dismissal
-  - action: utter_academic_probation_dismissal
-
-- rule: ask about honors graduation criteria
-  steps:
-  - intent: honors_graduation_criteria
-  - action: utter_honors_graduation_criteria
-
-- rule: ask about expecting graduate steps
-  steps:
-  - intent: expecting_graduate_steps
-  - action: utter_expecting_graduate_steps
-
-- rule: ask about graduation clearance requirements
-  steps:
-  - intent: graduation_clearance_requirements
-  - action: utter_graduation_clearance_requirements
-
-- rule: ask about CGPA max credit fall spring
-  steps:
-  - intent: CGPA_max_credit_fall_spring
-  - action: utter_CGPA_max_credit_fall_spring
-
-- rule: ask about CGPA max credi summer
-  steps:
-  - intent: CGPA_max_credit_summer
-  - action: utter_CGPA_max_credit_summer
-
-- rule: ask about more max credit allowed
-  steps:
-  - intent: more_max_credit_allowed
-  - action: utter_more_max_credit_allowed
-
-- rule: ask about appeal grade change 
-  steps:
-  - intent: appeal_grade_change 
-  - action: utter_appeal_grade_change 
-
-- rule: ask about course repetition policy 
-  steps:
-  - intent: course_repetition_policy 
-  - action: utter_course_repetition_policy 
-
-
-- rule: ask about repeat course CGPA improve
-  steps:
-  - intent: repeat_course_CGPA_improve
-  - action: utter_repeat_course_CGPA_improve
 
 
 ########## Story ##############
@@ -497,80 +344,37 @@ rules:
   - intent: from_eng_to_eng
   - action: utter_from_eng_to_eng
 
+- rule: from bus to bus
+  steps:
+  - intent: from_bus_to_bus
+  - action: utter_from_bus_to_bus
 
 
+- rule: from eng to teq
+  steps:
+  - intent: from_eng_to_teq
+  - action: utter_from_eng_to_teq
+
+- rule: about convert
+  steps:
+  - intent: convert
+  - action: utter_convert
 
 
+- rule: about transfer teq
+  steps:
+  - intent: transfer_teq
+  - action: utter_transfer_teq
+ 
 
+- rule: from teq to eng
+  steps:
+  - intent: from_teq_to_eng
+  - action: utter_from_teq_to_eng
+   
 
 
 
 
 ############## YAQEEN ##############
-
-- rule: ask about AUM soft skills
-  steps:
-  - intent: AUM_soft_skills
-  - action: utter_AUM_soft_skills
-
-- rule: ask about AUM book store
-  steps:
-  - intent: AUM_book_store
-  - action: utter_AUM_book_store
-
-- rule: ask about robotics research center
-  steps:
-  - intent: robotics_research_center
-  - action: utter_robotics_research_center
-
-- rule: ask about nanotechnology center
-  steps:
-  - intent: nanotechnology_center
-  - action: utter_nanotechnology_center
-
-- rule: ask about toefl and ielts
-  steps:
-  - intent: toefl_and_ielts
-  - action: utter_toefl_and_ielts
-
-# - rule: ask about freezing semester
-#   steps:
-#   - intent: freezing_semester
-#   - action: utter_freezing_semester
-
-- rule: ask about official withdrawal from AUM
-  steps: 
-  - intent: official_withdrawal_from_AUM
-  - action: utter_official_withdrawal_from_AUM
-
-- rule: ask about cancelling the withdrawal request during the semester 
-  steps:
-  - intent: cancelling_the_withdrawal_request_during_the_semester 
-  - action: utter_cancelling_the_withdrawal_request_during_the_semester 
-
-- rule: ask about cheating
-  steps:
-  - intent: cheating
-  - action: utter_cheating
-
-- rule: ask about plagiarism
-  steps:
-  - intent: plagiarism
-  - action: utter_plagiarism
-
-- rule: ask about violation of dress code
-  steps:
-  - intent: violation_of_dress_code
-  - action: utter_violation_of_dress_code
-
-- rule: ask about no smoking policy
-  steps:
-  - intent: no_smoking_policy
-  - action: utter_no_smoking_policy
-
-- rule: ask about Hassan Kanj
-  steps:
-  - intent: instructor_Hassan_Kanj
-  - action: utter_instructor_Hassan_Kanj
-
 

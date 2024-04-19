@@ -101,26 +101,7 @@ nlu:
 
 #2
 
-- intent: computer_credits
-  examples: |
-    - How many credits I need to complete my computer engineering bachelor degree in AUM? 
-    - How can I graduate computer engineering in AUM 
-    - ce credits
-    - how many credit i need to graduate from ce?
-    - how many credit i need to graduate from computer engineering ?
 
-#3
-
-- intent: change_major
-  examples: |
-    - procedures for changing the major
-    - change my major
-    - can i change major if my credits is 76
-    - i want to know how can i change my major. 
-    - Can I change my major?
-    - What are the requirements for changing majors from business administration to engineering?
-    - What is the total credit limit for changing majors?
-    - What is the GPA required to change major?
 
 #4
 
@@ -133,41 +114,28 @@ nlu:
     - What is the minimum GPA requirement for students to register for 18 credits at AUM?
     - Are there any specific academic conditions for students to register for 18 credits at AUM?
     - Is the 2.67 GPA threshold the same for all programs and departments at AUM?
-
-#5
-
-- intent: aum_club
-  examples: |
-    - What are the clubs in? 
-    - How can I register in the club? 
-    - What variety of clubs does AUM provide for its students, and how can students register for these clubs?
-    - What types of clubs are available for students at AUM?
-    - Can you list some of the specific clubs that AUM offers to its students?
-    - How does AUM facilitate club registration for its students?
-    - Are there any requirements or criteria for joining clubs at AUM?
-    - What role does the AUM portal play in the club registration process at AUM?
-    - Do students have the opportunity to start their own clubs at AUM?
-    - Are there any fees associated with joining clubs at AUM?
-    - How often do clubs at AUM typically meet and what activities do they engage in?
-    - Are there faculty advisors or mentors assigned to oversee the clubs at AUM?
-    - Can students participate in multiple clubs simultaneously at AUM?
+    - Can students with a GPA of 2.67 or higher register for 18 credits?
+    - Is a GPA of 2.67 or higher necessary to enroll in 18 credits?
+    - What GPA threshold allows students to register for 18 credits?
+    - Are students eligible to register for 18 credits if their GPA meets or exceeds 2.67?
+    - Is there a GPA requirement for students to be able to register for 18 credits?
 
 #6
 
-- intent: AUM_Tutoring_Center
-  examples: |
-    - AUM Tutoring Center 
-    - support center  
-    - can I have support in Tutoring 
-    - Tutoring 
-    - Where is Tutoring Center 
-    - how can i register in Tutoring Center 
-    - What services are offered by the Tutoring Center at AUM?
-    - What assistance does the Tutoring Center offer at AUM?
-    - What services does the Tutoring Center provide at AUM?
-    - How does the Tutoring Center support students at AUM?
-    - What resources are available at the Tutoring Center at AUM?
-    - What help can students receive from the Tutoring Center at AUM?
+# - intent: AUM_Tutoring_Center
+#   examples: |
+#     - AUM Tutoring Center 
+#     - support center  
+#     - can I have support in Tutoring 
+#     - Tutoring 
+#     - Where is Tutoring Center 
+#     - how can i register in Tutoring Center 
+#     - What services are offered by the Tutoring Center at AUM?
+#     - What assistance does the Tutoring Center offer at AUM?
+#     - What services does the Tutoring Center provide at AUM?
+#     - How does the Tutoring Center support students at AUM?
+#     - What resources are available at the Tutoring Center at AUM?
+#     - What help can students receive from the Tutoring Center at AUM?
 
 
 #7
@@ -271,59 +239,153 @@ nlu:
 
 #13 
 
-- intent: submit_appeal 
-  examples: | 
-    - How can I submit an appeal?  
-    - What is the procedure for submitting an appeal? 
-    - Could you guide me through the process of appealing a decision? 
-    - How do I go about formally submitting an appeal? 
-    - Can you provide instructions on the appeal submission process? 
-    - What steps should I take to initiate the appeal process? 
-    - In what manner can I officially request an appeal? 
-    - Could you explain the proper protocol for submitting an appeal? 
-    - What actions do I need to take to appeal a decision? 
-    - How can I formally challenge a decision through the appeal process? 
-    - What are the necessary steps to put forth an official appeal? 
-
 #14
 
-- intent: FallSpring_attendance_policy 
-  examples: |
-    - what is the max number of absences for a class that has 1 session a week in Fall/Spring semester?
-    - what is the max number of absences for a class that has 2 sessions a week in Fall/Spring semester?
-    - what is the max number of absences for a class that has 3 sessions a week in Fall/Spring semester?
-    - what is the max number of absences for a class that has 4 sessions a week in Fall/Spring semester?
-    - What is the maximum number of absences allowed for a class that meets once a week during the Fall or Spring semester?
-    - How many absences are permitted for a course that holds two sessions weekly in the Fall or Spring semester?
-    - In the context of Fall or Spring semester classes, what is the maximum number of absences permitted for a course with three weekly sessions?
-    - For classes meeting four times per week in the Fall or Spring semester, what is the maximum allowable number of absences according to the policy?
-    - the maximum number of absences allowed for different session frequencies?
     
+
+- intent: clarify_one_session
+  examples: |
+    - What's the max number of absences for a class with 1 session per week?
+    - How many absences can I have for a once-a-week class in Fall/Spring?
+    - Clarify the attendance policy for classes meeting once per week in Fall/Spring.
+    - What's the attendance rule for classes with only one session per week?
+    - Can you explain the absence limit for classes that meet once weekly?
+    - Tell me about the attendance policy for courses that meet once a week.
+    - How many times can I miss class for a course with one weekly session?
+    - What's the absence allowance for classes held once a week in Fall/Spring?
+    - Clarify the maximum number of absences for once-a-week classes.
+    - How many missed classes are permitted for courses meeting once per week?
+    - what is the max number of absences for a class that has 1 sessions a week in spring semester?
+
+- intent: clarify_two_sessions
+  examples: |
+    - What's the attendance policy for classes with two sessions per week?
+    - How many absences are allowed for a class with two meetings a week?
+    - Tell me about the attendance rules for classes meeting twice weekly in Fall/Spring.
+    - Clarify the attendance policy for classes with two sessions per week.
+    - What's the absence limit for courses that meet twice weekly?
+    - How many classes can I miss for a course with two sessions a week?
+    - Explain the attendance policy for classes held two times a week.
+    - What's the maximum number of absences for classes with two meetings per week?
+    - Can you provide details about the attendance policy for bi-weekly classes?
+    - How many times can I be absent for a class that meets twice weekly?
+    - what is the max number of absences for a class that has 2 sessions a week in spring semester?
+
+- intent: clarify_three_sessions
+  examples: |
+    - What's the limit for absences in a class that meets three times per week?
+    - Can you explain the attendance policy for classes with three sessions in Fall/Spring?
+    - How many times can I be absent from a thrice-weekly class in Fall/Spring?
+    - Clarify the attendance policy for classes with three sessions per week.
+    - What's the absence allowance for courses meeting three times weekly?
+    - Tell me about the attendance rules for classes with three sessions per week.
+    - Explain the attendance policy for classes held three times a week.
+    - What's the maximum number of absences for classes with three meetings per week?
+    - Provide details about the attendance policy for thrice-weekly classes.
+    - How many missed classes are permitted for courses meeting three times a week?
+    - what is the max number of absences for a class that has 3 sessions a week in spring semester?
+
+- intent: clarify_four_sessions
+  examples: |
+    - What's the maximum number of absences for a class that meets four times a week?
+    - Clarify the attendance policy for classes with four sessions weekly in Fall/Spring.
+    - How many absences are allowed for a class meeting four times per week in Fall/Spring?
+    - Tell me about the attendance rules for classes with four sessions per week.
+    - What's the absence limit for courses that meet four times weekly?
+    - Explain the attendance policy for classes held four times a week.
+    - What's the maximum number of absences for classes with four meetings per week?
+    - Can you provide details about the attendance policy for classes meeting four times weekly?
+    - How many times can I be absent for a class that meets four times weekly?
+    - Clarify the attendance policy for courses with four sessions per week.
+    - what is the max number of absences for a class that has 4 sessions a week in spring semester?
 
 #15
 
-
-- intent: summer_attendance_policy 
+- intent: clarify_summer_two_sessions
   examples: |
+    - What's the attendance policy for classes with two sessions per week in the Summer semester?
+    - Can you tell me about the absence limit for a class with two sessions weekly in Summer?
+    - How many absences are allowed for a class with two meetings a week in Summer?
+    - Clarify the attendance policy for classes meeting twice weekly in the Summer semester.
+    - I need to understand the attendance rules for classes with two sessions per week in Summer. Can you explain?
+    - What's the maximum number of absences permitted for a class with two sessions weekly in Summer?
+    - Explain the attendance policy for classes that meet twice a week during Summer semester.
+    - How strict is the attendance policy for classes with two sessions per week in Summer?
+    - Provide details about the absence policy for courses with two meetings per week in Summer.
+    - Clarify the rules regarding absences for classes with two sessions weekly in Summer.
     - what is the max number of absences for a class that has 2 sessions a week in Summer semester?
+
+- intent: clarify_summer_three_sessions
+  examples: |
+    - What's the max number of absences for a class that has three sessions a week in Summer?
+    - Clarify the attendance policy for classes meeting thrice weekly in the Summer semester.
+    - Can you explain the absence policy for classes with three sessions per week in Summer?
+    - How many absences are permitted for a class with three meetings a week in Summer?
+    - I'm unsure about the attendance rules for classes with three sessions per week in Summer. Can you help?
+    - What's the attendance policy for courses that meet three times a week during Summer semester?
+    - How many missed classes are allowed for a class with three sessions weekly in Summer?
+    - Clarify the rules regarding absences for classes with three sessions weekly in Summer.
+    - Provide details about the absence policy for courses with three meetings per week in Summer.
+    - Explain the maximum number of absences permitted for classes with three sessions per week in Summer.
     - what is the max number of absences for a class that has 3 sessions a week in Summer semester?
+
+- intent: clarify_summer_five_sessions
+  examples: |
+    - What's the attendance policy for classes with five sessions per week in Summer?
+    - Can you tell me about the absence limit for a class with five sessions weekly in Summer?
+    - How many absences are allowed for a class with five meetings a week in Summer?
+    - Clarify the attendance policy for classes meeting five times weekly in the Summer semester.
+    - I need to understand the attendance rules for classes with five sessions per week in Summer. Can you explain?
+    - What's the maximum number of absences permitted for a class with five sessions weekly in Summer?
+    - Explain the attendance policy for classes that meet five times a week during Summer semester.
+    - How strict is the attendance policy for classes with five sessions per week in Summer?
+    - Provide details about the absence policy for courses with five meetings per week in Summer.
+    - Clarify the rules regarding absences for classes with five sessions weekly in Summer.
     - what is the max number of absences for a class that has 5 sessions a week in Summer semester?
-    - the max number of absences for a class that has 7 sessions a week in Summer semester is 9
-    - the max number of absences for a class that has 10 sessions a week in Summer semester is 12
-    - the absent of the summer classes
+
+- intent: clarify_summer_seven_sessions
+  examples: |
+    - What's the max number of absences for a class that has seven sessions a week in Summer?
+    - Clarify the attendance policy for classes meeting seven times weekly in the Summer semester.
+    - Can you explain the absence policy for classes with seven sessions per week in Summer?
+    - How many absences are permitted for a class with seven meetings a week in Summer?
+    - I'm unsure about the attendance rules for classes with seven sessions per week in Summer. Can you help?
+    - What's the attendance policy for courses that meet seven times a week during Summer semester?
+    - How many missed classes are allowed for a class with seven sessions weekly in Summer?
+    - Clarify the rules regarding absences for classes with seven sessions weekly in Summer.
+    - Provide details about the absence policy for courses with seven meetings per week in Summer.
+    - Explain the maximum number of absences permitted for classes with seven sessions per week in Summer.
+    - the max number of absences for a class that has 7 sessions a week in Summer semester
+
+- intent: clarify_summer_ten_sessions
+  examples: |
+    - What's the attendance policy for classes with ten sessions per week in Summer?
+    - Can you tell me about the absence limit for a class with ten sessions weekly in Summer?
+    - How many absences are allowed for a class with ten meetings a week in Summer?
+    - Clarify the attendance policy for classes meeting ten times weekly in the Summer semester.
+    - I need to understand the attendance rules for classes with ten sessions per week in Summer. Can you explain?
+    - What's the maximum number of absences permitted for a class with ten sessions weekly in Summer?
+    - Explain the attendance policy for classes that meet ten times a week during Summer semester.
+    - How strict is the attendance policy for classes with ten sessions per week in Summer?
+    - Provide details about the absence policy for courses with ten meetings per week in Summer.
+    - Clarify the rules regarding absences for classes with ten sessions weekly in Summer.
+    - the max number of absences for a class that has 10 sessions a week in Summer semester
+
+    
+
 
 
 #16
 
-- intent: medical_excuses
-  examples: |
-    - When do I submit my medical excuses?
-    - How many days are allowed to submit my medical report?
-    - how many days until I submit my excuses?
-    - when the time if I want to submit my excuses? 
-    - when the last day for submit my medical excuses?
-    - How many days for submit the medical report? 
-    - What is the rationale behind the specific timeframe of 2 working days for submitting an appeal following a dismissal notification?
+# - intent: medical_excuses
+#   examples: |
+#     - When do I submit my medical excuses?
+#     - How many days are allowed to submit my medical report?
+#     - how many days until I submit my excuses?
+#     - when the time if I want to submit my excuses? 
+#     - when the last day for submit my medical excuses?
+#     - How many days for submit the medical report? 
+#     - What is the rationale behind the specific timeframe of 2 working days for submitting an appeal following a dismissal notification?
  
 #17
 
@@ -334,6 +396,13 @@ nlu:
     - If I get dismissed, how do I submit my medical report/excuses?
     - Can I track the status of my appeal after submitting it through the AUM Portal's Student Requests section?
     - Where specifically can I find the Student Requests section within the AUM Portal?
+    - How can students appeal an attendance dismissal using the AUM Portal?
+    - What is the process for appealing an attendance dismissal through the AUM Portal?
+    - How can students submit an appeal for attendance dismissal via the AUM Portal?
+    - Where on the AUM Portal can students find the option to appeal an attendance dismissal?
+    - What steps should students follow on the AUM Portal to initiate an appeal for attendance dismissal?
+    - In which section of the AUM Portal can students access the option to appeal attendance dismissal?
+    - What is the pathway within the AUM Portal for students to request a review of attendance dismissal?
 
 #18
 
@@ -346,6 +415,13 @@ nlu:
     - What is the grade if I reach 6 absents out of 6 of my course?
     - What is the grade if I reach 3 absents out of 3 of my course?
     - What is the grade if I reach 12 absents out of 12 of my course?
+    - How is a student's grade recorded if they are dismissed from a course?
+    - What designation is given to a student's grade if they are dismissed from a course?
+    - How does the grading system handle students who are dismissed from a course?
+    - In case of dismissal from a course, what grade notation is assigned to the student?
+    - What is the grading outcome for students who are dismissed from a course?
+    - What happens to a student's grade if they are unable to continue a course due to dismissal?
+    - How is the academic performance of dismissed students reflected in their grades?
 
 #19
 
@@ -356,7 +432,16 @@ nlu:
     - what the total grade for absent?
     - the limit grade for absent?
     - how many percentage for each course for the absent?
-
+    - What is the attendance percentage policy at AUM?
+    - Can you tell me about the attendance percentage component in courses at AUM?
+    - How much of my grade is determined by attendance in each course at AUM?
+    - Explain the attendance percentage policy at AUM.
+    - What percentage of my total grade comes from attendance in classes at AUM?
+    - Can you provide details about the attendance grading system at AUM?
+    - Clarify the role of attendance percentage in determining grades at AUM.
+    - How does attendance contribute to the final grade in courses at AUM?
+    - Tell me more about the attendance percentage component for courses at AUM.
+    - What is the maximum percentage of the total grade that can be achieved through attendance at AUM?
 #20
 
 - intent: before_dismissal
@@ -367,93 +452,56 @@ nlu:
     - I get 20% of the absent parsentage I will get dissmil or not?
     - I get 20% of the absence parsentage I will get dismissal or not?
     - what is the parsentage that i can get before dismissal?
+    - What is the allowed absence percentage before dismissal from a course?
+    - Can you tell me the threshold for absence percentage before dismissal?
+    - How many absences are allowed before dismissal from a course?
+    - What is the maximum absence percentage allowed before dismissal?
+    - Clarify the absence percentage threshold for course dismissal.
+    - How many absences can I have before being dismissed from a course?
+    - Tell me about the absence percentage limit before dismissal from a course.
+    - What happens if I exceed the absence percentage limit in a course?
 
 
 
-#22
-
-- intent: AUM_email_for_the_university_student
-  examples: |
-    - Is there any way to communicate between the student and the university?
-    - How can I change the password for my email?
-    - Is the private email account used solely for attendance-related communications, or are other notifications also sent there?
-    - how I communicate with my doctors
-    - how I get the nofitication of attendance and absence information
-
-#23
-
-
-- intent: class_standing
-  examples: |
-    - If I'm a freshman,what is the total number of hours i have earned and the minimum GPA required?
-    - If I'm a sophomore,what is the total number of hours i have earned and the minimum GPA required?
-    - If I'm a junior,what is the total number of hours i have earned and the minimum GPA required?
-    - If I'm a senior,what is the total number of hours i have earned and the minimum GPA required?
-
-#24
-
-- intent: graduation_with_honors
-  examples: |
-    - How can I graduate with honors?
-    - Are there criteria for graduating with honors?
-    - Can I graduate with honors if I get a grade less than C?
-    - What is the cumulative GPA required to graduate with honors?
-    - If I committed conduct violation, can I graduate with honors?
 
 #25
 
-- intent: about_AUM
-  examples: |
-    - I want to know more about the AUM?
-    - How many colleges does the AUM include?
-    - What distinguishes the AUM?
-    - what can I study in AUM?
-    - since when the aum is bigining
-    - In what year was AUM open?
 
 #26
 
-- intent: writing_lab
-  examples: |
-    - What is the writing lab at AUM?
-    - Is the writing lab for all students?
-    - Does the writing lab help me if I have a presentation or other projects?
-    - How can I contact the writing lab?
+
     
 #27
 
-
-- intent: AUM_library
-  examples: |
-    - Is there a library at the university?
-    - When does the library open?
-    - Will the library be open during Ramadan?
-    - How can we contact the library?
-    - How can I request a book that is not available in the library's catalog?
-    - Are there any upcoming events or workshops hosted by the library that can help me improve my research and study skills?
-    - What are the library's policies regarding borrowing materials, including loan periods, renewal options, and any associated fees or fines?
 
 #28
 
 - intent: AUM_restaurant
   examples: |
     - Are there restaurants on campus?
-    - What types of restaurants are available on campus?
+    - What the restaurants are available on campus?
     - Are there healthy options available in restaurants?
     - Are there designated places for students who want to eat in restaurants?
+    - food 
+    - coffee
+    - breakfast
+    - lunch
+    - dinner
+    - chocolate
+    - sweet
+    - food hall
+    - Can you provide a list of restaurants available at AUM?
+    - What dining options are there at AUM?
+    - Where can I find restaurants on campus?
+    - Tell me about the restaurants at AUM.
+    - What are the food options available on campus?
+    - Can you list the eateries at AUM?
+    - I'm looking for places to eat on campus. What are my options?
+    - Provide information about the restaurants at AUM.
+    - How many restaurants are there at AUM?
+    - What are the names of the restaurants on campus?
 
 #29
-
-
-- intent: AUM_registration
-  examples: |
-    - How can I register courses?
-    - Can I register less than 12 credits?
-    - What is the minimum credits that I must register for the course?
-    - When can I add or drop the course?
-    - Can I add a course after the end of the add and drop period?
-    - Can I change the section?
-    - If I have a subject on academic probation,how many credits can I register?
 
 #30
 
@@ -461,46 +509,53 @@ nlu:
 - intent: ATM_service
   examples: |
     - Is there an ATM service at the university?
-    - Can ATM cards from different banks be used?
     - Are cash deposit services available at ATMs?
+    - Is there an ATM service available on campus?
+    - Can you tell me about the ATM service at AUM?
+    - Where can I find ATMs on campus?
+    - Are there ATMs available in the Engineering Building?
+    - Can I withdraw cash from ATMs on campus?
+    - Provide information about the ATM services at AUM.
+    - What services does the ATM in the Engineering Building offer?
+    - Clarify the ATM services available on campus.
 
 #31
 
-- intent: tawteen_career_center
-  examples: |
-    - What services does the Tawteen Career Center offer to help students?
-    - What is the role of the Tawteen Career Center at the university?
-    - What services does the Tawteen Career Center provide to students and graduates?
-    - How can students access the Tawteen Career Center?
-    - Are job and internship opportunities provided through the Tawteen Career Center?
-    - Are recruitment events and events organized by the Tawteen Career Center?
+# - intent: tawteen_career_center
+#   examples: |
+#     - What services does the Tawteen Career Center offer to help students?
+#     - What is the role of the Tawteen Career Center at the university?
+#     - What services does the Tawteen Career Center provide to students and graduates?
+#     - How can students access the Tawteen Career Center?
+#     - Are job and internship opportunities provided through the Tawteen Career Center?
+#     - Are recruitment events and events organized by the Tawteen Career Center?
 
 
 
 
 
-#32
+# #32
 
-- intent: accident_campus
-  examples: |
-    - What should I do if I have an accident in a parking area?
-    - How can I access assistance in case of an accident within the campus?
-    - What steps should one take if an accident transpires within the campus premises?
-    - In case of an accident within the campus, what procedures should be followed to obtain assistance?
-    - What are the protocols for accessing aid in the event of an accident on campus?
-    - How does one access support if involved in an accident within campus boundaries?
-    - If there's an accident within the campus vicinity, how can one request assistance?
-    - What measures can individuals take to receive help promptly if a campus accidents haapen ?
-    - In what ways can individuals seek assistance if they encounter an accident  on campus grounds?
-    - How can one access emergency services in the event of an accident  situation on campus?
-    - if I get tired,I call who ?
-    - if I get tired where I go?
+# - intent: accident_campus
+#   examples: |
+#     - What should I do if I have an accident in a parking area?
+#     - How can I access assistance in case of an accident within the campus?
+#     - What steps should one take if an accident transpires within the campus premises?
+#     - In case of an accident within the campus, what procedures should be followed to obtain assistance?
+#     - What are the protocols for accessing aid in the event of an accident on campus?
+#     - How does one access support if involved in an accident within campus boundaries?
+#     - If there's an accident within the campus vicinity, how can one request assistance?
+#     - What measures can individuals take to receive help promptly if a campus accidents haapen ?
+#     - In what ways can individuals seek assistance if they encounter an accident  on campus grounds?
+#     - How can one access emergency services in the event of an accident  situation on campus?
+#     - if I get tired,I call who ?
+#     - if I get tired where I go?
 
 
  
 
 #33
-- intent: AUM_study
+- intent: AUM_major
   examples: |
     - What are the majors available at the university?
     - What are the main majors offered by the university?
@@ -511,21 +566,22 @@ nlu:
     - Which educational tracks are available for students to pursue at the university?
     - What majors does the university offer for prospective students?
     - Can you outline the diverse range of majors accessible for students at the university?
+    - The majors in AUM
 
 
-#34
-- intent: emergency_cases
-  examples: |
-    - Are there alarm and evacuation systems in place within the campus?
-    - Are there designated assembly points for students and staff during emergencies?
-    - How is communication with students and staff handled during emergencies?
-    - What measures are taken to designate assembly points within the campus, and how are they communicated to students and staff?
-    - In what ways does the campus ensure accountability and safety at designated assembly points during emergencies?
-    - Which communication channels are utilized by the campus for disseminating information and guidance during critical situations?
-    - What steps are taken to train students and staff on emergency procedures and the use of evacuation systems?
-    - How often are emergency preparedness drills conducted on campus, and what is the process for evaluating their effectiveness?
-    - Are there specific procedures in place for coordinating with local emergency services during campus-wide crises?
-    - How does the campus utilize technology and data analytics to enhance the efficiency and effectiveness of its emergency response systems?
+# #34
+# - intent: emergency_cases
+#   examples: |
+#     - Are there alarm and evacuation systems in place within the campus?
+#     - Are there designated assembly points for students and staff during emergencies?
+#     - How is communication with students and staff handled during emergencies?
+#     - What measures are taken to designate assembly points within the campus, and how are they communicated to students and staff?
+#     - In what ways does the campus ensure accountability and safety at designated assembly points during emergencies?
+#     - Which communication channels are utilized by the campus for disseminating information and guidance during critical situations?
+#     - What steps are taken to train students and staff on emergency procedures and the use of evacuation systems?
+#     - How often are emergency preparedness drills conducted on campus, and what is the process for evaluating their effectiveness?
+#     - Are there specific procedures in place for coordinating with local emergency services during campus-wide crises?
+#     - How does the campus utilize technology and data analytics to enhance the efficiency and effectiveness of its emergency response systems?
 
 
 #35
@@ -577,6 +633,15 @@ nlu:
     - if i arrive to the class after 13 minutes
     - if i arrive to the class after 14 minutes
     - if i arrive to the class before 15 minutes
+    - What is the policy if I arrive within the first 15 minutes of class?
+    - Can you explain what happens if I arrive within the first 15 minutes of class?
+    - What is considered late if I arrive within the first 15 minutes of class?
+    - Tell me about the arrival policy for the first 15 minutes of class.
+    - Is there a penalty if I arrive within the first 15 minutes of class?
+    - Provide information about being late within the first 15 minutes of class.
+    - Can you clarify the policy for arriving within the first 15 minutes of class?
+    - What happens if I'm late but still arrive within the first 15 minutes of class?
+    - Explain the consequences of arriving within the first 15 minutes of class.
     
 
 #37
@@ -591,6 +656,15 @@ nlu:
     - if i come to the class after 24 minutes
     - if i come to the class after 16 minutes
     - if i come to the class after 30 minutes
+    - What is the policy if I arrive after 15 minutes of the start of class?
+    - Can you explain what happens if I arrive after 15 minutes of the start of class?
+    - Will I be marked as absent if I arrive after 15 minutes of the start of class?
+    - Tell me about the policy for arriving after 15 minutes of the start of class.
+    - Is there a penalty if I arrive after 15 minutes of the start of class?
+    - Provide information about arriving after 15 minutes of the start of class.
+    - Can you clarify the policy for arriving after 15 minutes of the start of class?
+    - What happens if I'm late and arrive after 15 minutes of the start of class?
+    - Explain the consequences of arriving after 15 minutes of the start of class.
 
 #38
 
@@ -602,7 +676,15 @@ nlu:
     - i leave the class for 5 minutes 
     - when can the doctor put me late
     - can the doctor put me late if i leave the class
-
+    - What is the policy if I leave the classroom for less than 15 minutes?
+    - Can you explain what happens if I leave the classroom for less than 15 minutes?
+    - Will I be considered late if I leave the classroom for less than 15 minutes?
+    - Tell me about the policy for leaving the classroom for less than 15 minutes.
+    - Is there a penalty if I leave the classroom for less than 15 minutes?
+    - Provide information about leaving the classroom for less than 15 minutes.
+    - Can you clarify the policy for leaving the classroom for less than 15 minutes?
+    - What happens if I leave the classroom for less than 15 minutes?
+    - Explain the consequences of leaving the classroom for less than 15 minutes.
 
 #39
 
@@ -614,6 +696,15 @@ nlu:
     - i leave the class for 20 minutes
     - when can the doctor put me absent
     - can the doctor put me absent if i leave the class
+    - What is the policy if I leave the classroom for more than 15 minutes?
+    - Can you explain what happens if I leave the classroom for more than 15 minutes?
+    - Will I be considered absent if I leave the classroom for more than 15 minutes?
+    - Tell me about the policy for leaving the classroom for more than 15 minutes.
+    - Is there a penalty if I leave the classroom for more than 15 minutes?
+    - Provide information about leaving the classroom for more than 15 minutes.
+    - Can you clarify the policy for leaving the classroom for more than 15 minutes?
+    - What happens if I leave the classroom for more than 15 minutes?
+    - Explain the consequences of leaving the classroom for more than 15 minutes.
 
 
 
@@ -635,13 +726,13 @@ nlu:
 
 #41    
 
-- intent: privatepublic_institution
-  examples: | 
-    - what must the medical document containe if it take from a private institution
-    - what i should write in the medical doucment if it from private hospital ?
-    - what the important thinges in the medical position if it from private institution
-    - must have Doc Signature and Institution Stamp in the medical document from public hospital?
-    - what must be in the medical document that we take from public institution
+# - intent: privatepublic_institution
+#   examples: | 
+#     - what must the medical document containe if it take from a private institution
+#     - what i should write in the medical doucment if it from private hospital ?
+#     - what the important thinges in the medical position if it from private institution
+#     - must have Doc Signature and Institution Stamp in the medical document from public hospital?
+#     - what must be in the medical document that we take from public institution
 
 #42  
 
@@ -651,6 +742,15 @@ nlu:
     - if i get 3 late 
     - what happen if i get 3 late 
     - when i get absent
+    - What happens if I'm late to class three times?
+    - Can you explain the consequence of being late to class three times?
+    - How is being late to class three times counted?
+    - Tell me about the policy for being late to class three times.
+    - Is there a penalty for being late to class three times?
+    - Provide information about being late to class three times.
+    - Can you clarify the policy for being late to class three times?
+    - What happens if I'm late to class on three separate occasions?
+    - Explain the consequences of being late to class three times.
 
 #44
 
@@ -677,6 +777,15 @@ nlu:
     - if i missed the final how many day i have to submit the makeup request?
     - how many days must to submit makeup request
     - if i missed the midterm how many day i have to submit the makeup request?
+    - What is the deadline for submitting a Makeup Request?
+    - Can you tell me the timeframe for submitting a Makeup Request?
+    - How many days do I have to submit a Makeup Request after missing an assessment?
+    - Tell me about the deadline for Makeup Request submissions.
+    - Is there a time limit for submitting a Makeup Request after missing an assessment?
+    - Provide information about the timeframe for submitting a Makeup Request.
+    - Can you clarify the deadline for Makeup Request submissions?
+    - Explain the timeframe for submitting a Makeup Request after missing an assessment.
+    - How long do I have to submit a Makeup Request after missing an assessment?
 #46
 
 - intent: allowed_number
@@ -687,6 +796,16 @@ nlu:
     - i have a two makeup request in the semester can i get another one?
     - how many makeup can I take in per semester
     - max number for makeup for one student in one semester?
+    - How many makeups am I allowed per semester?
+    - Can you tell me the maximum number of makeups allowed per semester?
+    - What is the limit on the number of makeups I can have per semester?
+    - Tell me about the maximum allowed number of makeups per semester.
+    - Is there a restriction on the number of makeups I can have per semester?
+    - Provide information about the allowed number of makeups per semester.
+    - Can you clarify the maximum number of makeups allowed per semester?
+    - What is the policy on the number of makeups allowed per semester?
+    - How many makeups can I have per semester?
+    - Explain the maximum allowed number of makeups per semester.
 
 #47   
 
@@ -751,6 +870,14 @@ nlu:
     - How many absences are acceptable within the EPP guidelines?
     - What is the cap on absences for students enrolled in the EPP?
     - How many absences can students accrue while participating in the EPP?
+    - What is the maximum allowed number of absences for EPP?
+    - Can you tell me the maximum number of absences allowed for EPP?
+    - What is the limit on the number of absences for EPP?
+    - Tell me about the maximum allowed number of absences for EPP.
+    - Provide information about the maximum allowed number of absences for EPP.
+    - Can you clarify the maximum number of absences allowed for EPP?
+    - What is the policy on the number of absences allowed for EPP?
+    - How many absences are allowed for EPP?
 
 #51
 - intent: reach_excuses
@@ -764,396 +891,173 @@ nlu:
     - What is the highest percentage of dismissal permitted with excuses, capped at 30%?
     - What is the maximum dismissal rate achievable with excuses, not surpassing 30%?
     - What is the dismissal percentage limit when considering excuses, set at 30%?
+    - What is the maximum dismissal percentage I can reach with excuses?
+    - Can you tell me the maximum dismissal percentage allowed with excuses?
+    - What is the limit on the dismissal percentage I can reach with excuses?
+    - Tell me about the maximum dismissal percentage I can reach with excuses.
+    - Provide information about the maximum dismissal percentage I can reach with excuses.
+    - Can you clarify the maximum dismissal percentage allowed with excuses?
+    - What is the policy on the dismissal percentage I can reach with excuses?
+    - How high can my dismissal percentage reach with excuses?
 
 
 
-################ Amina ############
-###################################
-
-
-#45
-
-- intent: medical_emergency 
+- intent: prayer_room
   examples: |
-    - What should students do in case of a medical emergency on campus?
-    - What actions should students take if there's a medical emergency while on campus?
-    - In the event of a medical emergency on campus, what steps should students follow?
-    - What are the recommended procedures for students during a medical emergency situation at the campus?
-    - If there's a medical emergency at the campus, what course of action is advised for students?
-    - In case of a medical crisis on campus, what actions are suggested for students to take?
+    - In which building or area is the campus prayer room located?
+    - Where can one find the designated prayer room on campus, and which specific building houses it?
+    - What is the location of the campus prayer room, and in what building is it situated?
+    - Which building or area houses the designated prayer room on campus?
+    - Where exactly is the prayer room located on campus, and which building is it in?
+    - What building or area should one go to in order to access the campus prayer room?
+    - In what specific location or building can the campus prayer room be found?
+    - Where is the designated prayer space situated on campus, and which building does it occupy?
+    - What is the precise location of the campus prayer room, and which building is it situated within?
+    - where I can find the prayer room?
+    - in which building I can find the prayer room?
+    - prayer room
 
-#17
-- intent: car_accidents
+- intent: about_prayer_Engineeringfemale
   examples: |
-    - How should students handle car accidents on campus?
-    - What is the proper protocol for students to follow in the event of a car accident on campus?
-    - How should students manage car accidents that occur on the campus premises?
-    - What steps should students take if they are involved in a car accident while on campus?
-    - In the event of a car collision on campus, what guidance is recommended for students?
-    - What procedures should students adhere to if they encounter a car accident situation on campus?
+    - Where is the female prayer room located in the engineering building?
+    - I want to pray in the engineering building, specifically in the female prayer room.
+    - Where can I find the female prayer room in the engineering building?
+    - Can you tell me the location of the female prayer room within the engineering building?
+    - I'm looking for the female prayer room in the engineering building. Where is it?
+    - Is there a designated female prayer room in the engineering building, and if so, where is it situated?
+    - Can you point me to the female prayer space within the engineering building?
+    - I need to locate the female prayer room specifically in the engineering building. Can you help?
+    - Where exactly is the female prayer room situated within the engineering building?
+    - Could you guide me to the female prayer facility within the engineering building?
+    - female prayer room in engineering
 
 
-#18
-- intent: lost_found
+- intent: about_prayer_Engineeringmale
   examples: |
-    - Where should students inquire about lost and found items on campus?
-    - To whom should students direct their inquiries regarding lost and found items on campus?
-    - Where can students seek assistance regarding lost and found items within the campus grounds?
-    - What is the designated location for students to inquire about lost and found items on campus?
-    - Where should students go to report or inquire about lost belongings found on campus?
-    - Whom should students contact to inquire about misplaced items found within the campus premises?
+    - Where is the male prayer room located in the engineering building?
+    - I want to pray in the engineering building, specifically in the male prayer room.
+    - Where can I find the male prayer room in the engineering building?
+    - Can you tell me the location of the male prayer room within the engineering building?
+    - I'm looking for the male prayer room in the engineering building. Where is it?
+    - Is there a designated male prayer room in the engineering building, and if so, where is it situated?
+    - Can you point me to the male prayer space within the engineering building?
+    - I need to locate the male prayer room specifically in the engineering building. Can you help?
+    - Where exactly is the male prayer room situated within the engineering building?
+    - Could you guide me to the male prayer facility within the engineering building?
+    - male prayer room in engineering
 
-   
-#19
-- intent: scientific_laboratories
-  examples: |
-    - What role do the Scientific Laboratories play at AUM?
-    - How does AUM utilize its Scientific Laboratories?
-    - What functions are fulfilled by the Scientific Laboratories at AUM?
-    - What is the significance of Scientific Laboratories in the operations of AUM?
-    - How do the Scientific Laboratories contribute to AUM's activities?
-    - What purposes do the Scientific Laboratories serve within the framework of AUM?
-
-#20
-- intent: tawteen_center
-  examples: |
-    - What services does the Tawteen Career Center offer?
-    - What are the services provided by the Tawteen Career Center?
-    - What assistance does the Tawteen Career Center offer?
-    - What types of services are available at the Tawteen Career Center?
-    - What support can students expect from the Tawteen Career Center?
-    - What resources does the Tawteen Career Center provide to students?
-
-
-#21
-- intent: grading_system
-  examples: |
-    - What is the grading system for undergraduate courses at AUM?
-    - How are undergraduate courses graded at AUM?
-    - What grading criteria are employed for undergraduate courses at AUM?
-    - What grading system is utilized for undergraduates at AUM?
-    - How does the grading system work for undergraduate courses at AUM?
-    - What is the method for grading undergraduate courses at AUM?
-    - How is GPA calculated at the university?
-    - How is GPA determined for students at the university?
-    - What method does the university use to compute GPA?
-
-#22
-- intent: grade_points
-  examples: |
-    - What are the corresponding grade points for letter grades in the AUM grading system?
-    - What grade point equivalents correspond to letter grades in the AUM grading system?
-    - How do letter grades translate into grade points in the AUM grading system?
-    - What is the conversion scale for letter grades to grade points in the AUM grading system?
-    - What are the grade point values associated with letter grades within the AUM grading framework?
-    - How are letter grades converted into grade points within the AUM grading system?
-
-
-#23
-- intent: trasnscript_grade
-  examples: |
-    - Does the AUM transcript reflect the Grade/100?
-    - Is the Grade/100 reflected on the AUM transcript?
-    - Does the AUM transcript display the Grade/100?
-    - Is the Grade/100 score shown on the AUM transcript?
-    - Does the AUM transcript include the Grade/100 calculation?
-    - Is the Grade/100 information documented on the AUM transcript?
-
-
-#24
-- intent: minimum_required_grade
-  examples: |
-    - What is the minimum required passing grade in the AUM grading system?
-    - What is the lowest passing grade permitted in the AUM grading system?
-    - What is the minimum passing grade threshold within the AUM grading system?
-    - What is the minimum acceptable passing grade under the AUM grading guidelines?
-    - What is the lowest acceptable passing grade according to the AUM grading system?
-    - What is the minimum passing grade requirement in the AUM grading structure?
-
-#25
-- intent: minimum_passing_grade
-  examples: |
-   - What is the minimum passing grade for most courses at AUM?
-   - What is the lowest acceptable passing grade for the majority of courses at AUM?
-   - What is the standard minimum passing grade for most courses at AUM?
-   - What grade do most courses at AUM require as the minimum for passing?
-   - What is the minimum passing grade expected in the majority of courses at AUM?
-   - What grade is typically considered the minimum pass mark for courses at AUM?
-
-
-#26
-- intent: minimum_grade_exceptions
-  examples: |
-    - Are there exceptions to the minimum passing grade requirement?
-    - Are there any instances where the minimum passing grade requirement is waived?
-    - Do exceptions exist for the minimum passing grade requirement?
-    - Are there any circumstances where the minimum passing grade requirement is not applicable?
-    - Is there flexibility in the minimum passing grade requirement under certain circumstances?
-    - Are there any situations where the minimum passing grade requirement may be different?
-
-
-#27
-- intent: grading_affect_CGPA
-  examples: |
-    - How are certain courses graded, and how does it affect CGPA?
-    - What is the grading process for specific courses, and how does it impact CGPA?
-    - How do certain course grading methods influence CGPA calculation?
-    - What is the correlation between grading methodologies for particular courses and their impact on CGPA?
-    - How do grading practices for specific courses factor into CGPA determination?
-    - What is the relationship between the grading criteria for certain courses and their effect on CGPA?
-
-
-#28
-- intent: incomplete_grade
-  examples: |
-    - What does an "Incomplete" grade signify, and how is it handled?
-    - What is the significance of an Incomplete grade, and what procedures are in place for managing it?
-    - What does an Incomplete grade indicate, and what are the protocols for its resolution?
-    - What is the meaning behind an Incomplete grade, and what are the steps taken to address it?
-    - How is an Incomplete grade defined, and what measures are taken to resolve it?
-    - What does receiving an Incomplete grade imply, and how is it managed administratively?
 
  
-#29
-- intent: withdrawal_grade
+- intent: about_prayer_businessmale
   examples: |
-    - What does a "Withdrawal" grade indicate, and how does it impact GPA?
-    - What does a "Withdrawal" grade signify, and what effect does it have on GPA calculation?
-    - What is the meaning of a "Withdrawal" grade, and how does it influence GPA?
-    - What does receiving a "Withdrawal" grade signify, and how does it affect GPA?
-    - What is the implication of a "Withdrawal" grade, and how does it impact GPA calculation?
-    - What does a "Withdrawal" grade indicate, and how does it factor into GPA determination?
+    - Where is the male prayer room located in the business building?
+    - I want to pray in the business building, specifically in the male prayer room.
+    - Where can I find the male prayer room in the business building?
+    - Can you tell me the location of the male prayer room within the business building?
+    - I'm looking for the male prayer room in the business building. Where is it?
+    - Is there a designated male prayer room in the business building, and if so, where is it situated?
+    - Can you point me to the male prayer space within the business building?
+    - I need to locate the male prayer room specifically in the business building. Can you help?
+    - Where exactly is the male prayer room situated within the business building?
+    - Could you guide me to the male prayer facility within the business building?
+    - male prayer room in business
 
-#30
-- intent: EPP_passing_grade
+
+- intent: about_prayer_businessfemale
   examples: |
-    - What is the passing grade requirement for each level of the English Foundation Program (EPP)?
-    - What is the minimum passing grade prerequisite for every tier of the English Foundation Program (EPP)?
-    - What is the passing grade threshold for each stage within the English Foundation Program (EPP)?
-    - What grade is required to pass each level of the English Foundation Program (EPP)?
-    - What is the minimum grade required to pass every tier of the English Foundation Program (EPP)?
-    - What is the requisite passing grade for each level in the English Foundation Program (EPP)?
+    - Where is the female prayer room located in the business building?
+    - I want to pray in the business building, specifically in the female prayer room.
+    - Where can I find the female prayer room in the business building?
+    - Can you tell me the location of the female prayer room within the business building?
+    - I'm looking for the female prayer room in the business building. Where is it?
+    - Is there a designated female prayer room in the business building, and if so, where is it situated?
+    - Can you point me to the female prayer space within the business building?
+    - I need to locate the female prayer room specifically in the business building. Can you help?
+    - Where exactly is the female prayer room situated within the business building?
+    - Could you guide me to the female prayer facility within the business building?
+    - female prayer room in business
 
 
-#31
-- intent: Math_prep_passing_grade
+
+- intent: about_prayer_Libraryfemale
   examples: |
-    - What is the passing grade requirement for each level of the Mathematics Preparatory Program?
-    - What is the minimum passing grade requirement for each tier of the Mathematics Preparatory Program?
-    - What grade is necessary to pass each level of the Mathematics Preparatory Program?
-    - What is the passing grade prerequisite for every stage within the Mathematics Preparatory Program?
-    - What grade is required to successfully complete each tier of the Mathematics Preparatory Program?
-    - What is the requisite passing grade for each level in the Mathematics Preparatory Program?
+    - Where is the female prayer room located in the library building?
+    - I want to pray in the library building, specifically in the female prayer room.
+    - Where can I find the female prayer room in the library building?
+    - Can you tell me the location of the female prayer room within the library building?
+    - I'm looking for the female prayer room in the library building. Where is it?
+    - Is there a designated female prayer room in the library building, and if so, where is it situated?
+    - Can you point me to the female prayer space within the library building?
+    - I need to locate the female prayer room specifically in the library building. Can you help?
+    - Where exactly is the female prayer room situated within the library building?
+    - Could you guide me to the female prayer facility within the library building?
+    - female prayer room in library
 
-#32
-- intent: undergraduate_class_standings
+
+- intent: about_prayer_Researchfemale
   examples: |
-    - What are the different class standings for undergraduate students at AUM?
-    - What are the various class standings available for undergraduate students enrolled at AUM?
-    - What are the distinct classifications of class standings for undergraduate students at AUM?
-    - What are the different levels of class standings that undergraduate students can achieve at AUM?
-    - What are the diverse categories of class standings that undergraduate students may hold at AUM?
-    - What are the separate designations for class standings applicable to undergraduate students attending AUM?
+    - Where is the female prayer room located in the Research and Innovation building?
+    - I want to pray in the Research and Innovation building, specifically in the female prayer room.
+    - Where can I find the female prayer room in the Research and Innovation building?
+    - Can you tell me the location of the female prayer room within the Research and Innovation building?
+    - I'm looking for the female prayer room in the Research and Innovation building. Where is it?
+    - Is there a designated female prayer room in the Research and Innovation building, and if so, where is it situated?
+    - Can you point me to the female prayer space within the Research and Innovation building?
+    - I need to locate the female prayer room specifically in the Research and Innovation building. Can you help?
+    - Where exactly is the female prayer room situated within the Research and Innovation building?
+    - Could you guide me to the female prayer facility within the Research and Innovation building?
+    - female prayer room in Research and Innovation
+    - female prayer room in Research building
 
-
-#33
-- intent: academic_class_standing
+- intent: about_prayer_Researchmale
   examples: |
-    - What is the corresponding academic year for each class standing?
-    - What academic year aligns with each class standing?
-    - Which academic year corresponds to each class standing?
-    - What academic period is associated with each class standing?
-    - For each class standing, what is the corresponding academic year?
-    - What academic level correlates with each class standing?
-
-
-#34
-- intent: total_credits_class_standing
-  examples: |
-    - How are total credits earned related to class standing?
-    - What is the relationship between total earned credits and class standing?
-    - How do total earned credits impact class standing?
-    - In what way are total credits earned connected to class standing?
-    - What is the correlation between total earned credits and class standing?
-    - How does the accumulation of total credits earned influence class standing?
-
-
-
-#35
-- intent: CGPA_good_standing
-  examples: |
-    - What is the minimum required CGPA to maintain a good standing for each class?
-    - What is the minimum CGPA required to maintain good standing for each class level?
-    - What is the CGPA threshold necessary to sustain good standing for each class designation?
-    - What is the minimum CGPA requirement to uphold good standing status for each class level?
-    - What CGPA must be maintained to retain good standing for each class category?
-    - What is the minimum CGPA needed to ensure good standing for students at each class level?
-
-
-
-#36
-- intent: calculate_CGPA_GPA
-  examples: |
-    - What is GPA and CGPA, and how are they calculated?
-    - What is the definition of GPA and CGPA, and what methodologies are used to calculate them?
-    - What are GPA and CGPA, and what formulas are employed to compute them?
-    - How are GPA and CGPA defined, and what procedures are used to determine their values?
-    - What do GPA and CGPA signify, and what calculations are involved in deriving them?
-    - What are GPA and CGPA, and how are their numerical values determined through calculation processes?
-
-
-#37
-- intent: CGPA_GPA_transcript
-  examples: |
-    - How are GPA and CGPA displayed on the AUM transcript?
-    - How are GPA and CGPA showcased on the AUM transcript?
-    - In what format are GPA and CGPA presented on the AUM transcript?
-    - How are GPA and CGPA represented on the AUM transcript?
-    - What is the layout for displaying GPA and CGPA on the AUM transcript?
-    - On the AUM transcript, how are GPA and CGPA visually represented?
-
-
-#38
-- intent: EPP_purpose
-  examples: |
-    - What is the purpose of the AUM English Preparatory Program (EPP)?
-    - What is the objective of implementing the AUM English Preparatory Program (EPP)?
-    - What is the aim of establishing the AUM English Preparatory Program (EPP)?
-    - What purpose does the AUM English Preparatory Program (EPP) serve?
-    - What are the goals of the AUM English Preparatory Program (EPP)?
-    - What is the intended outcome of the AUM English Preparatory Program (EPP)?
-
-
-#39
-- intent: college_eng_tech_require_math_placement_test
-  examples: |
-    - What happens if a student of the College of Engineering and Technology does not satisfy the threshold needed for the Math Placement Test?
-    - What occurs if a student from the College of Engineering and Technology fails to meet the required threshold for the Math Placement Test?
-    - What are the consequences if a student in the College of Engineering and Technology does not meet the Math Placement Test requirement?
-    - What happens if a College of Engineering and Technology student does not achieve the necessary score on the Math Placement Test?
-    - If a student in the College of Engineering and Technology does not meet the Math Placement Test criteria, what are the implications?
-    - What are the repercussions for a student in the College of Engineering and Technology who does not meet the Math Placement Test standard?
-
-
-#40
-- intent: academic_max_duration
-  examples: |
-    - What is the maximum duration for students to meet all academic program requirements at AUM?
-    - What is the deadline for students to fulfill all academic program requirements at AUM?
-    - What is the maximum timeframe given to students to complete all academic program requirements at AUM?
-    - What is the longest duration allowed for students to satisfy all academic program requirements at AUM?
-    - What is the time limit for students to meet all academic program requirements at AUM?
-    - What is the maximum period allocated for students to fulfill all academic program requirements at AUM?
-
-
-
-#41
-- intent: academic_probation_dismissal
-  examples: |
-    - What are the conditions for academic probation and dismissal?
-    - What criteria lead to academic probation and dismissal?
-    - What circumstances result in academic probation and dismissal?
-    - What are the requirements for academic probation and dismissal?
-    - Under what conditions do students face academic probation and dismissal?
-    - What factors contribute to academic probation and dismissal?
-
-
-#42
-- intent: honors_graduation_criteria
-  examples: |
-    - What are the criteria for graduation with honors?
-    - What standards must be met for graduating with honors?
-    - What are the requirements for achieving honors at graduation?
-    - What criteria determine eligibility for graduating with honors?
-    - What benchmarks need to be achieved to graduate with honors?
-    - What are the qualifications for earning honors upon graduation?
+    - Where is the male prayer room located in the Research and Innovation building?
+    - I want to pray in the Research and Innovation building, specifically in the male prayer room.
+    - Where can I find the male prayer room in the Research and Innovation building?
+    - Can you tell me the location of the male prayer room within the Research and Innovation building?
+    - I'm looking for the male prayer room in the Research and Innovation building. Where is it?
+    - Is there a designated male prayer room in the Research and Innovation building, and if so, where is it situated?
+    - Can you point me to the male prayer space within the Research and Innovation building?
+    - I need to locate the male prayer room specifically in the Research and Innovation building. Can you help?
+    - Where exactly is the male prayer room situated within the Research and Innovation building?
+    - Could you guide me to the male prayer facility within the Research and Innovation building?
+    - male prayer room in Research and Innovation
+    - male prayer room in Research building
     
 
-#43
-- intent: expecting_graduate_steps
+
+- intent: about_prayer_Culturalmale
   examples: |
-    - What are the steps for students expecting to graduate?
-    - What are the procedures for students anticipating graduation?
-    - What steps must students take if they are planning to graduate?
-    - What are the sequential actions for students preparing for graduation?
-    - What is the process that students who are about to graduate need to follow?
-    - What are the necessary steps for students who are expecting to graduate?
+    - Where is the male prayer room located in the Cultural building?
+    - I want to pray in the Cultural building, specifically in the male prayer room.
+    - Where can I find the male prayer room in the Cultural building?
+    - Can you tell me the location of the male prayer room within the Cultural building?
+    - I'm looking for the male prayer room in the Cultural building. Where is it?
+    - Is there a designated male prayer room in the Cultural building, and if so, where is it situated?
+    - Can you point me to the male prayer space within the Cultural building?
+    - I need to locate the male prayer room specifically in the Cultural building. Can you help?
+    - Where exactly is the male prayer room situated within the Cultural building?
+    - Could you guide me to the male prayer facility within the Cultural building?
+    - male prayer room in Cultural
+    - male prayer room in CLCT
+  
 
-#44
-- intent: graduation_clearance_requirements
+- intent: about_prayer_Culturalfemale
   examples: |
-    - What are the clearance requirements for graduation?
-    - What are the criteria that students must fulfill for graduation clearance?
-    - What are the requirements that students need to meet to obtain clearance for graduation?
-    - What conditions or obligations must students satisfy in order to achieve graduation clearance?
-    - What are the clearance prerequisites that students must fulfill in order to graduate?
-    - What are the necessary steps or obligations that students need to complete for graduation clearance?
+    - Where is the female prayer room located in the Cultural building?
+    - I want to pray in the Cultural building, specifically in the female prayer room.
+    - Where can I find the female prayer room in the Cultural building?
+    - Can you tell me the location of the female prayer room within the Cultural building?
+    - I'm looking for the female prayer room in the Cultural building. Where is it?
+    - Is there a designated female prayer room in the Cultural building, and if so, where is it situated?
+    - Can you point me to the female prayer space within the Cultural building?
+    - I need to locate the female prayer room specifically in the Cultural building. Can you help?
+    - Where exactly is the female prayer room situated within the Cultural building?
+    - Could you guide me to the female prayer facility within the Cultural building?
+    - female prayer room in Cultural
+    - female prayer room in CLCT
 
 
-#45
-- intent: CGPA_max_credit_fall_spring
-  examples: |
-    - What is the maximum credit load allowed for students during Fall and Spring semesters based on their Cumulative GPA?
-    - What is the maximum credit load permitted for students during Fall and Spring semesters based on their Cumulative GPA?
-    - What is the highest number of credits students can take during Fall and Spring semesters depending on their Cumulative GPA?
-    - What is the upper limit for credit hours that students can enroll in during Fall and Spring semesters, determined by their Cumulative GPA?
-    - What is the maximum number of credits students can register for during Fall and Spring semesters, taking into account their Cumulative GPA?
-    - What is the maximum credit load that students can carry during Fall and Spring semesters, contingent upon their Cumulative GPA?
-
-
-#46
-- intent: CGPA_max_credit_summer
-  examples: |
-    - What is the maximum credit load allowed for students during the Summer semester based on their Cumulative GPA?
-    - What is the highest credit load permitted for students during the Summer semester depending on their Cumulative GPA?
-    - What is the maximum number of credits students can take during the Summer semester, determined by their Cumulative GPA?
-    - What is the upper limit for credit hours that students can enroll in during the Summer semester, based on their Cumulative GPA?
-    - What is the maximum credit load that students can carry during the Summer semester, contingent upon their Cumulative GPA?
-    - What is the maximum credit load allowed for students during the Summer semester, considering their Cumulative GPA?
-
-
-#47
-- intent: more_max_credit_allowed
-  examples: |
-    - What is the procedure for students who wish to register for more than the maximum allowed credit load?
-    - What steps should students follow if they want to register for more credits than the maximum allowed load?
-    - What is the process for students who wish to exceed the maximum credit load during registration?
-    - How should students proceed if they desire to enroll in additional credits beyond the maximum allowed limit?
-    - What are the steps students need to take if they intend to register for more credits than the maximum permitted load?
-    - What procedure do students need to follow if they want to exceed the maximum allowed credit load during registration?
-
-
-#48
-- intent: appeal_grade_change 
-  examples: |
-    - What is the procedure for students who want to appeal for a grade change?
-    - What steps should students follow if they seek to appeal a change in their grade?
-    - How can students proceed if they wish to challenge a grade alteration?
-    - What are the steps students need to take if they desire to contest a modification in their grade?
-    - How should students proceed if they aim to request a review of their grade?
-    - What is the process for students who wish to appeal for a modification in their grade?
-
-
-#49
-- intent: course_repetition_policy 
-  examples: |
-    - Under what circumstances can a student repeat a course according to the Course Repetition Policy?
-    - What are the conditions under which a student can retake a course in accordance with the Course Repetition Policy?
-    - Under what circumstances is a student permitted to repeat a course as outlined in the Course Repetition Policy?
-    - What situations allow a student to retake a course based on the Course Repetition Policy?
-    - According to the Course Repetition Policy, in what instances can a student repeat a course?
-    - What are the criteria specified by the Course Repetition Policy for a student to repeat a course?
-
-
-#50
-- intent: repeat_course_CGPA_improve
-  examples: |
-    - How many courses can a student repeat to improve their CGPA, and how many times can they repeat each course?
-    - How many courses can a student retake to enhance their CGPA, and what is the limit on the number of times they can repeat each course?
-    - What is the maximum number of courses a student can repeat to raise their CGPA, and how many times can they retake each course?
-    - How many courses can a student repeat in order to boost their CGPA, and what is the maximum number of repetitions allowed for each course?
-    - According to the policy, what is the total number of courses a student can retake to improve their CGPA, and what is the maximum number of repetitions permitted for each course?
-    - What is the limit on the number of courses a student can retake to improve their CGPA, and what is the maximum number of times they can retake each course?
 
 
 ########## story #########
@@ -1163,18 +1067,53 @@ nlu:
     - i need help?
     - i have a question?
     - How many credit do I need to transfer to the chemical engineering major?
-    - how many credit I shouid take to graduate?
     - How many credit do I need to transfer to the civil engineering major?
     - How many credit do I need to transfer to the computer engineering major?
     - How many credit do I need to transfer to the electrical engineering major?
     - How many credit do I need to transfer to the Industrial engineering major?
     - How many credit do I need to transfer to the Architectural engineering major?
+    - How many credit do I need to transfer to the Mechanical engineering major?
     - if i want to change my major to Architectural engineering , how many credit i need?
     - if i want to change my major to chemical engineering , how many credit i need?
     - if i want to change my major to civil engineering , how many credit i need?
     - if i want to change my major to computer engineering , how many credit i need?
     - if i want to change my major to electrical engineering , how many credit i need?
     - if i want to change my major to Industrial engineering , how many credit i need?
+    - if i want to change my major to Mechanical engineering , how many credit i need?
+
+- intent: convert 
+  examples: |
+    - How many credit do I need to transfer to the Finance major?
+    - How many credit do I need to transfer to the Human Resource Management major?
+    - How many credit do I need to transfer to the Management Information Systems major?
+    - How many credit do I need to transfer to the Marketing major?
+    - if i want to change my major to Finance , how many credit i need?
+    - if i want to change my major to  Human Resource Management , how many credit i need?
+    - if i want to change my major to Management Information Systems , how many credit i need?
+    - if i want to change my major to Marketing, how many credit i need?
+    - What is the required credit range for transferring to a new major, such as Accounting?
+    - What is the minimum Cumulative GPA needed for changing majors to Accounting, and is it different for other majors?
+    - Is the approval of a specific committee necessary when changing majors?
+    - How does the College of Business prioritize applicants when accepting students into different majors?
+    - Are there any academic or non-academic conduct violations that would disqualify a student from changing majors, and how does AUM evaluate the severity of such violations?
+
+- intent: transfer_to_teq 
+  examples: |
+    - How many credit do I need to transfer to the Telecommunications and Networking Technology major?
+    - How many credit do I need to transfer to the Information Systems and Technology  major?
+    - if i want to change my major to Information Systems and Technology  , how many credit i need?
+    - if i want to change my major to Telecommunications and Networking Technology, how many credit i need?
+    - What is the credit transfer threshold for admission to the Telecommunications and Networking Technology major?
+    - How many credits are necessary for transferring into the Telecommunications and Networking Technology program?
+    - What is the minimum credit requirement for switching to the Telecommunications and Networking Technology major?
+    - How many credits do I need to transfer to qualify for enrollment in the Telecommunications and Networking Technology major?
+    - Could you please inform me of the credit transfer criteria for the Telecommunications and Networking Technology program?
+    - What is the requisite credit count for transitioning to the Telecommunications and Networking Technology major?
+    - What is the credit transfer policy for students aiming to join the Telecommunications and Networking Technology program?
+    - What is the credit transfer quota for prospective students interested in the Telecommunications and Networking Technology major?
+    - Could you elucidate the credit transfer standards applicable to those aspiring to pursue the Telecommunications and Networking Technology program?
+    - What is the threshold for credit transfers for admission consideration into the Telecommunications and Networking Technology major?
+
 
 
 - intent: from_eng_to_eng
@@ -1185,100 +1124,50 @@ nlu:
     - AE
     - ChE
     - CvlE
+    - ME
+    - Mechanical Engineering
+    - electrical engineering major
+    - computer engineering major
+    - Industrial engineering major
+    - Architectural engineering major
+    - civil engineering major?
+    - chemical engineering major
+
+  
+
+- intent: from_bus_to_bus
+  examples: |
+    - Finance
+    - HRM
+    - Human Resource Management
+    - Management Information Systems
+    - MIS
+    - Marketing
+
+
+    
+- intent: from_eng_to_teq
+  examples: |
+    - Telecommunications and Networking Technology
+    - TNT
+    - Information Systems and Technology 
+    - IT
+
+
+- intent: from_teq_to_eng
+  examples: |
+    - Telecommunications and Networking Technology
+    - TNT
+    - Information Systems and Technology 
+    - IT
+
 
 ####################### YAQEEN ##############
 
 
 
-  
-#57
-- intent: AUM_soft_skills
-  examples: |
-    - what is soft skills e-courses platform at aum?
-    - Are there any workshops or programs available at AUM to help improve my soft skills?
-    - How can I access the soft skills platform?
+############# Slot ####################
 
-#58
-- intent: AUM_book_store
-  examples: |
-    - Where is the bookstore located on campus?
-    - What are the bookstore hours?
-    - Does the bookstore sell supplies like notebooks, pens, and folders?
 
-#59
-- intent: robotics_research_center
-  examples: |
-    - What are the goals of the robotics research center?
-    - How does the center aim to support student and research in robotics?
-    - Does therobotics research center offer interdisciplinary research programs?
-
-#60
-- intent: nanotechnology_center
-  examples: |
-    - What is the aims of the nanotechnology center?
-    - How does the center contribute to nanotechnology research?
-    - Why was the nanotechnology center established?
-    
-#61
-- intent: toefl_and_ielts
-  examples: |
-    - What is the difference between TOEFL and IELTS?
-    - What is the format of the TOEFL/IELTS exam?
-    - What score do I need to pass the TOEFL/IELTS exam?
-    - Can the EPP student register for the TOEFL/IELTS test?
-
-#62
-# - intent: freezing_semester
-#   examples: |
-#     - What does it mean to freeze a semester?
-#     - Can I freeze my semester multiple times?
-#     - How does the semester freeze affect the graduation timeline?
-
-#63
-- intent: official_withdrawal_from_AUM
-  examples: |
-    - How do I officially withdraw from AUM?
-    - Is there a formal withdrawal form?
-    - Where can I submit the official withdrawal form?
-    - What grade will I get if I withdraw from the university?
-    - If I officially withdraw from the university, can I apply again?
-
-#64
-- intent: cancelling_the_withdrawal_request_during_the_semester 
-  examples: |
-    - Is there a deadline for canceling my withdrawal request?
-    - Can I cancel my withdrawal request multiple times in the same semester?
-    - What is the overall cumulative GPA required to withdraw from withdrawal?
-
-#65
-- intent: cheating
-  examples: |
-    - What is cheating?
-    - What are the consequences of being caught cheating?
-    - What exactly is considered cheating?
-#66
-- intent: plagiarism 
-  examples: |
-    - What is plagiarism?
-    - What steps can i take to avoid plagiarism?
-
-#67
-- intent: violation_of_dress_code
-  examples: |
-    - What is considered a violation of the dress code?
-    - How can I know if my outfit follows the dress code guidelines?
-
-#68
-- intent: no_smoking_policy
-  examples: |
-    - Where are the designated smoking areas on campus?
-    - Where can students smoke according to the policy?
-
-#69
-- intent: instructor_Hassan_Kanj
-  examples: |
-    - Where is the instructor Hassan Kanj office located?
-    - Is there a specific email address I should use to contact the instructor Hassan Kanj?
-    - What department does the instructor Hassan Kanj belong to?
 
 
