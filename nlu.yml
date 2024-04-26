@@ -444,22 +444,7 @@ nlu:
     - What is the maximum percentage of the total grade that can be achieved through attendance at AUM?
 #20
 
-- intent: before_dismissal
-  examples: |
-    - I want to know the allowed absence percentage to reach before dismissal?
-    - What is the defined threshold for allowable absences before an student faces dismissal in our univarsity?
-    - what is the percentage that I can take before I get dismissal?
-    - I get 20% of the absent parsentage I will get dissmil or not?
-    - I get 20% of the absence parsentage I will get dismissal or not?
-    - what is the parsentage that i can get before dismissal?
-    - What is the allowed absence percentage before dismissal from a course?
-    - Can you tell me the threshold for absence percentage before dismissal?
-    - How many absences are allowed before dismissal from a course?
-    - What is the maximum absence percentage allowed before dismissal?
-    - Clarify the absence percentage threshold for course dismissal.
-    - How many absences can I have before being dismissed from a course?
-    - Tell me about the absence percentage limit before dismissal from a course.
-    - What happens if I exceed the absence percentage limit in a course?
+
 
 
 
@@ -475,31 +460,6 @@ nlu:
 
 
 #28
-
-- intent: AUM_restaurant
-  examples: |
-    - Are there restaurants on campus?
-    - What the restaurants are available on campus?
-    - Are there healthy options available in restaurants?
-    - Are there designated places for students who want to eat in restaurants?
-    - food 
-    - coffee
-    - breakfast
-    - lunch
-    - dinner
-    - chocolate
-    - sweet
-    - food hall
-    - Can you provide a list of restaurants available at AUM?
-    - What dining options are there at AUM?
-    - Where can I find restaurants on campus?
-    - Tell me about the restaurants at AUM.
-    - What are the food options available on campus?
-    - Can you list the eateries at AUM?
-    - I'm looking for places to eat on campus. What are my options?
-    - Provide information about the restaurants at AUM.
-    - How many restaurants are there at AUM?
-    - What are the names of the restaurants on campus?
 
 #29
 
@@ -880,25 +840,6 @@ nlu:
     - How many absences are allowed for EPP?
 
 #51
-- intent: reach_excuses
-  examples: |
-    - what is the max dismissal percentage you can reach with excuses?    
-    - What is the maximum dismissal percentage allowed when providing excuses, capped at 30%?
-    - What is the highest dismissal rate permissible with excuses, limited to 30%?
-    - What is the maximum percentage of dismissal that can be reached using excuses, set at 30%?
-    - What is the threshold for dismissal percentage achievable with excuses, not exceeding 30%?
-    - What is the upper limit for dismissal percentage attainable with excuses, restricted to 30%?
-    - What is the highest percentage of dismissal permitted with excuses, capped at 30%?
-    - What is the maximum dismissal rate achievable with excuses, not surpassing 30%?
-    - What is the dismissal percentage limit when considering excuses, set at 30%?
-    - What is the maximum dismissal percentage I can reach with excuses?
-    - Can you tell me the maximum dismissal percentage allowed with excuses?
-    - What is the limit on the dismissal percentage I can reach with excuses?
-    - Tell me about the maximum dismissal percentage I can reach with excuses.
-    - Provide information about the maximum dismissal percentage I can reach with excuses.
-    - Can you clarify the maximum dismissal percentage allowed with excuses?
-    - What is the policy on the dismissal percentage I can reach with excuses?
-    - How high can my dismissal percentage reach with excuses?
 
 
 
@@ -1162,12 +1103,698 @@ nlu:
     - IT
 
 
-####################### YAQEEN ##############
+############## NEW NEW NEW  ##############
 
 
 
-############# Slot ####################
+- intent: engineering_building_location
+  examples: |
+    - Where is the engineering building located on campus?
+    - Can you tell me the exact location of the engineering building?
+    - What is the address of the engineering building?
+    - How do I find the engineering building?
+    - Where can I locate the engineering building?
+    - Could you provide directions to the engineering building?
+    - What campus area is the engineering building in?
+    - I'm looking for the engineering building. Where should I go?
+    - Can you guide me to the engineering building?
+    - What is the nearest landmark to the engineering building?
+    - where is the engineering building?
+    - what the location for engineering building?
+    - engineering location
+    - location of engineering building
+    - eng loc
+    - engineering location
+    - Where is the enginering buildin located on campus?
+    - Can you tell me the exact location of the enginering buildin?
+    - What is the addres of the enginering building?
+    - How do I find the enginering buildin?
+    - Where can I locate the enginering buildin?
+    - Could you provide directions to the enginering buildin?
+    - What campus area is the enginering buildin in?
+    - I'm looking for the enginering buildin. Where should I go?
+    - Can you guide me to the enginering buildin?
+    - What is the nearest landmark to the enginering buildin?
+    - engineering loc
+    - engineering building
+
+
+- intent: Cultural_Center_building_location
+  examples: |
+    - Where is the Cultural Center building located on campus?
+    - Where is the Cultural Centar building located?
+    - Can you tell me the exact locaion of the Cultural Centre building?
+    - What is the addres for the Cultural Center building?
+    - How do I find the Cultural Cneter building?
+    - Where can I locate the Cultural Center bilding at?
+    - Could you provide directon to the Cultural Center building?
+    - What campus area is the Cultural Center buidling in?
+    - I'm looking for the Cultural Centre building. Where should I go to?
+    - Can you guide me to the Cultural Cneter building?
+    - What's the nearest landamrk to the Cultural Center building?
+    - Where can I find the Cultural Center building?
+    - What's the location of the Cultural Center building?
+    - Can you tell me where the Cultural Center building is?
+    - How do I get to the Cultural Center building?
+    - Where exactly is the Cultural Center building situated?
+    - What's the address of the Cultural Center building?
+    - Could you provide directions to the Cultural Center building?
+    - Which area of the campus is the Cultural Center building in?
+    - I'm looking for the Cultural Center building. Where should I go?
+    - What landmark is closest to the Cultural Center building?
+    - where is the the culchare building
+    - cul build
+    - where is the the cul build?
+    - cul loc
+
+    
+- intent: Business_Administration_building_location
+  examples: |
+    - Where is the Business Administration building located?
+    - What's the location of the Business Admin building?
+    - Can you tell me where the Business Administration building is?
+    - How do I get to the Business Admin building?
+    - Where exactly is the Business Administration building situated?
+    - What's the address of the Business Administration building?
+    - Could you provide directions to the Business Admin building?
+    - Which area of the campus is the Business Administration building in?
+    - I'm looking for the Business Admin building. Where should I go?
+    - What landmark is closest to the Business Administration building?
+    - Where is the Business Adminstration building located?
+    - What's the location of the Busines Admin building?
+    - Can you tell me where the Busness Administration building is?
+    - How do I get to the Business Adminsitration building?
+    - Where exactly is the Business Adminstration building situated?
+    - What's the adress of the Business Administration building?
+    - Could you provide directions to the Busines Admin building?
+    - Which area of the campus is the Business Adminstration building in?
+    - I'm looking for the Business Adminstration building. Where should I go?
+    - What landmrak is closest to the Business Administration building?   
+    - bus build
+    - where is the the bus build?
+    - bus loc
+    - where is the the bussnes building
+    - where is the the busines building
+
+
+- intent: Library_building_location
+  examples: |
+    - Where is the library building located?
+    - What's the location of the library?
+    - Can you tell me where the library is?
+    - How do I get to the library building?
+    - Where exactly is the library situated?
+    - What's the address of the library building?
+    - Could you provide directions to the library?
+    - Which area of the campus is the library in?
+    - I'm looking for the library building. Where should I go?
+    - What landmark is closest to the library building?
+    - Where is the libray building located?
+    - What's the location of the library bilding?
+    - Can you tell me where the librry is?
+    - How do I get to the libary building?
+    - Where exactly is the libraray situated?
+    - What's the adress of the libray building?
+    - Could you provide directions to the library bilding?
+    - Which area of the campus is the libray in?
+    - I'm looking for the librry building. Where should I go?
+    - What landmrak is closest to the library building?
+    - librery build
+    - where is the the lebrairy build?
+    - where is the the lib build?
+    - library loc
+    - where is the the librere building
+
+   
+
+- intent: sport_center_building_location
+  examples: |
+    - Where is the sport center building located?
+    - What's the location of the sport center?
+    - Can you tell me where the sport center is?
+    - How do I get to the sport center building?
+    - Where exactly is the sport center situated?
+    - What's the address of the sport center building?
+    - Could you provide directions to the sport center?
+    - Which area of the campus is the sport center in?
+    - I'm looking for the sport center building. Where should I go?
+    - What landmark is closest to the sport center building?
+    - sport center location
+    - spor loc
+    - Where is the sports center bilding located?
+    - What's the location of the sport centre?
+    - Can you tell me where the sport centerr is?
+    - How do I get to the sport center bulding?
+    - Where exactly is the sports center situated?
+    - What's the adress of the sports center building?
+    - Could you provide directions to the sport centre?
+    - Which area of the campus is the sports center in?
+    - I'm looking for the sport center. Where should I go?
+    - What landmark is closest to the sports center building?
+
+
+
+- intent: Research_Innovation_building_location
+  examples: |
+    - Where is the Research and Innovation building located?
+    - What's the location of the Research and Innovation center?
+    - Can you tell me where the Research and Innovation building is?
+    - How do I get to the Research and Innovation building?
+    - Where exactly is the Research and Innovation center situated?
+    - What's the address of the Research and Innovation building?
+    - Could you provide directions to the Research and Innovation building?
+    - Which area of the campus is the Research and Innovation building in?
+    - I'm looking for the Research and Innovation building. Where should I go?
+    - What landmark is closest to the Research and Innovation building?
+    - Where is the Research and Inovation building located?
+    - What's the location of the Research & Inovation center?
+    - Can you tell me where the Recarch & Innovation building is?
+    - How do I get to the Research and Inovation building?
+    - Where exactly is the Research and Innovation center situtated?
+    - What's the adress of the Research and Inovation building?
+    - Could you provide directions to the Research and Inovation building?
+    - Which area of the campus is the Research & Innovation building in?
+    - I'm looking for the Research and Inovation building. Where should I go?
+    - What landmrak is closest to the Research & Innovation building?
+    - Research loc
+    - recarch location
+    - research location
+    - Research building
 
 
 
 
+- intent: pick_location
+  examples: |
+    - Where is PICK located?
+    - What's the location of PICK?
+    - Can you tell me where PICK is?
+    - How do I get to PICK?
+    - Where exactly is PICK situated?
+    - What's the address of PICK?
+    - Could you provide directions to PICK?
+    - Which area of the campus is PICK in?
+    - I'm looking for PICK. Where should I go?
+    - What landmark is closest to PICK?
+    - Where is the PIK bilding located?
+    - What's the location of the PICK bilding?
+    - Can you tell me where PICK is?
+    - How do I get to the PICK building?
+    - Where exactly is PICK situted?
+    - What's the adress of PICK?
+    - Could you provide directions to the PICK bilding?
+    - Which area of the campus is the PICK in?
+    - I'm looking for the PICK. Where should I go?
+    - What landmrak is closest to PICK?
+    - PIK location
+    - PIC location
+    - PICK loc
+
+   
+    
+
+
+- intent: CAF_location
+  examples: |
+    - Where is CAF located?
+    - What's the location of CAF?
+    - Can you tell me where CAF is?
+    - How do I get to CAF?
+    - Where exactly is CAF situated?
+    - What's the address of CAF?
+    - Could you provide directions to CAF?
+    - Which area of the campus is CAF in?
+    - I'm looking for CAF. Where should I go?
+    - What landmark is closest to CAF?
+    - Where is the PIK bilding located?
+    - What's the location of the CAF bilding?
+    - Can you tell me where CAF is?
+    - How do I get to the CAF building?
+    - Where exactly is CAF situted?
+    - What's the adress of CAF?
+    - Could you provide directions to the CAF bilding?
+    - Which area of the campus is the CAF in?
+    - I'm looking for the CAF. Where should I go?
+    - What landmrak is closest to CAF?
+    - CAF location
+    - caf loc
+
+- intent: trolley_location
+  examples: |
+    - Where is the trolley located?
+    - What's the location of the trolley?
+    - Can you tell me where I can find the trolley?
+    - How do I get to the trolley?
+    - Where exactly is the trolley situated?
+    - What's the address of the trolley stop?
+    - Could you provide directions to the trolley?
+    - Which area of the campus is the trolley in?
+    - I'm looking for the trolley. Where should I go?
+    - What landmark is closest to the trolley stop? 
+    - troly location
+    - trolley location
+    - troli location
+    - troley location
+    - Where is the trolly located?
+    - What's the location of trolly?
+    - Can you tell me where the trolley is?
+    - How do I get to the trolly?
+    - Where exactly is the trolly situated?
+    - What's the adress of the trolley stop?
+    - Could you provide directions to trolly?
+    - Which area of the campus is the trolly in?
+    - I'm looking for the trolly. Where should I go?
+    - What landmark is closest to the trolly stop?
+    - trolley loc
+    - troly loc
+
+
+
+- intent: OLE_location
+  examples: |
+    - Where is OLE located?
+    - What's the location of OLE?
+    - Can you tell me where OLE is?
+    - How do I get to OLE?
+    - Where exactly is OLE situated?
+    - What's the address of OLE?
+    - Could you provide directions to OLE?
+    - Which area of the campus is OLE in?
+    - I'm looking for OLE. Where should I go?
+    - What landmark is closest to OLE?
+    - Where is the OLE located?
+    - What's the location of the OLE?
+    - Can you tell me where the OLE is?
+    - How do I get to the OLE?
+    - Where exactly is the OLE situated?
+    - What's the adress of OLE?
+    - Could you provide directions to the OLE?
+    - Which area of the campus is the OLE in?
+    - I'm looking for the OLE. Where should I go?
+    - What landmrak is closest to the OLE?
+    - where is ole coffee
+    - ole loc
+
+
+
+- intent: football_ground_location
+  examples: |
+    - Where is football ground located?
+    - What's the location of football ground?
+    - football yard
+    - football location
+    - fotball location
+    - footbal location
+    - football loc
+    - fotbal loc
+    - where is football ground?
+    - Where is the football ground located?
+    - What's the location of the football field?
+    - Can you tell me where the football ground is?
+    - How do I get to the football field?
+    - Where exactly is the football ground situated?
+    - What's the address of the football field?
+    - Could you provide directions to the football ground?
+    - Which area of the campus is the football ground in?
+    - I'm looking for the football field. Where should I go?
+    - What landmark is closest to the football ground?
+    - Where is the football ground locate?
+    - What's the location of the football feild?
+    - Can you tell me where the football ground at?
+    - How do I get to the football feild?
+    - Which area of the campus is the football ground in?
+    - I'm looking for the football ground. Where should I go?
+    - What landmrak is closest to the football feild?
+    - Where is football ground located at?
+    - Could you provide directions to the football ground?
+    - Which area of the campus is the football ground in?
+    - I'm looking for the football feild. Where should I go?
+    - What landmrak is closest to the football ground?
+
+
+
+- intent: Zaatar_w_Zeit_location
+  examples: |
+    - Where is Zaatar w Zeit located?
+    - What's the location of Zaatar w Zeit?
+    - Zaatar w Zeit loc
+    - Where is Zaatar w Zeit located?
+    - What's the location of Zaatar w Zeit?
+    - Can you tell me where Zaatar w Zeit is?
+    - How do I get to Zaatar w Zeit?
+    - Where exactly is Zaatar w Zeit situated?
+    - What's the address of Zaatar w Zeit?
+    - Could you provide directions to Zaatar w Zeit?
+    - I'm looking for Zaatar w Zeit. Where should I go?
+    - What landmark is closest to Zaatar w Zeit?
+    - Where is Zatar w Zeit locate?
+    - What's the location of Zatar w Zeit?
+    - Can you tell me where Zaatar w Zeit at?
+    - How do I get to Zatar w Zeit?
+    - Where exactaly is Zaatar w Zeit situated?
+    - What's the adress of Zaatar w Zeit?
+    - Could you provide direction to Zatar w Zeit?
+    - I'm looking for Zatar w Zeit. Where should I go?
+    - What landmrak is closest to Zatar w Zeit?
+    - Where is Zaatar with Zeit located?
+    - What's the location of Zaatar w Ziet?
+    - Can you tell me where Zaatar with Zeit is located?
+    - How do I get to Zaatar with Ziet?
+    - Where exactaly is Zatar with Zeit situated?
+    - What's the adress of Zaatar w Zeit?
+    - Could you provide directions to Zatar with Ziet?
+    - I'm looking for Zaatar with Zeit. Where should I go?
+    - What landmark is closest to Zaatar w Ziet?
+
+
+  
+- intent: The_Chocolate_Bar_location
+  examples: |
+    - Where is The Chocolate Bar located?
+    - What's the location of The Chocolate Bar?
+    - The Chocolate Bar loc
+    - Where is The Chocolate Bar located?
+    - What's the location of The Chocolate Bar?
+    - Can you tell me where The Chocolate Bar is?
+    - How do I get to The Chocolate Bar?
+    - Where exactly is The Chocolate Bar situated?
+    - What's the address of The Chocolate Bar?
+    - Could you provide directions to The Chocolate Bar?
+    - I'm looking for The Chocolate Bar. Where should I go?
+    - What landmark is closest to The Chocolate Bar?
+    - Where is The Choclate Bar located?
+    - What's the location of The Choclate Bar?
+    - Can you tell me where The Choclate Bar is?
+    - How do I get to The Chocolate Bar?
+    - Where exactaly is The Choclate Bar situated?
+    - What's the adress of The Choclate Bar?
+    - Could you provide direction to The Chocolate Bar?
+    - I'm looking for The Choclate Bar. Where should I go?
+    - What landmrak is closest to The Choclate Bar?
+    - Where is The Chocolate Bar locate?
+    - What's the location of The Choclate Bar?
+    - Can you tell me where The Choclate Bar at?
+    - How do I get to The Chocolate Bar?
+    - Where exactaly is The Choclate Bar situated?
+    - What's the adress of The Choclate Bar?
+    - Could you provide direction to The Chocolate Bar?
+    - I'm looking for The Choclate Bar. Where should I go?
+    - What landmrak is closest to The Choclate Bar?
+    - choclate bar location
+    - chocolat bar location
+
+
+- intent: pret_location
+  examples: |
+    - Where is Pret located?
+    - What's the location of Pret?
+    - Can you tell me where Pret is?
+    - How do I get to Pret?
+    - Where exactly is Pret situated?
+    - What's the address of Pret?
+    - Could you provide directions to Pret?
+    - I'm looking for Pret. Where should I go?
+    - What landmark is closest to Pret?
+    - Where is Preet located?
+    - What's the location of Pret?
+    - Can you tell me where Pret at?
+    - How do I get to Preet?
+    - Where exactaly is Pret situated?
+    - What's the adress of Pret?
+    - Could you provide direction to Preet?
+    - I'm looking for Preet. Where should I go?
+    - What landmrak is closest to Pret?
+    - Where is Pre located?
+    - What's the location of Preet?
+    - Can you tell me where Preet at?
+    - How do I get to Pre?
+    - Where exactaly is Pret situated?
+    - What's the adress of Preet?
+    - Could you provide direction to Pre?
+    - I'm looking for Preet. Where should I go?
+    - What landmrak is closest to Pre?
+    - pret location
+    - pret loc
+
+
+- intent: WALLS_location
+  examples: |
+    - Where is WALLS located?
+    - What's the location of WALLS?
+    - Can you tell me where WALLS is?
+    - How do I get to WALLS?
+    - Where exactly is WALLS situated?
+    - What's the address of WALLS?
+    - Could you provide directions to WALLS?
+    - I'm looking for WALLS. Where should I go?
+    - What landmark is closest to WALLS?
+    - Where is WAALLS loceted?
+    - What's the locatoin of WALLS?
+    - Can you tel me where WALLS at?
+    - How do I get to WALSS?
+    - Where exactaly is WALLS situted?
+    - What's the adres of WALLS?
+    - Could you provid direction to WALLS?
+    - I'm lookng for WALSS. Where should I go?
+    - What landmark is clostest to WALLS?
+    - Where is WALLS loacted?
+    - What's the locaion of WAALLS?
+    - Can you tel me where WALSS at?
+    - How do I get to WALLS?
+    - Where exactaly is WALSS situted?
+    - What's the adress of WALLS?
+    - Could you provid direction to WALLS?
+    - I'm lookng for WALLS. Where should I go?
+    - What landmark is clostest to WALSS?
+    - walls location
+    - walss location
+    - walss loc
+
+
+
+
+
+- intent: basketball_court_location
+  examples: |
+    - Where is the basketball court located?
+    - What's the location of the basketball court?
+    - Can you tell me where the basketball court is?
+    - How do I get to the basketball court?
+    - Where exactly is the basketball court situated?
+    - What's the address of the basketball court?
+    - Could you provide directions to the basketball court?
+    - Which area of the campus is the basketball court in?
+    - I'm looking for the basketball court. Where should I go?
+    - What landmark is closest to the basketball court?
+    - Where is the b-ball court located?
+    - What's the location of the bball court?
+    - Can you tell me where the basketball court is at?
+    - How do I get to the hoops court?
+    - What's the address of the basketball hoop?
+    - Could you provide directions to the b-ball court?
+    - Which area of the campus is the basketball court in?
+    - I'm looking for the b-ball court. Where should I go?
+    - What landmark is closest to the bball court?
+    - basketball court location
+    - basketball court loc
+    - besketball court location
+    - Where is the baskettball curt located?
+    - What's the locaton of the b-ball court?
+    - Can you tell me where the baskettball court is at?
+    - How do I get to the hoops court?
+    - Where exactaly is the B-ball court situated?
+    - What's the adress of the basketball hoopp?
+    - Could you provide direction to the baskettball court?
+    - Which area of the campus is the b-ball court in?
+    - I'm looking for the baskettball court. Where should I go?
+    - What landmrak is closest to the bball court?
+    - Where is the basetball court locate?
+    - What's the locaion of the b-ball court?
+    - Can you tell me where the baskettball court is?
+
+
+
+
+- intent: padel_court_location
+  examples: |
+    - Where is the Padel court located?
+    - What's the location of the Padel court?
+    - Can you tell me where the Padel court is?
+    - How do I get to the Padel court?
+    - Where exactly is the Padel court situated?
+    - What's the address of the Padel court?
+    - Could you provide directions to the Padel court?
+    - Which area of the campus is the Padel court in?
+    - I'm looking for the Padel court. Where should I go?
+    - What landmark is closest to the Padel court?
+    - Where is the Pedal court located?
+    - What's the locaton of the Padel court?
+    - Can you tell me where the Pedal court is at?
+    - How do I get to the Padel court?
+    - Where exactaly is the Pedel court situated?
+    - What's the adress of the Padel court?
+    - Could you provide direction to the Pedal court?
+    - Can you tell me where the Pedal court is?
+    - How do I get to the Padel court?
+    - Where exactaly is the Pedel court situated?
+    - What's the adress of the Padel court?
+    - Could you provide direction to the Pedal court?
+    - Which area of the campus is the Padel court in?
+    - I'm looking for the Padel court. Where should I go?
+    - What landmrak is closest to the Padel court?
+
+
+
+- intent: gate_aum_e2_location
+  examples: |
+    - Where is Gate AUM E-2 located?
+    - What's the location of Gate AUM E-2?
+    - Can you tell me where Gate AUM E-2 is?
+    - How do I get to Gate AUM E-2?
+    - Where exactly is Gate AUM E-2 situated?
+    - What's the address of Gate AUM E-2?
+    - Could you provide directions to Gate AUM E-2?
+    - Which area of the campus is Gate AUM E-2 in?
+    - I'm looking for Gate AUM E-2. Where should I go?
+    - What landmark is closest to Gate AUM E-2?
+    - Where is Gate AUM E-2 locate?
+    - What's the locaton of Gate AUM E-2?
+    - Can you tell me where Gate AUM E-2 is at?
+    - How do I get to Gate AUM E-2?
+    - Where exactaly is Gate AUM E-2 situated?
+    - What's the adress of Gate AUM E-2?
+    - Could you provide direction to Gate AUM E-2?
+    - Which area of the campus is Gate AUM E-2 in?
+    - I'm looking for Gate AUM E-2. Where should I go?
+    - What landmrak is closest to Gate AUM E-2?
+    - Where is Gate AUM E2 locate?
+    - What's the locaion of Gate AUM E-2?
+    - Can you tell me where Gate AUM E-2 is?
+    - How do I get to Gate AUM E-2?
+    - Where exactaly is Gate AUM E-2 situated?
+    - What's the adress of Gate AUM E-2?
+    - Could you provide direction to Gate AUM E-2?
+    - Which area of the campus is Gate AUM E-2 in?
+    - I'm looking for Gate AUM E-2. Where should I go?
+    - What landmrak is closest to Gate AUM E-2?
+    - Gate AUM E-2 location
+    - gate E2
+    - gate e2
+    - gte E2
+
+
+- intent: gate_aum_d_location
+  examples: |
+    - Where is Gate AUM D located?
+    - What's the location of Gate AUM D?
+    - Can you tell me where Gate AUM D is?
+    - How do I get to Gate AUM D?
+    - Where exactly is Gate AUM D situated?
+    - What's the address of Gate AUM D?
+    - Could you provide directions to Gate AUM D?
+    - Which area of the campus is Gate AUM D in?
+    - I'm looking for Gate AUM D. Where should I go?
+    - What landmark is closest to Gate AUM D?
+    - Where is Gate AMU D located?
+    - What's the locaton of Gate AUM D?
+    - Can you tell me where Gate AUM D is at?
+    - How do I get to Gate AUM D?
+    - Where exactaly is Gate AUM D situated?
+    - What's the adress of Gate AUM D?
+    - Could you provide direction to Gate AUM D?
+    - Which area of the campus is Gate AUM D in?
+    - I'm looking for Gate AUM D. Where should I go?
+    - What landmrak is closest to Gate AUM D?
+    - Where is Gate AMU D located?
+    - What's the locaion of Gate AUM D?
+    - Can you tell me where Gate AUM D is?
+    - How do I get to Gate AUM D?
+    - Where exactaly is Gate AUM D situated?
+    - What's the adress of Gate AUM D?
+    - Could you provide direction to Gate AUM D?
+    - Which area of the campus is Gate AUM D in?
+    - I'm looking for Gate AUM D. Where should I go?
+    - What landmrak is closest to Gate AUM D?
+
+
+
+
+
+- intent: AUM_restaurant
+  examples: |
+    - Are there restaurants on campus?
+    - What the restaurants are available on campus?
+    - Are there healthy options available in restaurants?
+    - Are there designated places for students who want to eat in restaurants?
+    - food 
+    - breakfast
+    - lunch
+    - dinner
+    - food hall
+    - Can you provide a list of restaurants available at AUM?
+    - What dining options are there at AUM?
+    - Where can I find restaurants on campus?
+    - Tell me about the restaurants at AUM.
+    - What are the food options available on campus?
+    - Can you list the eateries at AUM?
+    - I'm looking for places to eat on campus. What are my options?
+    - Provide information about the restaurants at AUM.
+    - How many restaurants are there at AUM?
+    - What are the names of the restaurants on campus?
+    - What are the restaurants available at AUM?
+    - Can you tell me about the dining options on campus?
+    - Where can I find places to eat at AUM?
+    - Tell me about the restaurants near the Engineering building.
+    - What eateries are located in the Business Administration building?
+    - Where is the nearest restaurant to the Library building?
+    - I'm hungry. What are my food options on campus?
+    - Can you list the restaurants near the Engineering Building?
+    - Are there any cafes near the lake?
+    - Can you provide information about the food options at AUM?  
+
+
+- intent: before_dismissal
+  examples: |
+    - I want to know the allowed absence percentage to reach before dismissal?
+    - What is the defined threshold for allowable absences before an student faces dismissal in our univarsity?
+    - what is the percentage that I can take before I get dismissal?
+    - I get 20% of the absent parsentage I will get dissmil or not?
+    - I get 20% of the absence parsentage I will get dismissal or not?
+    - what is the parsentage that i can get before dismissal?
+    - What is the allowed absence percentage before dismissal from a course?
+    - Can you tell me the threshold for absence percentage before dismissal?
+    - How many absences are allowed before dismissal from a course?
+    - What is the maximum absence percentage allowed before dismissal?
+    - Clarify the absence percentage threshold for course dismissal.
+    - How many absences can I have before being dismissed from a course?
+    - Tell me about the absence percentage limit before dismissal from a course.
+    - What happens if I exceed the absence percentage limit in a course?
+    - limite dismmial
+    - limite dismissal
+    - limit dismis
+
+
+- intent: reach_excuses
+  examples: |
+    - what is the max dismissal percentage you can reach with excuses?    
+    - What is the maximum dismissal percentage allowed when providing excuses, capped at 30%?
+    - What is the highest dismissal rate permissible with excuses, limited to 30%?
+    - What is the maximum percentage of dismissal that can be reached using excuses, set at 30%?
+    - What is the threshold for dismissal percentage achievable with excuses, not exceeding 30%?
+    - What is the upper limit for dismissal percentage attainable with excuses, restricted to 30%?
+    - What is the highest percentage of dismissal permitted with excuses, capped at 30%?
+    - What is the maximum dismissal rate achievable with excuses, not surpassing 30%?
+    - What is the dismissal percentage limit when considering excuses, set at 30%?
+    - What is the maximum dismissal percentage I can reach with excuses?
+    - Can you tell me the maximum dismissal percentage allowed with excuses?
+    - What is the limit on the dismissal percentage I can reach with excuses?
+    - Tell me about the maximum dismissal percentage I can reach with excuses.
+    - Provide information about the maximum dismissal percentage I can reach with excuses.
+    - Can you clarify the maximum dismissal percentage allowed with excuses?
+    - What is the policy on the dismissal percentage I can reach with excuses?
+    - How high can my dismissal percentage reach with excuses?
+    - limite dismis with excuses
+    - limite desmis with excues
+    - lemite dismis if I have excues
+    - limete dismes if i have excuse 
+    

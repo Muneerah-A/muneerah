@@ -1,0 +1,140 @@
+version: "3.1"
+
+intents:
+  - engineering_building_location
+  - Cultural_Center_building_location
+  - Business_Administration_building_location
+  - Library_building_location
+  - sport_center_building_location
+  - Research_Innovation_building_location
+  - pick_location
+  - CAF_location
+  - trolley_location 
+  - ole_location 
+  - football_ground
+  - Zaatar_w_Zeit_location
+  - The_Chocolate_Bar_location
+  - pret_location
+  - WALLS_location
+  - basketball_court_location
+  - padel_court_location
+  - gate_aum_e2_location
+  - gate_aum_d_location
+  - AUM_restaurant
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+responses:
+  utter_engineering_building_location:
+  - text: " The location of engineering building  is : https://maps.app.goo.gl/NJiHyFV5KwPvsMc96?g_st=it "
+ 
+  utter_Cultural_Center_building_location:  
+  - text: " The location of Cultural Center building  is : https://maps.app.goo.gl/RgVtPsNorpQUEbLQ6?g_st=it "
+
+ 
+  utter_Business_Administration_building_location:  
+  - text: " The location of Business Administration building is : https://maps.app.goo.gl/1UWB9bd2CLSUYJr18?g_st=it "
+
+ 
+  utter_Library_building_location:  
+  - text: " The location of Library building is : https://maps.app.goo.gl/K1cFsXo2Cqcf8rFu9?g_st=it "
+ 
+  
+  utter_sport_center_building_location:  
+  - text: " The location of sport center building is : https://maps.app.goo.gl/7qrSgx9eNFJTJEdJ6?g_st=it "
+ 
+ 
+  utter_Research_Innovation_building_location:  
+  - text: " The location of Research and Innovation building is : https://maps.app.goo.gl/fL9wwEwZHZgou4Ud9?g_st=it "
+
+
+  utter_pick_location:  
+  - text: " The location of PICK is : https://maps.app.goo.gl/kHwN532FNgx8sBSJ8?g_st=it "
+
+
+  utter_CAF_location:  
+  - text: " The location of CAF is : https://maps.app.goo.gl/hmUSFy2ix9b35Avs9?g_st=it "
+
+
+  utter_trolley_location:  
+  - text: " The location of trolley is : https://maps.app.goo.gl/YLfipcWhMeLvaVhj9?g_st=it "
+
+
+  utter_OLE_location:  
+  - text: " The location of OLE is : https://maps.app.goo.gl/kJsXA5GFKdEQms1L8?g_st=it "
+
+
+
+  utter_football_ground_location:  
+  - text: " The location of football ground is : https://maps.app.goo.gl/XWc1L56evYixh7CA9?g_st=it "
+
+
+  utter_Zaatar_w_Zeit_location:  
+  - text: " The location of Zaatar w Zeit is : https://maps.app.goo.gl/gVG7QGHnJdAin9SWA?g_st=it"
+
+
+
+
+  utter_The_Chocolate_Bar_location:  
+  - text: " The location of  Chocolate Bar is : https://maps.app.goo.gl/A32Pg87MvSwDWNTq8?g_st=it"
+
+
+
+  utter_pret_location:  
+  - text: " The location of pret is : https://maps.app.goo.gl/fvJqU6Pq8t1vQh5Y6?g_st=it "
+
+
+  utter_WALLS_location:  
+  - text: " The location of WALLS is : https://maps.app.goo.gl/UdgSqnaRAPQmYfat6?g_st=it "
+
+
+
+  utter_basketball_court_location:  
+  - text: " The location of basketball court is : https://maps.app.goo.gl/ZyZkcJV355RdtC61A?g_st=it "
+
+
+
+  utter_padel_court_location:  
+  - text: " The location of padel court is : https://maps.app.goo.gl/7UfoQT5WWKVeFQty5?g_st=it "
+
+
+
+  utter_gate_aum_e2_location:  
+  - text: " The location of Gate E2 is : https://maps.app.goo.gl/7UfoQT5WWKVeFQty5?g_st=it "
+
+
+
+
+  utter_gate_aum_d_location:  
+  - text: " The location of Gate D is : https://maps.app.goo.gl/ruYB7JPAuWKTbY4t6?g_st=it "
+
+
+  utter_AUM_restaurant:
+  - text: " Engineering building:Chocolate Bar, Zaatar w Zeit, trolley, OLE,  Business Administration building: WALLS, Library building: Pret ,Front of the lake: Pick and CAF."
+
+
+
+  utter_before_dismissal:
+  - text: " the allowed absence percentage to reach before dismissal is 19%, if you reach 20% absence you will be dismissed from the course"
+
+  utter_reach_excuses:
+  - text: "the max dismissal percentage you can reach with excuses is 30%"
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -376,5 +376,113 @@ rules:
 
 
 
-############## YAQEEN ##############
+############## NEW NEW NEW  ##############
 
+
+- rule: engineering building location
+  steps:
+  - intent: engineering_building_location
+  - action: utter_engineering_building_location
+   
+   
+
+
+- rule: Cultural Center building location
+  steps:
+  - intent: Cultural_Center_building_location
+  - action: utter_Cultural_Center_building_location
+
+- rule: Business Administration building location
+  steps:
+  - intent: Business_Administration_building_location
+  - action: utter_Business_Administration_building_location
+  
+- rule: Library building location
+  steps:
+  - intent: Library_building_location
+  - action: utter_Library_building_location
+
+   
+- rule: sport center building location
+  steps:
+  - intent: sport_center_building_location
+  - action: utter_sport_center_building_location 
+  
+   
+- rule: Research Innovation building location
+  steps:
+  - intent: Research_Innovation_building_location
+  - action: utter_Research_Innovation_building_location 
+  
+   
+- rule: pick location
+  steps:
+  - intent: pick_location
+  - action: utter_pick_location 
+
+
+- rule: CAF location
+  steps:
+  - intent: CAF_location
+  - action: utter_CAF_location 
+
+
+- rule: trolley location 
+  steps:
+  - intent: trolley_location 
+  - action: utter_trolley_location  
+
+- rule: OLE location  
+  steps:
+  - intent: OLE_location  
+  - action: utter_OLE_location   
+
+- rule: football ground location 
+  steps:
+  - intent: football_ground_location  
+  - action: utter_football_ground_location  
+
+
+- rule: Zaatar w Zeit location 
+  steps:
+  - intent: Zaatar_w_Zeit_location 
+  - action: utter_Zaatar_w_Zeit_location
+  
+- rule: The Chocolate Bar location 
+  steps:
+  - intent: The_Chocolate_Bar_location 
+  - action: utter_The_Chocolate_Bar_location
+
+
+- rule: pret location
+  steps:
+  - intent: pret_location 
+  - action: utter_pret_location
+
+- rule: basketball court location
+  steps:
+  - intent: basketball_court_location 
+  - action: utter_basketball_court_location
+ 
+
+- rule: padel court location
+  steps:
+  - intent: padel_court_location 
+  - action: utter_padel_court_location
+
+  
+- rule: WALLS location
+  steps:
+  - intent: WALLS_location 
+  - action: utter_WALLS_location
+  
+- rule: gate aum e2 location
+  steps:
+  - intent: gate_aum_e2_location 
+  - action: utter_gate_aum_e2_location
+
+
+- rule: gate aum d location
+  steps:
+  - intent: gate_aum_d_location
+  - action: utter_gate_aum_d_location
