@@ -39,15 +39,15 @@ intents:
 responses:
 
   utter_AUM_restaurant:
-    - text: " Engineering building:Chocolate Bar, Zaatar w Zeit, trolley, OLE,  Business Administration building: WALLS, Library building: Pret ,Front of the lake: Pick and CAF."
+  - text: " Engineering building:Chocolate Bar, Zaatar w Zeit, trolley, OLE,  Business Administration building: WALLS, Library building: Pret ,Front of the lake: Pick and CAF."
 
 
 
   utter_before_dismissal:
-    - text: " the allowed absence percentage to reach before dismissal is 19%, if you reach 20% absence you will be dismissed from the course"
+  - text: " the allowed absence percentage to reach before dismissal is 19%, if you reach 20% absence you will be dismissed from the course"
 
   utter_reach_excuses:
-    - text: "the max dismissal percentage you can reach with excuses is 30%"
+  - text: "the max dismissal percentage you can reach with excuses is 30%"
 
 
   utter_engineering_building_location:
@@ -166,8 +166,7 @@ responses:
   - text: "In the male lounge, you'll find [ dining and study tables, Billiards and a TV with PlayStation]."
 
 
-  utter_express_gratitude_lounge_info:
-  - text: "You're welcome! If you need any more information, feel free to ask."
+
 
 
 

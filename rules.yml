@@ -2,23 +2,32 @@ version: "3.1"
 
 rules:
 
-
-
-
 - rule: Greet user at the start of the conversation
   steps:
-  - action: utter_greet
   - intent: greet
+  - action: utter_greet
+
+
+
+- rule: affirm
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+
+- rule: deny
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+
 
 - rule: student ID
   steps:
   - intent: AUM_student_ID
   - action: utter_AUM_student_ID
 
-- rule: ask about clinic
-  steps:
-  - intent: AUM_clinic
-  - action: utter_AUM_clinic
+
 
 - rule: ask about AUM email for the university student
   steps:
@@ -52,10 +61,6 @@ rules:
 
 
 
-- rule: ask about graduation with honors
-  steps:
-  - intent: graduation_with_honors
-  - action: utter_graduation_with_honors
 
 - rule: ask about AUM 
   steps:
@@ -72,25 +77,25 @@ rules:
   - intent: writing_lab
   - action: utter_writing_lab
 
-- rule: :ask about registration way 
+- rule: ask about registration way 
   steps:
   - intent: AUM_registration_way
   - action: utter_AUM_registration_way 
 
 
 
-- rule: :ask about registration min
+- rule: ask about registration min
   steps:
   - intent: AUM_registration_min
   - action: utter_AUM_registration_min
 
-- rule: :ask about registration max
+- rule: ask about registration max
   steps:
   - intent: AUM_registration_max
   - action: utter_AUM_registration_max
 
 
-- rule: :ask about AUM add drop
+- rule: ask about AUM add drop
   steps:
   - intent: AUM_add_drop
   - action: utter_AUM_add_drop
@@ -117,15 +122,9 @@ rules:
   - action: utter_final_exam_late
 
 
-# - rule: :ask about registration #
-#   steps:
-#   - intent: AUM_registration
-#   - action: utter_AUM_registration
 
-# - rule: final exam #
-#   steps:
-#   - intent: final_exam
-#   - action: utter_final_exam
+
+
 
 # - rule: AUM library
 #   steps:
@@ -144,10 +143,6 @@ rules:
   - intent: tawteen_career_center
   - action: utter_tawteen_career_center
 
-# - rule: emergency cases
-#   steps:
-#   - intent: emergency_cases
-#   - action: utter_emergency_cases
 
 - rule: AUM major
   steps:
@@ -160,46 +155,18 @@ rules:
   - intent: electrical_engineering
   - action: utter_electrical_engineering
 
-- rule: ask about clinic services 
-  steps:
-  - intent: clinic_services 
-  - action: utter_clinic_services 
-
-- rule: ask about clinic location
-  steps:
-  - intent: clinic_location
-  - action: utter_clinic_location
-
-- rule: ask about sports center
-  steps:  
-  - intent: sports_center
-  - action: utter_sports_center
-
-- rule: ask about it services
-  steps:
-  - intent: it_services
-  - action: utter_it_services
 
 
-- rule: ask about aum aum website
-  steps:
-  - intent: aum_website
-  - action: utter_aum_website
+
+
 
 - rule : ask about portal purpose
   steps:  
   - intent : portal_purpose
   - action : utter_portal_purpose
 
-- rule: ask about aum moodle
-  steps:
-  - intent: aum_Moodle
-  - action: utter_aum_Moodle
 
-- rule: ask about aum banner
-  steps:
-  - intent: aum_banner
-  - action: utter_aum_banner
+
 
 
 - rule: ask about aum communicate
@@ -208,25 +175,10 @@ rules:
   - action: utter_aum_communicate
 
 
-- rule: ask about parking services
-  steps:
-  - intent: parking_services
-  - action: utter_parking_services
 
-- rule: ask about students identified
-  steps:
-  - intent: students_identified
-  - action: utter_students_identified
 
-- rule: ask about tutoring center
-  steps:
-  - intent: tutoring_center
-  - action: utter_tutoring_center
 
-- rule: ask about innovation center
-  steps:
-  - intent: innovation_center
-  - action: utter_innovation_center
+
 
 - rule: ask about AUM calendar
   steps: 
@@ -242,7 +194,7 @@ rules:
 
 - rule: ask about grading system
   steps:
-  - intent: ask_grading_system
+  - intent: grading_system
   - action: utter_grading_system
 
 
@@ -252,23 +204,23 @@ rules:
 
 - rule: ask about business major
   steps:
-  - intent: Ask_about_business_major
+  - intent: business_major
   - action: utter_business_major
 
 - rule: ask about attendance dismissal request
   steps:
-  - intent: Ask_about_attendance_dismissal_request
+  - intent: attendance_dismissal_request
   - action: utter_attendance_dismissal_request
 
 
 - rule: ask about medical examination submission
   steps:
-  - intent: Ask_about_medical_examination_submission
+  - intent: medical_examination_submission
   - action: utter_medical_examination_submission
 
 - rule: ask about lost item on campus 
   steps:
-  - intent: Ask_about_lost_item_on_campus
+  - intent: lost_item_on_campus
   - action: utter_lost_item_on_campus
 
 - rule: ask about advising services 
@@ -302,8 +254,8 @@ rules:
   - action: utter_student_affairs_office_hours_info
 - rule: Provide student affairs contact information
   steps:
-  - intent: student_affairs_contact_info
-  - action: utter_student_affairs_contact_info
+  - intent: student_affairs_contact
+  - action: utter_student_affairs_contact
 - rule: Provide student affairs service
   steps:
   - intent: student_affairs_services_info
@@ -407,10 +359,7 @@ rules:
   - action: utter_aum_website_info
 
 
-- rule : ask about portal purpose
-  steps:  
-  - intent : portal_purpose
-  - action : utter_portal_purpose
+
 
 - rule: ask about aum moodle
   steps:
@@ -424,10 +373,10 @@ rules:
   - action: utter_aum_banner
 
 
-- rule: ask about aum communicate
-  steps:
-  - intent: aum_communicate
-  - action: utter_aum_communicate
+# - rule: ask about aum communicate
+#   steps:
+#   - intent: aum_communicate
+#   - action: utter_aum_communicate
 
 
 - rule: ask about parking services
@@ -446,10 +395,10 @@ rules:
   - intent: aum_library
   - action: utter_aum_library
 
-- rule: ask about writing club
-  steps:
-  - intent: writing_club
-  - action: utter_writing_club
+# - rule: ask about writing club
+#   steps:
+#   - intent: writing_club
+#   - action: utter_writing_club
 
 - rule: ask about tutoring center
   steps:
@@ -492,10 +441,7 @@ rules:
   - action: utter_tawteen_center
 
   
-- rule: ask about grading system
-  steps:
-  - intent: grading_system
-  - action: utter_grading_system
+
 
   
 - rule: ask about grade points
@@ -517,10 +463,10 @@ rules:
   - action: utter_minimum_required_grade
 
   
-- rule: ask about minimum passing grade
-  steps:
-  - intent: minimum_passing_grade
-  - action: utter_minimum_passing_grade
+# - rule: ask about minimum passing grade
+#   steps:
+#   - intent: minimum_passing_grade
+#   - action: utter_minimum_passing_grade
 
   
 - rule: ask about minimum grade exceptions
@@ -575,10 +521,10 @@ rules:
   - intent: CGPA_good_standing
   - action: utter_CGPA_good_standing
 
-# - rule: ask about calculate CGPA and GPA
-#   steps:
-#   - intent: calculate_CGPA_GPA
-#   - action: utter_calculate_CGPA_GPA
+- rule: ask about calculate CGPA and GPA
+  steps:
+  - intent: calculate_CGPA_GPA
+  - action: utter_calculate_CGPA_GPA
 
 - rule: ask about CGPA and GPA transcript
   steps:
@@ -651,6 +597,17 @@ rules:
   - intent: repeat_course_CGPA_improve
   - action: utter_repeat_course_CGPA_improve
 
+- rule: med examination form
+  steps:
+  - intent: med_examination_form
+  - action: utter_med_examination_form
+
+- rule: attendance policy
+  steps:
+  - intent: attendance_policy
+  - action: utter_attendance_policy
+
+
 #newnewnew
 - rule: ask about repeat specific courses
   steps:
@@ -708,20 +665,13 @@ rules:
   - intent: attendance_importance
   - action: utter_attendance_importance
 
-- rule: ask about honors list criteria
+
+
+
+- rule: ask about park car
   steps:
-  - intent: honors_list_criteria
-  - action: utter_honors_list_criteria
-
-# - rule: ask about grading table
-#   steps:
-#   - intent: grading_table
-#   - action: utter_grading_table
-
-# - rule: ask about park car
-#   steps:
-#   - intent: park_car
-#   - action: utter_park_car
+  - intent: park_car
+  - action: utter_park_car
 
 - rule: ask about join art club
   steps:
@@ -813,30 +763,32 @@ rules:
   - intent: speech_communication_club_info
   - action: utter_speech_communication_club_info
 
-- rule: ask about library location
+########################################################
+- rule: print services location
   steps:
-  - intent: provide_library_location
-  - action: utter_library_building
+  - intent: print_services_location
+  - action: utter_print_services_location
 
 
 
-- rule: ask about library location
+- rule: atm location
   steps:
-  - intent: cafe_locations
-  - action: utter_cafe_locations
+  - intent: atm_location
+  - action: utter_atm_location
 
-- rule: ask about library location
+
+- rule: ask male lounge facilities
   steps:
-  - intent: restaurant_locations
-  - action: utter_restaurant_locations
+  - intent: ask_male_lounge_facilities
+  - action: utter_ask_male_lounge_facilities
 
-
-- rule: ask about library location
+- rule: male lounge location
   steps:
-  - intent: food_locations
-  - action: utter_food_locations
+  - intent: male_lounge_location
+  - action: utter_male_lounge_location
 
 
+###########################################################
 - rule: ask about library location
   steps:
   - intent: industrial_engineering_credits_required
@@ -1014,32 +966,20 @@ rules:
 
 
 
-- rule: ask about final 5
-  steps:
-  - intent: late_final 
-  - action: utter_late_final 
+# - rule: ask about final 5
+#   steps:
+#   - intent: late_final 
+#   - action: utter_late_final 
 
 - rule: ask about final 7
   steps:
   - intent: satisfied_final
   - action: utter_satisfied_final 
 
-- rule: ask about final 6
+- rule: medical excuses 
   steps:
-  - intent: submit_appeal
-  - action: utter_submit_appeal
-
-# # - rule: computer eng 
-#   steps:
-#   - intent: computer_engineering_credits 
-#   - action: utter_computer_engineering_credits 
-
-
-
-# - rule: medical excuses 
-#   steps:
-#   - intent: medical_excuses
-#   - action: utter_medical_excuses
+  - intent: medical_excuses
+  - action: utter_medical_excuses
 
 - rule: aum portal
   steps:
@@ -1060,32 +1000,21 @@ rules:
 
 
 
-
-
-- rule: ATM service
+- rule: before dismissal
   steps:
-  - intent: ATM_service
-  - action: utter_ATM_service
+  - intent: before_dismissal
+  - action: utter_before_dismissal
 
-# - rule: tawteen career center
-#   steps:
-#   - intent: tawteen_career_center
-#   - action: utter_tawteen_career_center
 
-# - rule: emergency_cases
-#   steps:
-#   - intent: emergency_cases
-#   - action: utter_emergency_cases
 
-- rule: AUM major
+- rule: AUM restaurant
   steps:
-  - intent: AUM_major
-  - action: utter_AUM_major
+  - intent: AUM_restaurant 
+  - action: utter_AUM_restaurant
 
-# - rule: accident campus
-#   steps:
-#   - intent: accident_campus
-#   - action: utter_accident_campus
+
+
+
 
 - rule: program degree
   steps:
@@ -1164,6 +1093,70 @@ rules:
   - intent: max_EPP
   - action: utter_max_EPP
 
+- rule: reach excuses
+  steps:
+  - intent: reach_excuses
+  - action: utter_reach_excuses  
+
+- rule: prayer room
+  steps:
+  - intent: prayer_room
+  - action: utter_prayer_room  
+
+- rule: about prayer Engineering female
+  steps:
+  - intent: about_prayer_Engineeringfemale
+  - action: utter_about_prayer_Engineeringfemale
+
+
+- rule: about prayer Engineering male
+  steps:
+  - intent: about_prayer_Engineeringmale
+  - action: utter_about_prayer_Engineeringmale
+
+- rule: about prayer businessmale
+  steps:
+  - intent: about_prayer_businessmale
+  - action: utter_about_prayer_businessmale
+
+- rule: about prayer businessfemale
+  steps:
+  - intent: about_prayer_businessfemale
+  - action: utter_about_prayer_businessfemale
+
+- rule: about prayer Libraryfemale
+  steps:
+  - intent: about_prayer_Libraryfemale
+  - action: utter_about_prayer_Libraryfemale
+
+- rule: about prayer Librarymale
+  steps:
+  - intent: about_prayer_Librarymale
+  - action: utter_about_prayer_Librarymale
+
+
+
+- rule: about prayer Researchmale
+  steps:
+  - intent: about_prayer_Researchmale
+  - action: utter_about_prayer_Researchmale
+
+- rule: about prayer Researchfemale
+  steps:
+  - intent: about_prayer_Researchfemale
+  - action: utter_about_prayer_Researchfemale
+
+
+- rule: about prayer Culturalmale
+  steps:
+  - intent: about_prayer_Culturalmale
+  - action: utter_about_prayer_Culturalmale
+
+
+- rule: about prayer Culturalfemale
+  steps:
+  - intent: about_prayer_Culturalfemale
+  - action: utter_about_prayer_Culturalfemale
 
 
 - rule: Respond to fall spring attendance policy1
@@ -1213,47 +1206,6 @@ rules:
 
 
 
-########## Story ##############
-
-
-# - rule: ask about your
-#   steps:
-#   - intent: what_is_your
-#   - action: utter_what_is_your
-
-# - rule: from eng to eng
-#   steps:
-#   - intent: from_eng_to_eng
-#   - action: utter_from_eng_to_eng
-
-# - rule: from bus to bus
-#   steps:
-#   - intent: from_bus_to_bus
-#   - action: utter_from_bus_to_bus
-
-
-# - rule: from eng to teq
-#   steps:
-#   - intent: from_eng_to_teq
-#   - action: utter_from_eng_to_teq
-
-# - rule: about convert
-#   steps:
-#   - intent: convert
-#   - action: utter_convert
-
-
-# - rule: about transfer teq
-#   steps:
-#   - intent: transfer_teq
-#   - action: utter_transfer_teq
- 
-
-# - rule: from teq to eng
-#   steps:
-#   - intent: from_teq_to_eng
-#   - action: utter_from_teq_to_eng
-   
 
 
 
@@ -1309,95 +1261,64 @@ rules:
 
 
 
-###################### NEW NEW NEW ###########################
 
-- rule: before dismissal
+
+  
+
+  ##############################################reem####################################################
+
+- rule: ask about graduate plan
   steps:
-  - intent: before_dismissal
-  - action: utter_before_dismissal
+  - intent: graduate_plan
+  - action: utter_graduate_plan
 
-
-
-- rule: AUM restaurant
+- rule: ask about undergraduate plan
   steps:
-  - intent: AUM_restaurant 
-  - action: utter_AUM_restaurant
+  - intent: undergraduate_plan
+  - action: utter_undergraduate_plan
 
-- rule: reach excuses
+- rule: ask about Contact info
   steps:
-  - intent: reach_excuses
-  - action: utter_reach_excuses  
+  - intent: Contact_info
+  - action: utter_Contact_info
 
-- rule: prayer room
+- rule: ask about AUM twitter
   steps:
-  - intent: prayer_room
-  - action: utter_prayer_room  
+  - intent: AUM_twitter
+  - action: utter_AUM_twitter
 
-- rule: about prayer Engineering female
+- rule: ask about AUM instgram
   steps:
-  - intent: about_prayer_Engineeringfemale
-  - action: utter_about_prayer_Engineeringfemale
+  - intent: AUM_instgram
+  - action: utter_AUM_instgram
 
-
-- rule: about prayer Engineering male
+- rule: ask about AUM facebook
   steps:
-  - intent: about_prayer_Engineeringmale
-  - action: utter_about_prayer_Engineeringmale
+  - intent: AUM_facebook
+  - action: utter_AUM_facebook
 
-- rule: about prayer businessmale
+- rule: ask about AUM youtube
   steps:
-  - intent: about_about_prayer_businessmale
-  - action: utter_about_prayer_businessmale
+  - intent: AUM_youtube
+  - action: utter_AUM_youtube
 
-- rule: about prayer businessfemale
+- rule: ask about Library Support
   steps:
-  - intent: about_about_prayer_businessfemale
-  - action: utter_about_prayer_businessfemale
+  - intent: Library_Support
+  - action: utter_Library_Support
 
-
-- rule: about prayer Libraryfemale
+- rule: ask about help
   steps:
-  - intent: about_prayer_Libraryfemale
-  - action: utter_about_prayer_Libraryfemale
-
-- rule: about prayer Librarymale
-  steps:
-  - intent: about_prayer_Librarymale
-  - action: utter_about_prayer_Librarymale
+  - intent: help
+  - action: utter_help
 
 
-
-- rule: about prayer Researchmale
-  steps:
-  - intent: about_prayer_Researchmale
-  - action: utter_about_prayer_Researchmale
-
-- rule: about prayer Researchfemale
-  steps:
-  - intent: about_prayer_Researchfemale
-  - action: utter_about_prayer_Researchfemale
-
-
-- rule: about prayer Culturalmale
-  steps:
-  - intent: about_prayer_Culturalmale
-  - action: utter_about_prayer_Culturalmale
-
-
-- rule: about prayer Culturalfemale
-  steps:
-  - intent: about_prayer_Culturalfemale
-  - action: utter_about_prayer_Culturalfemale
-
+#################################################
 
 - rule: engineering building location
   steps:
   - intent: engineering_building_location
   - action: utter_engineering_building_location
-
-
-
-
 
 - rule: Cultural Center building location
   steps:
@@ -1410,11 +1331,13 @@ rules:
   - intent: Business_Administration_building_location
   - action: utter_Business_Administration_building_location
 
-
 - rule: Library building location
   steps:
   - intent: Library_building_location
   - action: utter_Library_building_location
+
+
+
 
 - rule: pick location
   steps:
@@ -1524,23 +1447,3 @@ rules:
   - action: utter_ask_female_lounge_facilities
 
 
-- rule: ask male lounge facilities
-  steps:
-  - intent: ask_male_lounge_facilities
-  - action: utter_ask_male_lounge_facilities
-
-
-- rule: male lounge location
-  steps:
-  - intent: male_lounge_location
-  - action: utter_male_lounge_location
-
-- rule: atm location
-  steps:
-  - intent: atm_location
-  - action: utter_atm_location
-
-- rule: print services location
-  steps:
-  - intent: print_services_location
-  - action: utter_print_services_location
