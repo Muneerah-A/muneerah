@@ -1,0 +1,128 @@
+version: "3.1"
+
+intents:
+
+  - thank_you
+  - get_course_info
+  - get_course_code
+
+
+
+
+entities:
+- course_name
+- rows
+- course_code
+- points
+- major
+- answer
+- gradestext
+- gpa
+- student_id
+
+
+
+
+
+
+
+
+
+slots: 
+  
+  course_name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: course_name
+
+  rows:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: rows
+
+  course_code:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: course_code     
+
+  student_id:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: student_id     
+
+
+
+      
+
+  points:
+    type: float
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: points
+
+  gradestext:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: gradestext
+
+      
+  gpa:
+    type: float
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: gpa
+
+
+responses:
+  
+  utter_ask_lost_id:
+    - text: "Seems like you've lost your student ID. Can you provide your student ID number?"
+  utter_student_id_registered:
+    - text: "Your student ID is registered. You're all set!"
+  utter_student_id_not_registered:
+    - text: "Sorry, we couldn't find your student ID in our records. Please contact student affairs for assistance."
+  utter_thank_you:
+    - text: "Thank you for providing your student ID."
+  utter_no_records:
+    - text: "Sorry, no records found for the specified course."
+  # utter_ask_gpa:
+  #   - text: "What is your current GPA?"
+  utter_ask_grades:
+    - text: "Please provide your grades."
+  utter_ask_credits:
+    - text: "Please provide the corresponding credits for each grade."
+  utter_ask_old_gpa:
+    - text: "What was your previous GPA?"
+
+
+  utter_ask_gpa:
+  - text: "What is your GPA? place write it like this --> gpa 3.4"
+  utter_ask_points:
+  - text: "How many credits write it like this --> credits 3 "
+  utter_ask_grade:
+  - text: "What is your mark write it like this --> Previous mark: A"
+
+  utter_i_want_calclute:
+  - text: "Ok lets start !"
+actions:
+
+- action_Course
+- action_Course_code
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

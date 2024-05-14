@@ -1,0 +1,23 @@
+version: "3.1"
+
+intents:
+  - Library_question
+
+
+
+responses:
+
+  utter_Library_question:
+  - text: " What do you want to know about library?"
+
+  # utter_is_help:
+  # - text: "Did that help you?"
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
